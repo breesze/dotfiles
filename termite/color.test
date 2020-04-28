@@ -1,0 +1,188 @@
+[colors]
+# background = rgba(0,0,0,0.7)
+# background = rgba(18,18,18,0.9)
+background = #121212
+# cursor = #bbbbbb
+foreground = #bbbbbb
+color0 = #1b1d1e
+color1 = #CD0000
+# color1 = #D7005F
+color2 = #44ff00
+# color2 = #ffff00
+color3 = #f67400
+# color4 = #1080d0
+color4 = #268BD2
+color4 = #0000ff
+color5 = #CD00CD
+# color5 = #8C54FE
+color6  = #00bbff
+color7 = #bbbbbb
+color8  = #555555
+color9 = #FF0000
+color10 = #00FF00
+color11 = #FFFF00
+color12 = #1f75fe
+# color12 = #3333ff
+color13 = #FF00FF
+color14 = #00FFFF
+color15 = #FFFFFF
+colorBD = #ffffff
+colorIT =
+colorUL =
+
+# # simple-molokai
+# background = #1b1d1e
+# background = rgba(29,29,30,0.77)
+# # simple-solarized
+# background = #002b36
+
+# # molokai
+# [colors]
+# background = #121212
+# cursor = #bbbbbb
+# foreground = #bbbbbb
+
+# color0 = #1b1d1e
+# color1 = #fa2573
+# color2 = #98e123
+# color3 = #dfd460
+# color4 = #1080d0
+# color5 = #8700ff
+# color6 = #43a8d0
+# color7 = #bbbbbb
+# color8 = #555555
+# color9 = #f6669d
+# color10 = #b1e05f
+# color11 = #fff26d
+# color12 = #00afff
+# color13 = #af87ff
+# color14 = #51ceff
+# color15 = #ffffff
+# colorBD = #ffffff
+# colorIT =
+# colorUL =
+
+# # breeze 
+# [colors]
+# background = #1b1d1e
+# # background = rgba(29,29,30,0.80)
+# cursor = #fcfcfc
+# foreground = #fcfcfc
+
+# color0 = #1d1d1e
+# color1 = #ed1515
+# color2 = #11d116
+# color3 = #f67400
+# color4 = #1d99f3
+# color5 = #9b59b6
+# color6 = #1abc9c
+# color7 = #fcfcfc
+# color8 = #7f8c8d
+# color9 = #c0392b
+# color10 = #1cdc9a
+# color11 = #fdbc4b
+# color12 = #3daee9
+# color13 = #8e44ad
+# color14 = #16a085
+# color15 = #ffffff
+# colorBD = #ffffff
+# # colorIT =
+# colorUL =
+
+# # zsh-ys
+# [colors]
+# background = #121212
+# cursor = #bbbbbb
+# foreground = #bbbbbb
+#
+# color0 = #000000
+# color1 = #CD0000
+# color2 = #00CD00
+# color3 = #CDCD00
+# color4 = #0000CD
+# color5 = #CD00CD
+# color6 = #00CDCD
+# color7 = #E5E5E5
+# color8 = #4D4D4D
+# color9 = #FF0000
+# color10 = #00FF00
+# color11 = #FFFF00
+# color12 = #1f75fe
+# color13 = #FF00FF
+# color14 = #00FFFF
+# color15 = #FFFFFF
+# colorBD = #ffffff
+# colorIT =
+# colorUL =
+
+# molokai git
+# [colors]
+# background = 121212
+# cursor = bbbbbb
+# foreground = bbbbbb
+
+# color0 = #1b1d1e
+# color1 = #ff0044
+# color2 = #82B414
+# color3 = #FD971F
+# color4 = #266C98
+# color5 = #AC0CB1
+# color6 = #AE81FF
+# color7 = #CCCCCC
+# color8 = #808080
+# color9 = #F92672
+# color10 = #A6E22E
+# color11 = #E6DB74
+# color12 = #7070F0
+# color13 = #D63AE1
+# color14 = #66D9FE
+# color15 = #F8F8F2
+# colorBD =
+# colorIT =
+# colorUL =
+
+# [colors]
+# background = #121212
+# cursor = #bbbbbb
+# foreground = #bbbbbb
+#
+# color0 = #1b1d1e
+# color1 = #f92672
+# color2 = #82b414
+# color3 = #fd971F
+# color4 = #268BD2
+# color5 = #8C54FE
+# color6 = #56C2D6
+# color7 = #CCCCC6
+# color8 = #505354
+# color9 = #ff5995
+# color10 = #B7EB46
+# color11 = #FEED6C
+# color12 = #62ADE3
+# color13 = #BFA0FE
+# color14 = #94D8E5
+# color15 = #F8F8F2
+# colorBD = #ffffff
+# colorIT =
+# colorUL =
+
+
+# color0  = #121212
+# color1  = #fa2573
+# color2  = #98e123
+# color3  = #dfd460
+# color4  = #1080d0
+# color5  = #8700ff
+# color6  = #43a8d0
+# color7  = #bbbbbb
+# color8  = #555555
+# color9  = #f6669d
+# color10 = #b1e05f
+# color11 = #fff26d
+# color12 = #00afff
+# color13 = #af87ff
+# color14 = #51ceff
+# color15 = #ffffff
+# colorBD = #ffffff
+#
+

@@ -1,0 +1,106 @@
+!$HOME/.Xresources
+! URxvt.preeditType:Root
+
+URxvt.inputMethod:fcitx
+URxvt.clipboard.autocopy: true
+
+! URxvt.keysym.M-c: perl:clipboard:copy
+! URxvt.keysym.M-v: perl:clipboard:paste
+
+! 粘贴板设置
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Shift/Control 顺序无关
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! 禁用之前的复制粘贴方案
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
+!font-config
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+URxvt.depth:32
+! URxvt.inheritPixmap:true
+!!URL操作
+URxvt.urlLauncher:firefox-nightly
+URxvt.matcher.button:1
+Urxvt.perl-ext-common:matcher
+!!滚动条设置
+URxvt.scrollBar:False
+URxvt.scrollBar_floating:False
+URxvt.scrollstyle:plain
+!!滚屏设置
+URxvt.mouseWheelScrollPage:True
+URxvt.scrollTtyOutput:False
+URxvt.scrollWithBuffer:True
+URxvt.scrollTtyKeypress:True
+!!光标闪烁
+! URxvt.cursorBlink:False
+URxvt.cursorBlink:True
+URxvt.saveLines:3000
+!!边框
+URxvt.borderLess:False
+!!字体设置
+Xft.dpi:96
+Xft.antialias: true
+! URxvt.letterSpace: -1
+
+! URxvt.font:xft:Hack Nerd Font Mono:antialias=True:size=10.6,xft:Noto Color Emoji:size:10.6
+! URxvt.boldfont:xft:Hack Nerd Font Mono:antialias=True:size=10.6,xft:Noto Color Emoji:size:10.6
+
+URxvt.font:xft:Hack Nerd Font Mono:antialias=True:size=10.6
+URxvt.boldfont:xft:Hack Nerd Font Mono:antialias=True:size=10.6
+
+! URxvt.font:xft:FiraMono Nerd Font Mono:size=10.6
+! URxvt.boldfont:xft:FiraMono Nerd Font Mono:antialias=True:size=10.6
+
+! URxvt.font:xft:Fira Mono:antialias=True:size=10.6
+! URxvt.boldfont:xft:Fira Mono:antialias=True:size=10.6
+
+! URxvt.font:xft:Noto Sans Mono:antialias=True:size=9
+! URxvt.boldfont:xft:Noto Sans Mono:antialias=True:size=9
+
+URxvt.background:   [75]#000000
+! URxvt.background:       #121212
+URxvt.foreground:       #c0c0c0
+URxvt.color12:          #1f75fe
+!---------------------
+!breeze theme from kde
+!---------------------
+! ! black
+! URxvt.color0:           #1d1d1e
+! URxvt.color8:           #7f8c8d
+! ! red
+! URxvt.color1:           #ed1515
+! URxvt.color9:           #c0392b
+! ! green
+! URxvt.color2:           #11d116
+! URxvt.color10:          #1cdc9a
+! ! brown/yellow
+! URxvt.color3:           #f67400
+! URxvt.color11:          #fdbc4b
+! ! blue
+! URxvt.color4:           #1d99f3
+! URxvt.color12:          #3daee9
+! ! magenta
+! URxvt.color5:           #9b59b6
+! URxvt.color13:          #8e44ad
+! ! cyan
+! URxvt.color6:           #1adb9c
+! URxvt.color14:          #16a085
+! ! white
+! URxvt.color7:           #fcfcfc
+! URxvt.color15:          #ffffff
+
+Xcursor.theme:Breeze
+! Xcursor.size:16
+
+
