@@ -1,5 +1,6 @@
 #! /bin/sh
 
+# Make sure u r in the path where this script is 
 path=`pwd`
 # X
 ln -sfv $path/X/Xresources ~/.Xresources
@@ -32,6 +33,6 @@ ln -sfv $path/vim/vimrc ~/.vimrc
 ln -sfv $path/zsh/zshrc ~/.zshrc
 ln -sfv $path/zsh/LESS_TERMCAP ~/.LESS_TERMCAP 
 ln -sfv $path/zsh/zpreztorc ~/.zpreztorc
-ln -sfv $path/zsh/lgfs.prompt ~/.lgfs.prompt
-ln -sfv $path/zsh/fish.prompt ~/.fish.prompt
+ln -sfv $path/zsh/lgfs.prompt.sh ~/.lgfs.prompt.sh
+ln -sfv $path/zsh/fish.prompt.sh ~/.fish.prompt.sh
 ln -sfv $path/zsh/alias.sh ~/.alias.sh

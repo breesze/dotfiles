@@ -1,6 +1,6 @@
 setopt PROMPT_SUBST
 source ~/.zpreztorc
-source ~/.fish.prompt
-source ~/.lgfs.prompt
+source ~/.fish.prompt.sh
+source ~/.lgfs.prompt.sh
 source ~/.alias.sh
 cowfortune
