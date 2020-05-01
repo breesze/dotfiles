@@ -60,7 +60,7 @@ colorscheme molokai
 nmap <C-S-p> <Plug>MarkdownPreviewToggle
 let g:mkdp_auto_close = 0
 let g:mkdp_refresh_slow = 1
-let g:mkdp_browser = 'firefox-nightly'
+let g:mkdp_browser = 'firefox'
 " let g:mkdp_markdown_css = '~/.vim/vim/markdown-preview_vim.css'
 
 " cpp-enhanced-highlight
@@ -114,7 +114,7 @@ let g:clang_format#style_options = {
             \ "SpaceBeforeParens" : "ControlStatements",
             \ "SpaceBeforeRangeBasedForLoopColon" : "true",
             \ "SpaceInEmptyParentheses" : "true",
-            \ "SpacesInParentheses" : "true",
+            \ "SpacesInParentheses" : "false",
             \ "SpacesInContainerLiterals" : "true",
             \ "SpacesInSquareBrackets" : "true",
             \ "Standard" : "C++11",
