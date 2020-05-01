@@ -31,3 +31,7 @@ ln -sfv $path/vim/vimrc ~/.vimrc
 # zsh
 ln -sfv $path/zsh/zshrc ~/.zshrc
 ln -sfv $path/zsh/LESS_TERMCAP ~/.LESS_TERMCAP 
+ln -sfv $path/zsh/zpreztorc ~/.zpreztorc
+ln -sfv $path/zsh/lgfs.prompt ~/.lgfs.prompt
+ln -sfv $path/zsh/fish.prompt ~/.fish.prompt
+ln -sfv $path/zsh/alias.sh ~/.alias.sh
