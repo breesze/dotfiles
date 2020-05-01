@@ -30,7 +30,7 @@ Xft.rgba: rgb
 URxvt.depth:32
 ! URxvt.inheritPixmap:true
 !!URL操作
-URxvt.urlLauncher:firefox-nightly
+URxvt.urlLauncher:firefox
 URxvt.matcher.button:1
 Urxvt.perl-ext-common:matcher
 !!滚动条设置
@@ -50,14 +50,14 @@ URxvt.saveLines:3000
 URxvt.borderLess:False
 !!字体设置
 Xft.dpi:96
-Xft.antialias: true
-! URxvt.letterSpace: -1
+! Xft.antialias: true
+URxvt.letterSpace: -1
 
 ! URxvt.font:xft:Hack Nerd Font Mono:antialias=True:size=10.6,xft:Noto Color Emoji:size:10.6
 ! URxvt.boldfont:xft:Hack Nerd Font Mono:antialias=True:size=10.6,xft:Noto Color Emoji:size:10.6
 
-URxvt.font:xft:Hack Nerd Font Mono:antialias=True:size=10.6
-URxvt.boldfont:xft:Hack Nerd Font Mono:antialias=True:size=10.6
+URxvt.font:xft:Fira Code Medium:antialias=True:size=10.6
+URxvt.boldfont:xft:Fira Code Medium:antialias=True:size=10.6
 
 ! URxvt.font:xft:FiraMono Nerd Font Mono:size=10.6
 ! URxvt.boldfont:xft:FiraMono Nerd Font Mono:antialias=True:size=10.6
