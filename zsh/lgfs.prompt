@@ -1,0 +1,25 @@
+if [ -n "$BASH_VERSION" ]; then
+    if [ "$UID" -eq 0 ]; then
+        export PS1='\[\e[01;31m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\w\[\e[00m\]\# '
+    else
+        export PS1='\[\e[01;32m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\w\[\e[00m\]\$ '
+    fi
+else
+    if [ "$UID" -eq 0 ]; then
+        export PROMPT='%F{9}%n@%m%f:%F{12}%~%f%# '
+    else
+        autoload -Uz vcs_info
+        precmd_vcs_info() { vcs_info }
+        precmd_functions+=( precmd_vcs_info )
+        zstyle ':vcs_info:git:*' formats '%F{3}[%b]'
+        zstyle ':vcs_info:*' enable git
+# ⎇
+        # export PROMPT='%F{12}[%*] %F{6}%n%F{8}@%F{10}%m %fin %F{11}$(_fish_collapsed_pwd) %F{6}$vcs_info_msg_0_%(?.. %F{1}✘ %?) %F{9}$%f '
+
+        export PROMPT='%F{12}[%*] %F{6}%n%F{8}@%F{10}%m %F{9}»%F{11}$(_fish_collapsed_pwd)%F{14}>%f '
+        export RPROMPT='%(?.. %F{1}✘ %?) $vcs_info_msg_0_'
+
+#         export PROMPT='%F{8}┌─%F{12}[%*] %F{6}%n %f@ %F{10}%m %fin %F{11}%B$(_fish_collapsed_pwd)%b %F{6}$vcs_info_msg_0_%(?.. %F{1}✘ %?)
+# └─%F{9}$%f '
+    fi
+fi
