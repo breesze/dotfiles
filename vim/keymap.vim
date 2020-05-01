@@ -51,12 +51,15 @@ inoremap <C-h> <ESC>gUiwgi
 inoremap <C-P><ESC>:setl paste<CR>gi<C-R>+<ESC>:setl nopaste<CR>gi
 set switchbuf=useopen,usetab,newtab
 set formatoptions=c,q,r,t
+map j gj
+map k gk
 
 filetype on
 syntax on
 set clipboard=unnamed
 set hidden
 set nowrap
+set linebreak
 set scrolloff=7
 set laststatus=2
 set cursorline
@@ -68,6 +71,7 @@ set ruler
 set ignorecase
 set hlsearch
 set incsearch
+set copyindent
 "autocmd insertenter * se nocul
 set sw=4
 set ts=4
