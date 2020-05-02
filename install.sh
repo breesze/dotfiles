@@ -18,7 +18,7 @@ ln -sfv $path/i3status/config ~/.config/i3status/config
 ln -sfv $path/i3status/net-speed.sh ~/.config/i3status/net-speed.sh
 ln -sfv $path/i3wm/config ~/.config/i3/config
 # mpd, ncmpcpp
-ln -sfv $path/mpd-ncmpcpp/bingings ~/.ncmpcpp/bindings
+ln -sfv $path/mpd-ncmpcpp/bindings ~/.ncmpcpp/bindings
 ln -sfv $path/mpd-ncmpcpp/config ~/.ncmpcpp/config
 ln -sfv $path/mpd-ncmpcpp/mpd.conf ~/.config/mpd/mpd.conf
 # termite

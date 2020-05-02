@@ -97,12 +97,12 @@ zstyle ':prezto:module:editor' dot-expansion 'yes'
 # History Substring Search
 #
 
-zstyle ':prezto:module:history-substring-search' case-sensitive 'no'
+# zstyle ':prezto:module:history-substring-search' case-sensitive 'no'
 
 # zstyle ':prezto:module:history-substring-search' color 'yes'
 
 # Set the query found color.
-zstyle ':prezto:module:history-substring-search:color' found ''
+# zstyle ':prezto:module:history-substring-search:color' found ''
 
 # Set the query not found color.
 # zstyle ':prezto:module:history-substring-search:color' not-found ''
