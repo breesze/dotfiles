@@ -8,8 +8,8 @@ nnoremap <Leader>a 0
 vnoremap <Leader>a 0
 nnoremap <Leader>e $
 vnoremap <Leader>e $
-nnoremap <Leader>h ^
-vnoremap <Leader>h ^
+nnoremap <Leader>s ^
+vnoremap <Leader>s ^
 vnoremap <Leader>y "+y
 nnoremap <Leader>p "+p
 nnoremap <Leader>qq :q<CR>
@@ -34,12 +34,7 @@ nnoremap <space>p :bp<CR>
 nnoremap <space>n :bn<CR>
 nnoremap <space>gg gg=G``<CR>
 nnoremap <space>gh :nohlsearch<CR>
-" nnoremap <A-w> <C-W>
 nnoremap <space>w <C-W>
-" nnoremap <space>h <C-W>h
-" nnoremap <space>l <C-W>l
-" nnoremap <space>j <C-W>j
-" nnoremap <space>k <C-W>k
 " inoremap jj <Esc>
 " nnoremap <CR> o<Esc>
 " inoremap ( ()<esc>i
