@@ -17,10 +17,10 @@ alias la='ls -lAh'
 alias ll='ls -lh'
 
 alias cp='cp -i'
-# alias afind='ack -il'
+alias afind='ack -il'
 alias egrep='egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
 alias fgrep='fgrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
-# alias z='_z 2>&1'
+alias z='_z 2>&1'
 
 alias VIM='vim'
 alias emacs='vim'
