@@ -1,3 +1,5 @@
+eval $(thefuck --alias)
+
 export LESS="--RAW-CONTROL-CHARS"
 [[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
 
