@@ -16,7 +16,7 @@ else
 # ⎇
         # export PROMPT='%F{12}[%*] %F{6}%n%F{8}@%F{10}%m %fin %F{11}$(_fish_collapsed_pwd) %F{6}$vcs_info_msg_0_%(?.. %F{1}✘ %?) %F{9}$%f '
 
-        export PROMPT='%F{12}[%*] %F{6}%n%F{8}@%F{10}%m %F{9}»%F{11}$(_fish_collapsed_pwd)%F{14}>%f '
+        export PROMPT='%F{12}[%*] %F{6}%n%F{8}@%F{10}%m %B%F{9}»%F{11}$(_fish_collapsed_pwd)%b%F{14}>%f '
         export RPROMPT='%(?.. %F{1}✘ %?) $vcs_info_msg_0_'
 
 #         export PROMPT='%F{8}┌─%F{12}[%*] %F{6}%n %f@ %F{10}%m %fin %F{11}%B$(_fish_collapsed_pwd)%b %F{6}$vcs_info_msg_0_%(?.. %F{1}✘ %?)
