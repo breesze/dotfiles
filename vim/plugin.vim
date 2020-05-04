@@ -21,7 +21,7 @@ Plug 'majutsushi/tagbar', { 'on':  'TagbarToggle' }
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'honza/vim-snippets'
-Plug 'SirVer/ultisnips',{ 'for':['c','cpp','html','markdown'] }
+Plug 'SirVer/ultisnips',{ 'for':['c','cpp','rust', 'html','markdown'] }
 Plug 'Yggdroot/LeaderF',{ 'do': './install.sh' }
 Plug 'dense-analysis/ale',{ 'for':['c','cpp'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -510,3 +510,5 @@ nnoremap <silent> <space>ej :<C-u>CocNext<CR>
 nnoremap <silent> <space>ek :<C-u>CocPrev<CR>
 nnoremap <silent> <space>ep :<C-u>CocListResume<CR>
 
+hi CocErrorSign ctermfg=9
+hi CocWarningSign ctermfg=6

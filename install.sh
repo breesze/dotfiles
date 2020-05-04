@@ -26,9 +26,10 @@ ln -siv $path/termite/config ~/.config/termite/config
 # tmux
 ln -siv $path/tmux/tmux.conf ~/.tmux.conf
 # vim
+ln -siv $path/vim/vimrc ~/.vimrc
+ln -siv $path/vim/coc-settings.json ~/.vim/coc-settings.json
 ln -siv $path/vim/keymap.vim ~/.vim/vim/keymap.vim
 ln -siv $path/vim/plugin.vim ~/.vim/vim/plugin.vim
-ln -siv $path/vim/vimrc ~/.vimrc
 # zsh
 ln -siv $path/zsh/zshrc ~/.zshrc
 ln -siv $path/zsh/LESS_TERMCAP ~/.LESS_TERMCAP 
