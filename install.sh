@@ -5,6 +5,7 @@ path=`pwd`
 # X
 ln -siv $path/X/Xresources ~/.Xresources
 ln -siv $path/X/xinitrc ~/.xinitrc
+ln -siv $path/X/redshift.conf ~/.config/redshift.conf
 # aria2
 ln -siv $path/aria2/aria2.conf ~/.aria2/aria2.conf
 ln -siv $path/aria2/delete.aria2.sh ~/.aria2/delete.aria2.sh
