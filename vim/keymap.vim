@@ -34,6 +34,7 @@ nnoremap <space>p :bp<CR>
 nnoremap <space>n :bn<CR>
 nnoremap <space>gg gg=G``<CR>
 nnoremap <space>rr :%!rustfmt<CR>
+nnoremap <space>rt :!cargo run<CR>
 nnoremap <space>gh :nohlsearch<CR>
 nnoremap <space>w <C-W>
 " inoremap jj <Esc>
@@ -44,7 +45,7 @@ nnoremap <space>w <C-W>
 " inoremap { {<CR>}<esc>O
 nnoremap <Leader>mm m1gUiw`1
 inoremap <C-h> <ESC>gUiwgi
-inoremap <C-P><ESC>:setl paste<CR>gi<C-R>+<ESC>:setl nopaste<CR>gi
+nnoremap <A-P> :setl paste<CR>gi<C-R>+<ESC>:setl nopaste<CR>gi
 set switchbuf=useopen,usetab,newtab
 set formatoptions=c,q,r,t
 map j gj

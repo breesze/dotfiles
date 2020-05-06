@@ -15,20 +15,20 @@ Plug 'rhysd/vim-clang-format'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 "若安装未完全，需要(到md文件里)执行:call mkdp#util#install()
 
-Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'mbbill/undotree'
-Plug 'majutsushi/tagbar', { 'on':  'TagbarToggle' }
+Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'honza/vim-snippets'
-Plug 'SirVer/ultisnips',{ 'for':['c','cpp','rust', 'html','markdown'] }
+Plug 'SirVer/ultisnips',{ 'for': ['c', 'cpp', 'rust', 'markdown', 'html'] }
 Plug 'Yggdroot/LeaderF',{ 'do': './install.sh' }
-Plug 'dense-analysis/ale',{ 'for':['c','cpp'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'mhinz/vim-startify'
 " Plug 'Chiel92/vim-autoformat'
+" Plug 'dense-analysis/ale',{ 'for':['c','cpp'] }
 " Plug 'ycm-core/YouCompleteMe',{ 'for':['c','cpp'] }
 
 call plug#end()
@@ -243,69 +243,6 @@ let g:NERDTreeIndicatorMapCustom = {
 " snippets
 let g:UltiSnipsExpandTrigger = '<C-l>'
 
-" ale
-noremap <A-o> :ALEToggle<CR>
-let g:ale_enabled=0
-
-nmap <silent> <A-,> <Plug>(ale_previous_wrap)
-nmap <silent> <A-m> <Plug>(ale_next_wrap)
-let g:ale_linters = {
-            \'cpp':['clang'],
-            \'c':['clang'],
-            \}
-let g:ale_linters_explicit = 1
-let g:ale_sign_error = '>>'
-let g:ale_sign_warning = '=='
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%linter%] %code: %%s [%severity%]'
-
-let g:ale_sign_column_always = 0
-let g:ale_completion_delay = 500
-let g:ale_echo_delay = 20
-let g:ale_lint_delay = 500
-let g:ale_lint_on_enter = 0
-" let g:ale_lint_on_text_changed = 'normal'
-" let g:ale_lint_on_insert_leave = 1
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_insert_leave = 0
-
-let g:ale_c_gcc_options = '-Wall -O2 -std=c99'
-let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++14'
-let g:ale_c_clang_options = '-Weverything -O2 -std=c99'
-let g:ale_cpp_clang_options = '-Weverything -O2 -std=c++14'
-
-" 👽💣✗⚡🐕🐦🐈🐟¿💩🎭🌡🕯☢️⚠️☣️☯️⛔️♨️™📈📉
-" let g:ale_sign_error = '💣'
-" let g:ale_sign_warning = '✗™'
-let g:ale_sign_error = ''
-let g:ale_sign_warning = ''
-" let g:ale_sign_warning = '👽'
-
-"highlight clear ALEErrorSign
-"highlight clear ALEWarningSign "
-"9 4236 13
-highlight ALEErrorSign ctermfg=9  "cterm=underline
-highlight ALEWarningSign ctermfg=6 "cterm=underline
-" highlight ALEErrorSign guibg=#232526 guifg=#ff3f3f
-" highlight ALEWarningSign guibg=#232526 guifg=#0055ff
-
-hi! clear SpellBad
-hi! clear SpellCap
-" hi! SpellBad cterm=undercurl
-" hi! SpellCap cterm=undercurl
-" hi! SpellBad
-" hi! SpellCap
-"highlight ALEError guisp=green cterm=undercurl
-"highlight ALEWarning guisp=green cterm=undercurl
-
-"let g:ale_change_sign_column_color=1
-"let g:ale_fix_on_save = 1
-
-" snippets ultisnips
-"ActivateAddons vim-snippets ultisnips
-
-
 "lightline
 set showtabline=2
 let g:lightline#bufferline#show_number  = 1
@@ -316,13 +253,14 @@ let g:lightline = {
             \ 'colorscheme': 'molokai2',
             \ 'active': {
             \   'left': [ [ 'mode', 'paste' ],
-            \             ['readonly', 'filename','modified', 'charvaluehex' ] ],
+            \             ['readonly', 'filename','modified', 'charvaluehex'] ],
             \   'right': [ [ 'lineinfo' ],
             \              [ 'percent' ],
             \              [ 'fileformat', 'fileencoding', 'filetype', 'totallinenum' ] ]
             \ },
             \ 'component': {
             \   'charvaluehex': '%b-0x%B',
+            \   'cocstatus': 'coc#status',
             \   'method': 'NearestMethodOrFunction',
             \   'totallinenum': '%L'
             \ },
@@ -333,6 +271,7 @@ let g:lightline.component_type   = {'buffers': 'tabsel'}
 " let g:lightline.separator = { 'left': '', 'right': '' }
 " let g:lightline.subseparator = { 'left': '>', 'right': '>' }
 " autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
+ autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 
 " easymotion
 let g:EasyMotion_smartcase = 1
@@ -419,6 +358,12 @@ set updatetime=300
 set signcolumn=yes
 set shortmess+=c
 
+" imap <C-l> <Plug>(coc-snippets-expand)
+" vmap <C-j> <Plug>(coc-snippets-select)
+" let g:coc_snippet_next = '<c-j>'
+" let g:coc_snippet_prev = '<c-k>'
+" imap <C-j> <Plug>(coc-snippets-expand-jump)
+
 inoremap <silent><expr> <TAB>
             \ pumvisible() ? "\<C-n>" :
             \ <SID>check_back_space() ? "\<TAB>" :
@@ -430,12 +375,24 @@ function! s:check_back_space() abort
     return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" inoremap <silent><expr> <TAB>
+"       \ pumvisible() ? coc#_select_confirm() :
+"       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+"       \ <SID>check_back_space() ? "\<TAB>" :
+"       \ coc#refresh()
+"
+" function! s:check_back_space() abort
+"   let col = col('.') - 1
+"   return !col || getline('.')[col - 1]  =~# '\s'
+" endfunction
+
 "trigger completion.
 inoremap <silent><expr> <A-i> coc#refresh()
 
 " Use <cr> to confirm completion, `<C-g>u` means breakundo chain at current position.
 " Coc only does snippet and additional edit on confirm.
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" :"\<C-g>u\<CR>"
+" inoremap <expr> <cr> pumvisible() ? "\<C-y>" :"\<C-g>u\<CR>"
+ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
@@ -512,3 +469,4 @@ nnoremap <silent> <space>ep :<C-u>CocListResume<CR>
 
 hi CocErrorSign ctermfg=9
 hi CocWarningSign ctermfg=6
+" hi default CocUnderline cterm=undercurl gui=undercurl
