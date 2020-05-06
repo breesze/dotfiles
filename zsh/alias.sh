@@ -3,8 +3,8 @@ eval $(thefuck --alias)
 export LESS="--RAW-CONTROL-CHARS"
 [[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
 
-alias nss='export ALL_PROXY=socks5://127.0.0.1:10889'
-alias uss='unset ALL_PROXY'
+alias ray='export ALL_PROXY=socks5://127.0.0.1:10889'
+alias uv='unset ALL_PROXY'
 alias cip='curl cip.cc'
 alias wea='curl wttr.in/shenzhen'
 alias ctg='ctags -R --c++-kinds=+px --fields=+niazs --extras=+q -f .tags'
