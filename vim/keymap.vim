@@ -33,8 +33,7 @@ noremap <M-d> <C-w>p<C-d><C-w>p
 nnoremap <space>p :bp<CR>
 nnoremap <space>n :bn<CR>
 nnoremap <space>gg gg=G``<CR>
-nnoremap <space>rr :%!rustfmt<CR>
-nnoremap <space>rt :!cargo run<CR>
+nnoremap <space>rr :!cargo run<CR>
 nnoremap <space>gh :nohlsearch<CR>
 nnoremap <space>w <C-W>
 " inoremap jj <Esc>
@@ -62,7 +61,7 @@ set laststatus=2
 set cursorline
 set textwidth=80
 " set cursorcolumn
-" set colorcolumn=80
+set colorcolumn=80
 set number
 set ruler
 set ignorecase

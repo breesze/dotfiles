@@ -1,7 +1,7 @@
 {
     "diagnostic.errorSign":"",
     "diagnostic.warningSign":"",
-    "pairs.enableCharacters":["(", "[", "{", "<", "\"", "`"],
+    "pairs.enableCharacters":["(", "[", "{", "\"", "`"],
     //"diagnostic.displayByAle":false,
     //"diagnostic.level":"information",
     //"diagnostic.checkCurrentLine":true,

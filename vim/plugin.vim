@@ -11,12 +11,12 @@ Plug 'tpope/vim-repeat'
 Plug 'preservim/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
-Plug 'rhysd/vim-clang-format'
+Plug 'Chiel92/vim-autoformat'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 "若安装未完全，需要(到md文件里)执行:call mkdp#util#install()
 
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'mbbill/undotree'
+Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -27,7 +27,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'mhinz/vim-startify'
-" Plug 'Chiel92/vim-autoformat'
 " Plug 'dense-analysis/ale',{ 'for':['c','cpp'] }
 " Plug 'ycm-core/YouCompleteMe',{ 'for':['c','cpp'] }
 
@@ -82,53 +81,10 @@ let g:indentLine_enabled = 1
 " let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " clang-format
-let g:clang_format#style_options = {
-            \ "AccessModifierOffset" : -4,
-            \ "AlignConsecutiveAssignments" : "true",
-            \ "AlignConsecutiveDeclarations" : "true",
-            \ "AlignConsecutiveMacros" : "true",
-            \ "AlignOperands" : "true",
-            \ "AlignTrailingComments" : "true",
-            \ "AllowAllArgumentsOnNextLine" : "true",
-            \ "AllowAllConstructorInitializersOnNextLine" : "true",
-            \ "AllowAllParametersOfDeclarationOnNextLine" : "true",
-            \ "AllowShortLambdasOnASingleLine" : "All",
-            \ "AllowShortLoopsOnASingleLine" : "true",
-            \ "AllowShortBlocksOnASingleLine" : "true",
-            \ "AllowShortCaseLabelsOnASingleLine" : "true",
-            \ "AllowShortFunctionsOnASingleLine" : "Inline",
-            \ "AllowShortIfStatementsOnASingleLine" : "false",
-            \ "AlwaysBreakTemplateDeclarations" : "MultiLine",
-            \ "BasedOnStyle" : "llvm",
-            \ "BreakConstructorInitializersBeforeComma" : "true",
-            \ "IndentWidth" : 4,
-            \ "IndentWrappedFunctionNames" : "true",
-            \ "IncludeBlocks" : "Regroup",
-            \ "TabWidth" : 4,
-            \ "UseTab" : "Never",
-            \ "SpaceAfterCStyleCast" : "true",
-            \ "SpaceBeforeAssignmentOperators" : "true",
-            \ "SpaceBeforeCpp11BracedList" : "true",
-            \ "SpaceBeforeCtorInitializerColon" : "true",
-            \ "SpaceBeforeInheritanceColon" : "true",
-            \ "SpaceBeforeParens" : "ControlStatements",
-            \ "SpaceBeforeRangeBasedForLoopColon" : "true",
-            \ "SpaceInEmptyParentheses" : "true",
-            \ "SpacesInParentheses" : "false",
-            \ "SpacesInContainerLiterals" : "true",
-            \ "SpacesInSquareBrackets" : "true",
-            \ "Standard" : "C++11",
-            \ "IncludeCategories" : [{"Regex":"^<..h>", "Priority":1},{"Regex":"^<.>", "Priority":20},{"Regex":".*", "Priority":3}]}
-
-
-" no work
-"SpaceBeforeSquareBrackets  true
-"SpacesInConditionalStatement  true
-"SpaceInEmptyBlock  true
-
-" map to <Leader>cf in C++ code
-autocmd FileType c,cpp,objc nnoremap <buffer><Leader>vv :<C-u>ClangFormat<CR>
-autocmd FileType c,cpp,objc vnoremap <buffer><Leader>vv :ClangFormat<CR>
+" let g:autoformat_autoindent = 0
+" let g:autoformat_retab = 0
+" let g:autoformat_remove_trailing_spaces = 0
+nnoremap <Leader>vv :Autoformat<CR>
 
 " nerdcommenter
 " Add spaces after comment delimiters by default
