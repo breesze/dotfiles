@@ -29,7 +29,7 @@
     $ ./install.sh
     ```
 ## 3.Announcements
-- If you change the 'dotfiles' path, you should repeat **step 2-3** to make sure
+- If you change the 'dotfiles' path, you should repeat **step 2.3** to make sure
    the symblic point to the right file.
 
 - If you don't want some files, remove it, and comment it out in the script.
