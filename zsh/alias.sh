@@ -10,6 +10,7 @@ alias wea='curl wttr.in/shenzhen'
 alias ctg='ctags -R --c++-kinds=+px --fields=+niazs --extras=+q -f .tags'
 alias clg='clang++ -O2 -std=c++14 -Weverything -Wno-c++98-compat'
 alias nocap='amixer set Capture nocap' # WKQTM
+alias st='/home/lg/Downloads/ScreenShot/ocr_temp/scrot_ocr_xclip.sh'
 
 alias ls='ls --color=tty'
 alias l='ls -lah'
