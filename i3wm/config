@@ -17,6 +17,15 @@ focus_follows_mouse no
 bindsym --release $mod+Shift+a exec --no-startup-id "scrot -b -m -p -e 'mv $f ~/Downloads/ScreenShot/'"
 bindsym --release $mod+Shift+s exec --no-startup-id "scrot -u -b -m -p -e 'mv $f ~/Downloads/ScreenShot/'"
 bindsym --release $mod+Shift+d exec --no-startup-id "scrot -s -b -m -p -e 'mv $f ~/Downloads/ScreenShot/'"
+# -q 100
+bindsym --release $mod+Shift+q exec --no-startup-id "scrot -b -m -p -q 100 -e 'mv $f ~/Downloads/ScreenShot/'"
+bindsym --release $mod+Shift+w exec --no-startup-id "scrot -u -b -m -p -q 100 -e 'mv $f ~/Downloads/ScreenShot/'"
+bindsym --release $mod+Shift+t exec --no-startup-id "scrot -s -b -m -p -e 'mv $f ~/Downloads/ScreenShot/'"
+
+# scrot+ocr+xclip
+# bindsym $mod+Shift+g exec "bash /home/lg/Downloads/ScreenShot/ocr_temp/scrot_ocr_xclip.sh"
+bindsym $mod+Shift+g exec "whatShit"
+
 
 bindsym $mod+Return exec termite
 # bindsym $mod+c exec dmenu_run
