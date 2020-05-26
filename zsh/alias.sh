@@ -9,6 +9,7 @@ alias cip='curl cip.cc'
 alias wea='curl wttr.in/shenzhen'
 alias ctg='ctags -R --c++-kinds=+px --fields=+niazs --extras=+q -f .tags'
 alias clg='clang++ -O2 -std=c++14 -Weverything -Wno-c++98-compat'
+alias clgm='fn() { clang++ -O2 -std=c++14 -Weverything -Wno-c++98-compat $2 $3 $4 -o $1 -lmuduo_net -lmuduo_base -lpthread;};fn'
 alias nocap='amixer set Capture nocap' # WKQTM
 alias st='/home/lg/Downloads/ScreenShot/ocr_temp/scrot_ocr_xclip.sh'
 

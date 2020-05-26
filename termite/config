@@ -1,6 +1,7 @@
 [options]
 # font = Hack Nerd Font Mono 10.2
 font = Fira Code Medium 10
+# font = Sarasa Mono SC Semibold 11
 # font = DejaVu Sans Mono 10
 
 allow_bold = true
@@ -30,8 +31,12 @@ search_wrap = true
 
 [colors]
 # background = rgba(0,0,0,0.7)
-# background = rgba(18,18,18,0.9)
-background = #121212
+background = rgba(10,10,10,0.70)
+# background = rgba(43,46,47,0.9)
+# background = rgba(44,44,44,0.7)
+# background = #121212
+# background = #2c2c2c
+#292b2e
 cursor = #bbbbbb
 foreground = #bbbbbb
 color0 = #1b1d1e

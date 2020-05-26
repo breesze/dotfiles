@@ -24,7 +24,7 @@ bindsym --release $mod+Shift+t exec --no-startup-id "scrot -s -b -m -p -e 'mv $f
 
 # scrot+ocr+xclip
 # bindsym $mod+Shift+g exec "bash /home/lg/Downloads/ScreenShot/ocr_temp/scrot_ocr_xclip.sh"
-bindsym $mod+Shift+g exec "whatShit"
+# bindsym $mod+Shift+g exec "st"
 
 
 bindsym $mod+Return exec termite
@@ -43,7 +43,7 @@ mode "$mode_launcher" {
         bindsym j exec --no-startup-id firefox,mode "default"
         bindsym t exec --no-startup-id telegram-desktop,mode "default"
         bindsym q exec --no-startup-id ~/Programs/wine-appimg/TIM-x86_64.AppImage,mode "default"
-        bindsym w exec --no-startup-id ~/Programs/wine-appimg/Wechat-x86_64.AppImage,mode "default"
+        bindsym w exec --no-startup-id ~/Programs/wine-appimg/Wechat-2.6.8.65-x86_64.AppImage,mode "default"
         bindsym e exec --no-startup-id pcmanfm,mode "default"
         bindsym o exec --no-startup-id falkon,mode "default"
         bindsym z exec --no-startup-id zathura,mode "default"
@@ -56,6 +56,7 @@ mode "$mode_launcher" {
 # for_window [class="URxvt" instance="floating"] floating enable,resize set 772 463,move position center
 
 
+bindsym $mod+i move position center
 # bindsym $mod+shift+n resize set 772 503,move position center
 bindsym $mod+shift+n resize set 772 490,move position center
 bindsym $mod+Tab workspace next
@@ -71,18 +72,21 @@ hide_edge_borders both
 
 # default_border pixel 0
 #********************************************i3-gaps*********************************
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
-# gaps inner 20
-# gaps outer 100
-# for_window [workspace=$ws1] gaps inner current set 9, gaps outer current set 6
-# for_window [workspace=$ws3] gaps inner current set 0, gaps outer current set 0
+# Plan-bule
+# gaps inner 0
+# gaps outer 0
+# for_window [workspace=$ws2] gaps inner current set 20, gaps outer current set 100
 
-gaps inner 0
-gaps outer 0
+# Plan-dark
+gaps inner 9
+gaps outer 6
 for_window [workspace=$ws2] gaps inner current set 20, gaps outer current set 100
+for_window [workspace=$ws3] gaps inner current set 0, gaps outer current set 0
+for_window [workspace=$ws5] gaps inner current set 0, gaps outer current set 0
 
-set $mode_gaps Gaps: (o) outer, (i) inner, (r) 20(i)-100(o), (l)recover, (s)zero
+set $mode_gaps Gaps: (o) outer, (i) inner, (s) short(0, 0) (l) long(20, 100), (r) reset(9, 6)
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+g mode "$mode_gaps"
@@ -92,9 +96,9 @@ mode "$mode_gaps" {
         bindsym i      mode "$mode_gaps_inner"
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym r gaps inner current set 20, gaps outer current set 100 ,mode "default"
-        bindsym l gaps inner current set 9, gaps outer current set 6 ,mode "default"
         bindsym s gaps inner current set 0, gaps outer current set 0 ,mode "default"
+        bindsym l gaps inner current set 20, gaps outer current set 100 ,mode "default"
+        bindsym r gaps inner current set 9, gaps outer current set 6 ,mode "default"
 }
 
 mode "$mode_gaps_inner" {
@@ -188,7 +192,7 @@ bindsym $mod+Shift+Right move right
 
 bindsym $mod+Shift+v split h
 bindsym $mod+v split v
-bindsym $mod+i split toggle
+bindsym $mod+Shift+i split toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -288,13 +292,16 @@ for_window [class=Pcmanfm] floating enable
 for_window [class=qv2ray] floating enable
 for_window [class=gvim] floating enable
 for_window [class=Tim.exe] floating enable
+for_window [class=wechat.exe] floating enable
 for_window [class=Wine] floating enable
 for_window [class=qq] floating enable
 for_window [class=qBittorrent] floating enable
 for_window [class=Telegram] floating enable
 for_window [class="VirtualBox Manager"] floating enable
-# for_window [class=feh] floating enable
-# for_window [class=sxiv] floating enable
+for_window [class="sun-awt-X11-XFramePeer"] floating enable
+for_window [class="calculator-calculatorGui"] floating enable
+for_window [class=feh] floating enable, move absolute position center
+for_window [class=Sxiv] floating enable, move absolute position center
 #**************************************************主题设置*********************************************
 font pango:DejaVu Sans Mono Bold 8.5
 # font pango:Fira Code Medium 8.5
@@ -325,7 +332,7 @@ client.background       $bg
 
 #i3bar设置
 bar {
-# i3bar_command i3bar -t
+    # i3bar_command i3bar -t
     i3bar_command i3bar 
         height 19
 # tray_output none
@@ -354,8 +361,7 @@ bar {
                 binding_mode       $urg     $urg90      $font
         }
 }
-exec_always --no-startup-id feh --bg-scale "/home/lg/Desktop/wp/blueHeart.jpg"
-# exec_always --no-startup-id feh --bg-scale "~/Desktop/wp/eclipse.jpg"
+exec_always --no-startup-id feh --bg-scale "/home/lg/Desktop/wp/darkHeart.jpg"
 # screen 黑屏 睡眠 断电
 # exec --no-startup-id xset dpms 600 15000 30000
 # xrandr

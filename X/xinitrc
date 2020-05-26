@@ -60,7 +60,7 @@ fi
 # exec xterm -geometry 80x66+0+0 -name login
 
 xset r rate 220 45
-exec compton -b &
+exec compton -CGb &
 exec fcitx &
 exec redshift &
 exec aria2c --conf-path=/home/lg/.dotfiles/aria2/aria2.conf &

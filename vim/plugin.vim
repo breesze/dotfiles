@@ -15,9 +15,9 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 "若安装未完全，需要(到md文件里)执行:call mkdp#util#install()
 
-Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'preservim/nerdtree'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
-Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'honza/vim-snippets'
@@ -46,9 +46,10 @@ colorscheme molokai
 " " let g:solarized_termcolors=256
 " colorscheme solarized8
 
-" hi Normal guibg=NONE ctermbg=NONE
+hi Normal guibg=NONE ctermbg=NONE
 " hi NonText ctermbg=none
 " highlight clear SignColumn
+hi CursorLine term=bold cterm=bold 
 
 
 " 5/8/39/45/201
@@ -74,9 +75,9 @@ let g:cpp_experimental_simple_template_highlight = 1
 
 " indentLine
 let g:indentLine_enabled = 1
-" let g:indentLine_setColors = 1
-" let g:indentLine_color_term = 10
-" let g:indentLine_bgcolor_term = 20
+let g:indentLine_setColors = 1
+let g:indentLine_color_term = 6
+" let g:indentLine_bgcolor_term = 7
 " let g:indentLine_char = '┆'
 " let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
@@ -156,17 +157,18 @@ noremap go :<C-U>Leaderf! rg --recall<CR>
 " UndoTree
 nnoremap <A-f> :UndotreeToggle<CR>
 let g:undotree_WindowLayout = 3
+map <A-w> <A-q><A-e>
 
 " NerdTree
 map <A-q> :NERDTreeToggle<CR>
-" " bug:Nerdtree自动关闭让ycm无法关闭,需要自己qa
-" " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" " 自动关闭会让 ycm 无法关闭，coc 则没事
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " autocmd StdinReadPre * let s:std_in=1
 " " empty file
 " " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " " directory
 " autocmd vimenter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-" autocmd vimenter * NERDTree | wincmd p
+autocmd vimenter * NERDTree | wincmd p
 " "autocmd vimenter * wincmd p
 
 let g:NERDTreeWinSize=25
@@ -206,7 +208,7 @@ let g:lightline#bufferline#shorten_path = 1
 let g:lightline#bufferline#unnamed      = '[No Name]'
 
 let g:lightline = {
-            \ 'colorscheme': 'molokai2',
+            \ 'colorscheme': 'powerlineish',
             \ 'active': {
             \   'left': [ [ 'mode', 'paste' ],
             \             ['readonly', 'filename','modified', 'charvaluehex'] ],
@@ -215,7 +217,7 @@ let g:lightline = {
             \              [ 'fileformat', 'fileencoding', 'filetype', 'totallinenum' ] ]
             \ },
             \ 'component': {
-            \   'charvaluehex': '%b-0x%B',
+            \   'charvaluehex': '0x%B',
             \   'cocstatus': 'coc#status',
             \   'method': 'NearestMethodOrFunction',
             \   'totallinenum': '%L'
@@ -286,7 +288,14 @@ let g:multi_cursor_quit_key            = '<Esc>'	" 退出
 " let g:vista#renderer#enable_icon = 1
 
 " Tagbar
+autocmd VimEnter * nested :TagbarOpen
+autocmd vimenter * wincmd p
 noremap <A-e> :TagbarToggle<CR>
+let g:tagbar_left=0
+let g:tagbar_width=30
+let g:tagbar_autofocus=1
+let g:tagbar_sort=0
+let g:tagbar_compact=1
 
 " gitgutter
 set updatetime=100

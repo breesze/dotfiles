@@ -52,5 +52,5 @@ current_item_inactive_column_prefix = red
 current_item_inactive_column_suffix = red
 window_border_color = yellow
 active_window_border = magenta
-#default_find_mode = normal
+# default_find_mode = normal
 # startup_slave_screen=visualizer
