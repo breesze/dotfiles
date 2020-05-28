@@ -43,7 +43,6 @@ URxvt.scrollTtyOutput:False
 URxvt.scrollWithBuffer:True
 URxvt.scrollTtyKeypress:True
 !!光标闪烁
-! URxvt.cursorBlink:False
 URxvt.cursorBlink:True
 URxvt.saveLines:3000
 !!边框
@@ -56,8 +55,11 @@ URxvt.letterSpace: -1
 ! URxvt.font:xft:Hack Nerd Font Mono:antialias=True:size=10.6,xft:Noto Color Emoji:size:10.6
 ! URxvt.boldfont:xft:Hack Nerd Font Mono:antialias=True:size=10.6,xft:Noto Color Emoji:size:10.6
 
-URxvt.font:xft:Fira Code Medium:antialias=True:size=10.6
-URxvt.boldfont:xft:Fira Code Medium:antialias=True:size=10.6
+! URxvt.font:xft:Fira Code Medium:antialias=True:size=10.6
+! URxvt.boldfont:xft:Fira Code Medium:antialias=True:size=10.6
+
+URxvt.font:xft:Sarasa Mono CL Semibold :antialias=True:size=12
+URxvt.boldfont:xft:Sarasa Mono CL Semibold:antialias=True:size=12
 
 ! URxvt.font:xft:xos4 Terminus:antialias=True:size=12,
 ! ! xft:WenQuanYi Bitmap Song:size=12

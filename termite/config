@@ -1,8 +1,12 @@
 [options]
 # font = Hack Nerd Font Mono 10.2
-font = Fira Code Medium 10
-# font = Sarasa Mono SC Semibold 11
+# font = Fira Code Medium 10
 # font = DejaVu Sans Mono 10
+
+# Slab means the Latins will have serifs
+# font = Sarasa Fixed Slab CL Semibold 12
+font = Sarasa Mono CL Semibold 12
+# font = Sarasa Term SC Semibold 12
 
 allow_bold = true
 # audible_bell = 
@@ -46,7 +50,7 @@ color2 = #44ff00
 # color2 = #ffff00
 color3 = #f67400
 # color4 = #1080d0
-color4 = #268BD2
+# color4 = #268BD2
 color4 = #0000ff
 color5 = #CD00CD
 # color5 = #8C54FE
