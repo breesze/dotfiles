@@ -58,7 +58,8 @@ mode "$mode_launcher" {
 
 bindsym $mod+i move position center
 # bindsym $mod+shift+n resize set 772 503,move position center
-bindsym $mod+shift+n resize set 772 490,move position center
+# bindsym $mod+shift+n resize set 766 475,move position center
+bindsym $mod+shift+n resize set 766 469,move position center
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
@@ -81,8 +82,8 @@ for_window [class="^.*"] border pixel 2
 
 # Plan-dark
 gaps inner 9
-gaps outer 6
-for_window [workspace=$ws2] gaps inner current set 20, gaps outer current set 100
+gaps outer 5
+for_window [workspace=$ws2] gaps inner current set 15, gaps outer current set 80
 for_window [workspace=$ws3] gaps inner current set 0, gaps outer current set 0
 for_window [workspace=$ws5] gaps inner current set 0, gaps outer current set 0
 
@@ -97,8 +98,8 @@ mode "$mode_gaps" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym s gaps inner current set 0, gaps outer current set 0 ,mode "default"
-        bindsym l gaps inner current set 20, gaps outer current set 100 ,mode "default"
-        bindsym r gaps inner current set 9, gaps outer current set 6 ,mode "default"
+        bindsym l gaps inner current set 15, gaps outer current set 80 ,mode "default"
+        bindsym r gaps inner current set 9, gaps outer current set 5 ,mode "default"
 }
 
 mode "$mode_gaps_inner" {
@@ -129,16 +130,16 @@ mode "$mode_gaps_outer" {
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 #   龜      
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
-set $ws4 "4:"
-set $ws5 "5:"
-set $ws6 "6:"
-set $ws7 "7:"
-set $ws8 "8:"
-set $ws9 "9:"
-set $ws10 "10:"
+set $ws1 "1: CODE"
+set $ws2 "2: SYSX"
+set $ws3 "3: SURF"
+set $ws4 "4: TGIM"
+set $ws5 "5: VIRT"
+set $ws6 "6: TORR"
+set $ws7 "7: CRYS"
+set $ws8 "8: MASK"
+set $ws9 "9: POWR"
+set $ws10 "10: UNIX"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -274,14 +275,13 @@ workspace_auto_back_and_forth yes
 show_marks yes
 
 # xprop | grep WM_CLASS 命令获取wm_class
-# assign [class="Nightly"] $WS3
-assign [class="VirtualBox"] $WS5
 # assign [class="Google-chrome"] $WS3
 # assign [class="wechat.exe"] $WS4
 # assign [class="Tim.exe"] $WS4
-assign [class="qBittorrent"] $WS6
+# assign [class="Steam"] $WS5
 assign [class="Telegram"] $WS4
-assign [class="Steam"] $WS5
+assign [class="VirtualBox"] $WS5
+assign [class="qBittorrent"] $WS6
 
 bindsym $mod+Shift+semicolon exec i3-input -f pango:mono -F 'mark %s' -l 1 -P 'Mark: '
 bindsym $mod+semicolon exec i3-input -f pango:mono -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
@@ -303,31 +303,34 @@ for_window [class="calculator-calculatorGui"] floating enable
 for_window [class=feh] floating enable, move absolute position center
 for_window [class=Sxiv] floating enable, move absolute position center
 #**************************************************主题设置*********************************************
-font pango:DejaVu Sans Mono Bold 8.5
+# font pango:DejaVu Sans Mono Bold 8.5
 # font pango:Fira Code Medium 8.5
+font pango:Sarasa Gothic SC Bold 8.5
 
 # $focu #333333
 # $ufocu #1c1c1c #101010
 
 # set $focu #00ced1
-set $focu #39C5BB
+set $focu #00ffff
 set $ufocu #1e1e1e
 set $font #c0c0c0
 set $ufont #5d5d5d
 set $tfont #2f4f4f
-set $urg #990000
-set $blu #1F75FE
+set $urg #D7005F
+# set $blu #1F75FE
+set $blu #44ff00
+set $gre #44ff00
 set $bg #1b1d1e
 # set $bg #121212
 # set $bg #232629
 # set $bg #181A1B
 
 # 窗口颜色              边框  背景  文字  提示
-client.focused          $focu $focu $tfont $blu
-client.focused_inactive $ufocu $ufocu $ufont $blu
-client.unfocused        $ufocu $ufocu $ufont $blu
-client.urgent           $urg $urg $font $urg
-client.placeholder      $font $font $bg $font
+client.focused          $focu90 $focu $tfont $blu
+client.focused_inactive $ufocu90 $ufocu $ufont $blu
+client.unfocused        $ufocu90 $ufocu $ufont $blu
+client.urgent           $urg90 $urg $font $urg
+client.placeholder      $font90 $font $bg $font
 client.background       $bg
 
 #i3bar设置
@@ -341,11 +344,12 @@ bar {
         status_command ~/.config/i3status/net-speed.sh
         position top
 # position bottom
-# mode h
-# hidden_state show
+# mode dock
+# hidden_state hide
 # strip_workspace_numbers no
-        font pango:DejaVu Sans Mono Bold 9
-        # font pango:Fira Code Bold 9
+        # font pango:DejaVu Sans Mono Bold 9
+font pango:Fira Code Bold 8.5
+        # font pango: Sarasa Gothic CL bold 9
         separator_symbol "  "
 
 #    ¶ ⊘ ∥ ➔ ➥ 
@@ -354,11 +358,11 @@ bar {
                 statusline $font
                 separator #555666
 # 工作区颜色       边框     背景        文字
-                focused_workspace  $blu     $blu90      $font
+                focused_workspace  $gre90     $gre      $bg
                 active_workspace   $bg      $bg         $font
                 inactive_workspace $bg      $bg         $ufont
-                urgent_workspace   $urg     $urg90      $font
-                binding_mode       $urg     $urg90      $font
+                urgent_workspace   $urg90     $urg      $bg
+                binding_mode       $urg90     $urg      $bg
         }
 }
 exec_always --no-startup-id feh --bg-scale "/home/lg/Desktop/wp/darkHeart.jpg"
