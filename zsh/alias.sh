@@ -5,6 +5,7 @@ export LESS="--RAW-CONTROL-CHARS"
 
 alias ray='export ALL_PROXY=socks5://127.0.0.1:10889'
 alias uv='unset ALL_PROXY'
+alias pyay='ALL_PROXY=socks5://127.0.0.1:10889 yay'
 alias cip='curl cip.cc'
 alias wea='curl wttr.in/shenzhen'
 alias ctg='ctags -R --c++-kinds=+px --fields=+niazs --extras=+q -f .tags'

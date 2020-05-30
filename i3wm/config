@@ -246,6 +246,15 @@ bindsym XF86AudioLowerVolume exec amixer set Master playback 5-
 # bindsym XF86AudioMute exec amixer set Master toggle
 bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle
 
+# Media player controls
+# bindsym XF86AudioPlay exec playerctl play-pause
+# bindsym XF86AudioPause exec playerctl play-pause
+# bindsym XF86AudioNext exec playerctl next
+# bindsym XF86AudioPrev exec playerctl previous
+
+bindsym XF86AudioPlay exec "mpc toggle"
+bindsym XF86AudioNext exec "mpc next"
+bindsym XF86AudioPrev exec "mpc prev"
 
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec_always --no-startup-id xautolock -time 8 -locker /usr/bin/i3lock-fancy
@@ -271,7 +280,7 @@ bindsym $mod+Shift+m move scratchpad
 bindsym $mod+m scratchpad show
 
 workspace_auto_back_and_forth yes
-# focus_on_window_activation no
+focus_on_window_activation no
 show_marks yes
 
 # xprop | grep WM_CLASS 命令获取wm_class
@@ -336,7 +345,7 @@ client.background       $bg
 #i3bar设置
 bar {
     # i3bar_command i3bar -t
-    i3bar_command i3bar 
+    i3bar_command i3bar
         height 19
 # tray_output none
         tray_padding 1
@@ -365,7 +374,8 @@ font pango:Fira Code Bold 8.5
                 binding_mode       $urg90     $urg      $bg
         }
 }
-exec_always --no-startup-id feh --bg-scale "/home/lg/Desktop/wp/darkHeart.jpg"
+# exec_always --no-startup-id feh --bg-scale "/home/lg/Desktop/wp/darkHeart.jpg"
+exec_always --no-startup-id feh --bg-scale "/home/lg/Desktop/wp/Forever-Shady-S.jpg"
 # screen 黑屏 睡眠 断电
 # exec --no-startup-id xset dpms 600 15000 30000
 # xrandr

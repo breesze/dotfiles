@@ -35,7 +35,7 @@ search_wrap = true
 
 [colors]
 # background = rgba(0,0,0,0.7)
-background = rgba(10,10,10,0.70)
+background = rgba(8,8,8,0.70)
 # background = rgba(43,46,47,0.9)
 # background = rgba(44,44,44,0.7)
 # background = #121212

@@ -77,7 +77,8 @@ URxvt.boldfont:xft:Sarasa Mono CL Semibold:antialias=True:size=12
 URxvt.background:   [75]#000000
 ! URxvt.background:       #121212
 URxvt.foreground:       #c0c0c0
-URxvt.color12:          #1f75fe
+URxvt.color12 = #1f75fe
+! *.alpha = 0.7
 !---------------------
 !breeze theme from kde
 !---------------------
@@ -110,3 +111,4 @@ Xcursor.theme:Breeze
 ! Xcursor.size:16
 
 
+! *.alpha: 0.7

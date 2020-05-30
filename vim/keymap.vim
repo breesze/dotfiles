@@ -101,7 +101,7 @@ if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" mksession 
+" mksession
 " nnoremap <leader>ms :execute 'tabdo NERDTreeClose'<CR>:execute 'mksession! .last.vim'<CR>:execute 'wviminfo! .last.viminfo'<CR>
 " nnoremap <leader>mr :silent execute 'source .last.vim'<CR>:silent execute 'rviminfo .last.viminfo'<CR>
 nnoremap <leader>ms :execute 'mksession! .last.vim'<CR>:execute 'wviminfo! .last.viminfo'<CR>
