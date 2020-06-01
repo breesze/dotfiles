@@ -48,7 +48,7 @@ nnoremap <space>w <C-W>
 " inoremap { {<CR>}<esc>O
 nnoremap <Leader>mm m1gUiw`1
 inoremap <C-h> <ESC>gUiwgi
-nnoremap <A-P> :setl paste<CR>gi<C-R>+<ESC>:setl nopaste<CR>gi
+inoremap <S-Insert><ESC>:setl paste<CR>gi<C-R>+<ESC>:setl nopaste<CR>gi
 set switchbuf=useopen,usetab,newtab
 set formatoptions=c,q,r,t
 map j gj
@@ -67,6 +67,7 @@ set textwidth=80
 " set cursorcolumn
 set colorcolumn=80
 set number
+" set relativenumber
 set ruler
 set ignorecase
 set hlsearch
