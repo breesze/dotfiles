@@ -65,5 +65,6 @@ exec fcitx &
 exec redshift &
 exec aria2c --conf-path=/home/lg/.dotfiles/aria2/aria2.conf &
 /usr/bin/start-pulseaudio-x11
-exec termite &
+# exec termite &
+exec st &
 exec i3 -V >> ~/.config/i3/log/i3log-$(date +'%F-%k-%M-%S') 2>&1

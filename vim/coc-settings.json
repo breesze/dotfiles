@@ -1,8 +1,8 @@
 {
     // 
     // 
-    "diagnostic.errorSign":"",
-    "diagnostic.warningSign":"",
+    "diagnostic.errorSign":">>",
+    "diagnostic.warningSign":"==",
     "pairs.enableCharacters":["(", "[", "{", "\"", "`"],
     // "diagnostic.displayByAle":false,
     // "diagnostic.level":"information",

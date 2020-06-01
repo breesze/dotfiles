@@ -14,27 +14,28 @@ set $right l
 focus_follows_mouse no
 
 #exec "scrot -b -m 分割线/tmp/screenshot.png && xclip -selection clipoard -t 'image/png' /tmp/screenshot.png"
-bindsym --release $mod+Shift+a exec --no-startup-id "scrot -b -m -p -e 'mv $f ~/Downloads/ScreenShot/'"
-bindsym --release $mod+Shift+s exec --no-startup-id "scrot -u -b -m -p -e 'mv $f ~/Downloads/ScreenShot/'"
-bindsym --release $mod+Shift+d exec --no-startup-id "scrot -s -b -m -p -e 'mv $f ~/Downloads/ScreenShot/'"
+bindsym --release $mod+Shift+a exec --no-startup-id "scrot -bmpe 'mv $f ~/Downloads/ScreenShot/'"
+bindsym --release $mod+Shift+s exec --no-startup-id "scrot -ubmpe 'mv $f ~/Downloads/ScreenShot/'"
+bindsym --release $mod+Shift+d exec --no-startup-id "scrot -sbmpe 'mv $f ~/Downloads/ScreenShot/'"
 # -q 100
-bindsym --release $mod+Shift+q exec --no-startup-id "scrot -b -m -p -q 100 -e 'mv $f ~/Downloads/ScreenShot/'"
-bindsym --release $mod+Shift+w exec --no-startup-id "scrot -u -b -m -p -q 100 -e 'mv $f ~/Downloads/ScreenShot/'"
-bindsym --release $mod+Shift+t exec --no-startup-id "scrot -s -b -m -p -e 'mv $f ~/Downloads/ScreenShot/'"
+bindsym --release $mod+Shift+q exec --no-startup-id "scrot -bmpq 100 -e 'mv $f ~/Downloads/ScreenShot/'"
+bindsym --release $mod+Shift+w exec --no-startup-id "scrot -ubmpq 100 -e 'mv $f ~/Downloads/ScreenShot/'"
+bindsym --release $mod+Shift+t exec --no-startup-id "scrot -sbmpe 'mv $f ~/Downloads/ScreenShot/'"
+bindsym --release $mod+Shift+o exec --no-startup-id "scrot -bmpq 100 -cd 5 -e 'mv $f ~/Downloads/ScreenShot/'"
 
 # scrot+ocr+xclip
 # bindsym $mod+Shift+g exec "bash /home/lg/Downloads/ScreenShot/ocr_temp/scrot_ocr_xclip.sh"
 # bindsym $mod+Shift+g exec "st"
 
 
-bindsym $mod+Return exec termite
-# bindsym $mod+Return exec st
+# bindsym $mod+Return exec termite
+bindsym $mod+Return exec st
 # bindsym $mod+c exec dmenu_run
 bindsym $mod+c exec dmenu_run -nb black -sb tomato -l 10
 bindsym $mod+t exec --no-startup-id rofi -show window
 bindsym $mod+space exec --no-startup-id rofi -show run
 
-set $mode_launcher firefox(F),chrome(G),telegram(T),tim(Q),wechat(W),falkon(O),st(S),urxvt(U),pcmanfm(E),zathura(Z);
+set $mode_launcher firefox(F),chrome(G),telegram(T),tim(Q),wechat(W),falkon(O),st(S),termite(J)urxvt(U),pcmanfm(E),zathura(Z);
 bindsym $mod+o mode "$mode_launcher"
 mode "$mode_launcher" {
         # bindsym g exec --no-startup-id google-chrome-stable --proxy-server="socks5://127.0.0.1:10889",mode "default"
@@ -48,6 +49,7 @@ mode "$mode_launcher" {
         bindsym o exec --no-startup-id falkon,mode "default"
         bindsym z exec --no-startup-id zathura,mode "default"
         bindsym s exec --no-startup-id st,mode "default"
+        bindsym j exec --no-startup-id termite,mode "default"
         bindsym u exec --no-startup-id urxvt,mode "default"
 # bindsym a exec urxvt -name floating ,mode "default"
 
@@ -83,12 +85,12 @@ for_window [class="^.*"] border pixel 2
 
 # Plan-dark
 gaps inner 9
-gaps outer 5
+gaps outer 4
 for_window [workspace=$ws2] gaps inner current set 15, gaps outer current set 80
 for_window [workspace=$ws3] gaps inner current set 0, gaps outer current set 0
 for_window [workspace=$ws5] gaps inner current set 0, gaps outer current set 0
 
-set $mode_gaps Gaps: (o) outer, (i) inner, (s) short(0, 0) (l) long(20, 100), (r) reset(9, 5)
+set $mode_gaps Gaps: (o) outer, (i) inner, (s) short(0, 0) (l) long(20, 100), (r) reset(9, 4)
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+g mode "$mode_gaps"
@@ -100,7 +102,7 @@ mode "$mode_gaps" {
         bindsym Escape mode "default"
         bindsym s gaps inner current set 0, gaps outer current set 0 ,mode "default"
         bindsym l gaps inner current set 15, gaps outer current set 80 ,mode "default"
-        bindsym r gaps inner current set 9, gaps outer current set 5 ,mode "default"
+        bindsym r gaps inner current set 9, gaps outer current set 4 ,mode "default"
 }
 
 mode "$mode_gaps_inner" {

@@ -1,11 +1,7 @@
 [options]
-# font = Hack Nerd Font Mono 10.2
-# font = Fira Code Medium 10
-# font = DejaVu Sans Mono 10
-
 # Slab means the Latins will have serifs
-# font = Sarasa Fixed Slab CL Semibold 12
 font = Sarasa Mono CL Semibold 12
+# font = Sarasa Fixed Slab CL Semibold 12
 # font = Sarasa Term SC Semibold 12
 
 allow_bold = true
@@ -22,7 +18,7 @@ cursor_blink = on
 # cell_height_scale = 
 # cell_widht_scale = 
 # modify_other_keys = 
-# mouse_autohide = true
+mouse_autohide = true
 scrollback_lines = 65536
 scrollbar=off
 # scrollbar_on_keystroke = 
@@ -68,4 +64,5 @@ color15 = #FFFFFF
 colorBD = #ffffff
 colorIT =
 colorUL =
+
 

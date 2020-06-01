@@ -109,6 +109,3 @@ URxvt.color12 = #1f75fe
 
 Xcursor.theme:Breeze
 ! Xcursor.size:16
-
-
-! *.alpha: 0.7
