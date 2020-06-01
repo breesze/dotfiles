@@ -43,7 +43,7 @@ URxvt.scrollTtyOutput:False
 URxvt.scrollWithBuffer:True
 URxvt.scrollTtyKeypress:True
 !!光标闪烁
-URxvt.cursorBlink:True
+URxvt.cursorBlink:false
 URxvt.saveLines:3000
 !!边框
 URxvt.borderLess:False
