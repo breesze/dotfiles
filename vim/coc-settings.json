@@ -1,11 +1,13 @@
 {
-    "diagnostic.errorSign":"",
-    "diagnostic.warningSign":"",
+    // 
+    // 
+    "diagnostic.errorSign":">>",
+    "diagnostic.warningSign":"==",
     "pairs.enableCharacters":["(", "[", "{", "\"", "`"],
-    //"diagnostic.displayByAle":false,
-    //"diagnostic.level":"information",
-    //"diagnostic.checkCurrentLine":true,
-    //"diagnostic.messageTarget":"float",
+    // "diagnostic.displayByAle":false,
+    // "diagnostic.level":"information",
+    // "diagnostic.checkCurrentLine":true,
+    // "diagnostic.messageTarget":"float",
     "languageserver": {
         "clangd": {
             "command": "clangd",
