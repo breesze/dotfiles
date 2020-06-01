@@ -58,8 +58,8 @@ mode "$mode_launcher" {
 
 bindsym $mod+i move position center
 # bindsym $mod+shift+n resize set 772 503,move position center
-# bindsym $mod+shift+n resize set 766 475,move position center
-bindsym $mod+shift+n resize set 766 469,move position center
+# bindsym $mod+shift+n resize set 766 469,move position center
+bindsym $mod+shift+n resize set 768 470,move position center
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
@@ -82,12 +82,12 @@ for_window [class="^.*"] border pixel 2
 
 # Plan-dark
 gaps inner 9
-gaps outer 5
+gaps outer 4
 for_window [workspace=$ws2] gaps inner current set 15, gaps outer current set 80
 for_window [workspace=$ws3] gaps inner current set 0, gaps outer current set 0
 for_window [workspace=$ws5] gaps inner current set 0, gaps outer current set 0
 
-set $mode_gaps Gaps: (o) outer, (i) inner, (s) short(0, 0) (l) long(20, 100), (r) reset(9, 6)
+set $mode_gaps Gaps: (o) outer, (i) inner, (s) short(0, 0) (l) long(20, 100), (r) reset(9, 4)
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+g mode "$mode_gaps"
@@ -99,7 +99,7 @@ mode "$mode_gaps" {
         bindsym Escape mode "default"
         bindsym s gaps inner current set 0, gaps outer current set 0 ,mode "default"
         bindsym l gaps inner current set 15, gaps outer current set 80 ,mode "default"
-        bindsym r gaps inner current set 9, gaps outer current set 5 ,mode "default"
+        bindsym r gaps inner current set 9, gaps outer current set 4 ,mode "default"
 }
 
 mode "$mode_gaps_inner" {
