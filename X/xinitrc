@@ -60,11 +60,15 @@ fi
 # exec xterm -geometry 80x66+0+0 -name login
 
 xset r rate 220 45
-exec compton -CGb &
+# exec compton -CGb &
+exec compton -b &
 exec fcitx &
 exec redshift &
 exec aria2c --conf-path=/home/lg/.dotfiles/aria2/aria2.conf &
 /usr/bin/start-pulseaudio-x11
+./.fehbg &
+./.dwm-statusbar.sh
 # exec termite &
+# exec i3 -V >> ~/.config/i3/log/i3log-$(date +'%F-%k-%M-%S') 2>&1
 exec st &
-exec i3 -V >> ~/.config/i3/log/i3log-$(date +'%F-%k-%M-%S') 2>&1
+exec dwm

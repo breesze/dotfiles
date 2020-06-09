@@ -19,6 +19,8 @@ ln -siv $path/fontconfig/fonts.conf ~/.config/fontconfig/fonts.conf
 ln -siv $path/i3status/config ~/.config/i3status/config
 ln -siv $path/i3status/net-speed.sh ~/.config/i3status/net-speed.sh
 ln -siv $path/i3wm/config ~/.config/i3/config
+# dwm
+ln -siv $path/dwm/dwm-statusbar.sh ~/.dwm-statusbar.sh
 # mpd, ncmpcpp
 ln -siv $path/mpd-ncmpcpp/bindings ~/.ncmpcpp/bindings
 ln -siv $path/mpd-ncmpcpp/config ~/.ncmpcpp/config
