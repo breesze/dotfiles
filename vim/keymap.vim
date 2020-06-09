@@ -49,6 +49,7 @@ nnoremap <space>w <C-W>
 nnoremap <Leader>mm m1gUiw`1
 inoremap <C-h> <ESC>gUiwgi
 inoremap <S-Insert><ESC>:setl paste<CR>gi<C-R>+<ESC>:setl nopaste<CR>gi
+inoremap <F11><ESC>:setl paste<CR>gi<C-R>+<ESC>:setl nopaste<CR>gi
 set switchbuf=useopen,usetab,newtab
 set formatoptions=c,q,r,t
 map j gj
@@ -63,7 +64,7 @@ set linebreak
 set scrolloff=7
 set laststatus=2
 set cursorline
-set textwidth=80
+" set textwidth=80
 " set cursorcolumn
 set colorcolumn=80
 set number

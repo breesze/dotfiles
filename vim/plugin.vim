@@ -157,7 +157,7 @@ noremap go :<C-U>Leaderf! rg --recall<CR>
 " UndoTree
 nnoremap <A-f> :UndotreeToggle<CR>
 let g:undotree_WindowLayout = 3
-map <A-w> <A-q><A-e>
+map <A-w> <A-e><A-q><C-w>l
 
 " NerdTree
 map <A-q> :NERDTreeToggle<CR>
@@ -182,9 +182,9 @@ let g:nerdtree_tabs_open_on_console_startup=1
 " 忽略以下文件的显示
 let NERDTreeIgnore=['\.pyc','\~$','\.swp']
 " 显示书签列表
-"let NERDTreeShowBookmarks=1
-"let g:NERDTreeDirArrowExpandable = '▸'
-"let g:NERDTreeDirArrowCollapsible = '▾'
+let NERDTreeShowBookmarks=1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeIndicatorMapCustom = {
             \ "Modified"  : "✹",
             \ "Staged"    : "✚",
