@@ -1,4 +1,6 @@
 setopt PROMPT_SUBST
+unsetopt correct
+
 source ~/.zpreztorc
 source ~/.fish.prompt.sh
 source ~/.lgfs.prompt.sh
