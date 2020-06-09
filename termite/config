@@ -4,6 +4,10 @@ font = Sarasa Mono CL Semibold 12
 # font = Sarasa Fixed Slab CL Semibold 12
 # font = Sarasa Term SC Semibold 12
 
+# font = Terminus (TTF) Medium 12
+# font = xos4 Terminus 12
+# font = Terminus Medium 12
+
 allow_bold = true
 # audible_bell = 
 bold_is_right = true
