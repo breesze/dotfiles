@@ -66,9 +66,10 @@ exec fcitx &
 exec redshift &
 exec aria2c --conf-path=/home/lg/.dotfiles/aria2/aria2.conf &
 /usr/bin/start-pulseaudio-x11
-feh --no-fehbg --bg-scale '/home/lg/Desktop/wp/Forever-Shady-S.jpg' &
+
 ./.dwm-statusbar.sh
-# exec termite &
-# exec i3 -V >> ~/.config/i3/log/i3log-$(date +'%F-%k-%M-%S') 2>&1
+feh --no-fehbg --bg-scale '/home/lg/Desktop/wp/Forever-Shady-S.jpg' &
 exec st &
 exec dwm
+
+# exec i3 -V >> ~/.config/i3/log/i3log-$(date +'%F-%k-%M-%S') 2>&1
