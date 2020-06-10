@@ -21,6 +21,7 @@ ln -siv $path/i3status/net-speed.sh ~/.config/i3status/net-speed.sh
 ln -siv $path/i3wm/config ~/.config/i3/config
 # dwm
 ln -siv $path/dwm/dwm-statusbar.sh ~/.dwm-statusbar.sh
+ln -siv $path/dwm/fehbg ~/.fehbg
 # mpd, ncmpcpp
 ln -siv $path/mpd-ncmpcpp/bindings ~/.ncmpcpp/bindings
 ln -siv $path/mpd-ncmpcpp/config ~/.ncmpcpp/config
