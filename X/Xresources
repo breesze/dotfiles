@@ -70,8 +70,8 @@ Xft.dpi:96
 ! URxvt.font:xft:Terminus:antialias=True:size=12
 ! URxvt.boldfont:xft:Terminus:antialias=True:size=12
 
-URxvt.font:xft:xos4 Terminus:antialias=True:size=14
-URxvt.boldfont:xft:xos4 Terminus:antialias=True:size=14
+URxvt.font:xft:xos4 Terminus:antialias=True:size=12
+URxvt.boldfont:xft:xos4 Terminus:antialias=True:size=12
 
 ! URxvt.font:xft:FiraMono Nerd Font Mono:size=10.6
 ! URxvt.boldfont:xft:FiraMono Nerd Font Mono:antialias=True:size=10.6
