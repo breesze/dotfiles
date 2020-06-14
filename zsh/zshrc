@@ -1,5 +1,6 @@
 setopt PROMPT_SUBST
 unsetopt correct
+setopt clobber
 
 source ~/.zpreztorc
 source ~/.fish.prompt.sh
