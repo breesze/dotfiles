@@ -42,3 +42,5 @@ ln -siv $path/zsh/zpreztorc ~/.zpreztorc
 ln -siv $path/zsh/lgfs.prompt.sh ~/.lgfs.prompt.sh
 ln -siv $path/zsh/fish.prompt.sh ~/.fish.prompt.sh
 ln -siv $path/zsh/alias.sh ~/.alias.sh
+# pacman
+# ln -siv $path/pacman/pacman.log /var/log/
