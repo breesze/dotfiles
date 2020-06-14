@@ -63,7 +63,7 @@ xset r rate 220 45
 exec compton -CGb &
 exec fcitx &
 exec redshift &
-exec aria2c --conf-path=/home/lg/.dotfiles/aria2/aria2.conf &
+# exec aria2c --conf-path=/home/lg/.dotfiles/aria2/aria2.conf &
 exec xautolock -time 8 -locker slock &
 exec xautolock -time 60 -locker "systemctl suspend" &
 /usr/bin/start-pulseaudio-x11

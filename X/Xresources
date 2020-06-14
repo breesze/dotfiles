@@ -82,7 +82,7 @@ URxvt.boldfont:xft:xos4 Terminus:antialias=True:size=12
 ! URxvt.font:xft:Noto Sans Mono:antialias=True:size=9
 ! URxvt.boldfont:xft:Noto Sans Mono:antialias=True:size=9
 
-URxvt.background:   [75]#000000
+URxvt.background:   [50]#000000
 ! URxvt.background:       #121212
 URxvt.foreground:       #c0c0c0
 URxvt.color12 : #1f75fe
