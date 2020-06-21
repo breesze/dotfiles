@@ -64,7 +64,7 @@ set linebreak
 set scrolloff=7
 set laststatus=2
 set cursorline
-" set textwidth=80
+set textwidth=80
 " set cursorcolumn
 set colorcolumn=80
 set number
