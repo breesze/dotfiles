@@ -22,6 +22,7 @@ ln -siv $path/i3wm/config ~/.config/i3/config
 # dwm
 ln -siv $path/dwm/dwm-statusbar.sh ~/.dwm-statusbar.sh
 ln -siv $path/dwm/fehbg ~/.fehbg
+ln -siv $path/dwm/startdwm.sh ~/.startdwm.sh
 # mpd, ncmpcpp
 ln -siv $path/mpd-ncmpcpp/bindings ~/.ncmpcpp/bindings
 ln -siv $path/mpd-ncmpcpp/config ~/.ncmpcpp/config
