@@ -46,9 +46,10 @@ exec xautolock -time 60 -locker "systemctl suspend" &
 
 # suckless
 feh --no-fehbg --bg-scale '/home/lg/Desktop/wp/Forever-Shady-S.jpg' &
-./.dwm-statusbar.sh &
+exec ./.dwm-statusbar.sh &
 exec st &
-exec dwm
+exec ~/.startdwm.sh
+# exec dwm
 
 # exec aria2c --conf-path=/home/lg/.dotfiles/aria2/aria2.conf &
 # exec i3 -V >> ~/.config/i3/log/i3log-$(date +'%F-%k-%M-%S') 2>&1
