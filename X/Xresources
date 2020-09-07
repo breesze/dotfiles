@@ -1,7 +1,7 @@
 !$HOME/.Xresources
 ! URxvt.preeditType:Root
 
-URxvt.inputMethod:fcitx
+URxvt.inputMethod: fcitx5
 URxvt.clipboard.autocopy: true
 
 ! URxvt.keysym.M-c: perl:clipboard:copy
@@ -20,35 +20,37 @@ URxvt.keysym.Control-Meta-c: builtin-string:
 URxvt.keysym.Control-Meta-v: builtin-string:
 
 !font-config
-Xft.autohint: 0
-Xft.lcdfilter:  lcddefault
-Xft.hintstyle:  hintfull
+Xft.autohint: 3
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 
-URxvt.depth:32
+URxvt.depth: 32
 ! URxvt.inheritPixmap:true
 !!URL操作
-URxvt.urlLauncher:firefox
-URxvt.matcher.button:1
-Urxvt.perl-ext-common:matcher
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
+Urxvt.perl-ext-common: matcher
 !!滚动条设置
-URxvt.scrollBar:False
-URxvt.scrollBar_floating:False
-URxvt.scrollstyle:plain
+URxvt.scrollBar: False
+URxvt.scrollBar_floating: False
+URxvt.scrollstyle: plain
 !!滚屏设置
-URxvt.mouseWheelScrollPage:True
-URxvt.scrollTtyOutput:False
-URxvt.scrollWithBuffer:True
-URxvt.scrollTtyKeypress:True
+URxvt.mouseWheelScrollPage: True
+URxvt.scrollTtyOutput: False
+URxvt.scrollWithBuffer: True
+URxvt.scrollTtyKeypress: True
 !!光标闪烁
-URxvt.cursorBlink:false
-URxvt.saveLines:3000
+URxvt.cursorBlink: false
+URxvt.saveLines: 3000
 !!边框
-URxvt.borderLess:False
+URxvt.borderLess: False
 !!字体设置
-Xft.dpi:96
+! Xft.dpi:96
+! Xft.dpi:120
+Xft.dpi: 141
 ! Xft.antialias: true
 ! URxvt.letterSpace: -1
 
@@ -70,8 +72,8 @@ Xft.dpi:96
 ! URxvt.font:xft:Terminus:antialias=True:size=12
 ! URxvt.boldfont:xft:Terminus:antialias=True:size=12
 
-URxvt.font:xft:xos4 Terminus:antialias=True:size=12
-URxvt.boldfont:xft:xos4 Terminus:antialias=True:size=12
+URxvt.font: xft:xos4 Terminus:antialias=True:size=12
+URxvt.boldfont: xft:xos4 Terminus:antialias=True:size=12
 
 ! URxvt.font:xft:FiraMono Nerd Font Mono:size=10.6
 ! URxvt.boldfont:xft:FiraMono Nerd Font Mono:antialias=True:size=10.6
@@ -115,5 +117,5 @@ URxvt.color12 : #1f75fe
 ! URxvt.color7:           #fcfcfc
 ! URxvt.color15:          #ffffff
 
-Xcursor.theme:Breeze
-! Xcursor.size:16
+Xcursor.theme: Breeze
+Xcursor.size: 24
