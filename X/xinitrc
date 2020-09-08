@@ -41,7 +41,8 @@ xset r rate 220 45
 /usr/bin/start-pulseaudio-x11 &
 exec fcitx5 &
 exec redshift &
-exec compton -CGb &
+# exec compton -CGb &
+exec picom -b &
 exec xautolock -time 8 -locker slock &
 exec xautolock -time 60 -locker "systemctl suspend" &
 
