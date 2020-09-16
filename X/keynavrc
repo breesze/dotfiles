@@ -44,11 +44,13 @@ shift+u move-right,move-up
 shift+b move-left,move-down
 shift+n move-right,move-down
 space warp,click 1,end
-o warp,click 3,end  # 绑定o键为: 鼠标右键单击红框中心位置
+o warp,click 3 # 鼠标右键单击红框中心位置
 semicolon warp,end
 1 click 1
 2 click 2
 3 click 3
+i click 4
+e click 5
 
 # Zoom to the current window
 w windowzoom
@@ -92,20 +94,20 @@ shift+at playback
 # Make firefox the active window
 f sh "xdotool windowactivate $(xdotool search -title -- '- Mozilla Firefox')", end
 # Make a new tab in google chrome:
-t sh "xdotool windowactivate $(xdotool search --title -- '- Google Chrome' | head -1); xdotool key ctrl+t",end
+# t sh "xdotool windowactivate $(xdotool search --title -- '- Google Chrome' | head -1); xdotool key ctrl+t",end
 # Paste
 v sh "xdotool key shift+Insert"
 
 ### Drag examples
 # Start drag holding the left mouse button
-#q drag 1
+# q drag 1
 # Start drag holding middle mouse + control and shift
-#w drag 2 ctrl+shift
+# w drag 2 ctrl+shift
 # Dragging with modifiers
-#q drag 1
-#ctrl+q drag 1 ctrl
-#shift+q drag 1 shift
-#shift+ctrl+q drag 1 shift+ctrl
+# q drag 1
+# ctrl+q drag 1 ctrl
+# shift+q drag 1 shift
+# shift+ctrl+q drag 1 shift+ctrl
 
 ### History
 a history-back
