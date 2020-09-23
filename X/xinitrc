@@ -42,7 +42,7 @@ xset r rate 220 45
 exec fcitx5 &
 exec redshift &
 # exec compton -CGb &
-exec picom -b &
+exec picom &
 exec xautolock -time 8 -locker slock &
 exec xautolock -time 60 -locker "systemctl suspend" &
 
@@ -50,6 +50,7 @@ exec xautolock -time 60 -locker "systemctl suspend" &
 feh --no-fehbg --bg-scale '/home/lg/Desktop/wp/NyaITD5-arch-linux-wallpaper.png' &
 exec dwmstatus &
 exec st &
+exec keynav &
 exec ~/.startdwm.sh
 
 # exec dwm
