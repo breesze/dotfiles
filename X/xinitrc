@@ -49,7 +49,7 @@ exec xautolock -time 60 -locker "systemctl suspend" &
 # suckless
 feh --no-fehbg --bg-scale '/home/lg/Desktop/wp/NyaITD5-arch-linux-wallpaper.png' &
 exec dwmstatus &
-exec st &
+exec alacritty &
 exec keynav &
 exec ~/.startdwm.sh
 
