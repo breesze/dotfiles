@@ -48,3 +48,5 @@ ln -siv $path/zsh/fish.prompt.sh ~/.fish.prompt.sh
 ln -siv $path/zsh/alias.sh ~/.alias.sh
 # pacman
 # ln -siv $path/pacman/pacman.log /var/log/
+# alacritty
+ln -siv $path/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
