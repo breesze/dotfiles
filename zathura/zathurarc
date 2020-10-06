@@ -2,7 +2,6 @@
 set scroll-step 80
 
 set selection-clipboard clipboard
-set increment-search true
 
 # set font "monospace 10"
 set default-bg "#121212"
