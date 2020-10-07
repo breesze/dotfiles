@@ -57,7 +57,8 @@ map k gk
 
 filetype on
 syntax on
-set clipboard=unnamed
+" set clipboard=unnamed
+set clipboard=unnamedplus
 set hidden
 set nowrap
 set linebreak
