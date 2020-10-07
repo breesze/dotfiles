@@ -3,7 +3,7 @@ eval $(thefuck --alias)
 export LESS="--RAW-CONTROL-CHARS"
 [[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
 
-alias ray='export ALL_PROXY=socks5://127.0.0.1:10889'
+alias fw='export ALL_PROXY=socks5://127.0.0.1:10889'
 alias uv='unset ALL_PROXY'
 alias pyay='ALL_PROXY=socks5://127.0.0.1:10889 yay'
 alias cip='curl cip.cc'
@@ -11,7 +11,7 @@ alias wea='curl wttr.in/shenzhen'
 alias ctg='ctags -R --c++-kinds=+px --fields=+niazs --extras=+q -f .tags'
 alias clg='clang++ -O2 -std=c++14 -Weverything -Wno-c++98-compat'
 alias clgm='fn() { clang++ -O2 -std=c++14 -Weverything -Wno-c++98-compat $2 $3 $4 -o $1 -lmuduo_net -lmuduo_base -lpthread;};fn'
-alias nocap='amixer set Capture nocap' # WKQTM
+alias nocap='amixer set Capture nocap'
 alias ocr='/home/lg/Downloads/ScreenShot/ocr_temp/scrot_ocr_xclip.sh'
 
 alias ls='ls --color=tty'
@@ -28,7 +28,9 @@ alias fgrep='fgrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox
 alias z='_z 2>&1'
 
 alias VIM='vim'
-alias emacs='vim'
+alias nv='nvim'
+alias vim='nvim'
+alias emacs='nvim'
 alias pc='proxychains4'
 alias rn='ranger'
 alias mm='ncmpcpp'
