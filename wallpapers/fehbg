@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill './hatsune-miku-minimal-vocaloid-neon-lights-art.jpg' 
