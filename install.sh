@@ -48,7 +48,9 @@ ln -siv $path/tmux/tmux.conf ~/.tmux.conf
 
 # vim
 ln -siv $path/vim/clang-format ~/.clang-format
+ln -siv $path/vim/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -siv $path/vim/coc-settings.json ~/.vim/coc-settings.json
+ln -siv $path/vim/init.vim ~/.config/nvim/init.vim
 ln -siv $path/vim/keymap.vim ~/.vim/vim/keymap.vim
 ln -siv $path/vim/plugin.vim ~/.vim/vim/plugin.vim
 ln -siv $path/vim/vimrc ~/.vimrc
