@@ -15,6 +15,9 @@ ln -siv $path/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 # dwm
 ln -siv $path/dwm/startdwm.sh ~/.startdwm.sh
 
+# feh
+ln -siv $path/wallpapers/fehbg ~/.fehbg
+
 # fontconfig
 ln -siv $path/fontconfig/fonts.conf ~/.config/fonts.conf
 
