@@ -42,7 +42,7 @@ xset r rate 220 45
 exec fcitx5 &
 exec redshift &
 exec picom &
-exec xautolock -time 8 -locker "betterlockscreen -l dim" &
+exec xautolock -time 8 -locker "i3lock -i ~/.dotfiles/wallpapers/wp2611584-black-and-blue-wallpaper.jpg -k -c 000000 --timecolor="D7005F" --datecolor="D7005F"" &
 exec xautolock -time 60 -locker "systemctl suspend" &
 
 exec dwmstatus &
