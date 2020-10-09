@@ -58,6 +58,9 @@ ln -siv $path/vim/keymap.vim ~/.vim/vim/keymap.vim
 ln -siv $path/vim/plugin.vim ~/.vim/vim/plugin.vim
 ln -siv $path/vim/vimrc ~/.vimrc
 
+# Xmodmap
+ln -siv $path/xorg/Xmodmap ~/.Xmodmap
+
 # xorg
 ln -siv $path/xorg/Xresources ~/.Xresources
 ln -siv $path/xorg/xinitrc ~/.xinitrc
