@@ -7,7 +7,7 @@ set selection-clipboard clipboard
 set default-bg "#121212"
 set default-fg "#c0c0c0"
 
-set recolor "true"
+# set recolor "true"
 set recolor-lightcolor "#121212"
 # set recolor-darkcolor "#c0c0c0"
 set recolor-keephue true
