@@ -13,7 +13,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 Plug 'Chiel92/vim-autoformat'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-"若安装未完全，需要(到md文件里)执行:call mkdp#util#install()
 
 Plug 'preservim/nerdtree'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
