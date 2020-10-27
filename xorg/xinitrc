@@ -42,16 +42,16 @@ xset s 480 480
 xmodmap ~/.Xmodmap 
 /usr/bin/start-pulseaudio-x11 &
 
-exec xss-lock -- i3lock -n -i ~/.dotfiles/wallpapers/wp2611584-black-and-blue-wallpaper.jpg -k -c 000000 --timecolor="D7005F" --datecolor="D7005F" &
+exec xss-lock -- i3lock -n -B picom --indicator -k --timecolor="D7005F" --datecolor="D7005F" --ringcolor="1a1a1a" --keyhlcolor="D7005f" &
 exec xautolock -time 30 -locker "systemctl suspend" &
 exec fcitx5 &
 exec redshift &
 exec picom &
+exec keynav &
 
+exec ~/.fehbg &
 exec dwmstatus &
 exec alacritty &
-exec keynav &
-exec ~/.fehbg &
 exec ~/.startdwm.sh
 
 # abandon

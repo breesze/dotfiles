@@ -400,7 +400,7 @@ nmap <leader>o <Plug>(coc-codeaction-selected)
 " Remap for do codeAction of current line
 "nmap <leader>ac <Plug>(coc-codeaction)
 " Fix autofix problem of current line
-"nmap <leader>qf <Plug>(coc-fix-current)
+nmap <leader>gf <Plug>(coc-fix-current)
 
 " Use <tab> for select selections ranges, needs server support, like: coc-tsserver, coc-python
 "nmap <silent> <TAB> <Plug>(coc-range-select)
