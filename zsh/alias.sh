@@ -44,9 +44,10 @@ alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s bz2='tar -xjvf'
 
+# git 
 alias ga='git add'
 alias gac='git add . && git commit -m'
-alias gb='git branch'
+alias gbr='git branch'
 alias gco='git checkout'
 alias gcb='git checkout -b'
 alias gc='git commit -m'
@@ -59,3 +60,7 @@ alias gm='git merge'
 alias gst='git status'
 alias glola='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --all'
 alias glols='git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --stat'
+
+# golang
+alias gb='go build'
+alias gr='go run'
