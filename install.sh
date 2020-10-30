@@ -72,6 +72,7 @@ ln -siv $path/zathura/zathurarc ~/.config/zathura/zathurarc
 ln -siv $path/zsh/LESS_TERMCAP ~/.LESS_TERMCAP 
 ln -siv $path/zsh/alias.sh ~/.alias.sh
 ln -siv $path/zsh/fish.prompt.sh ~/.fish.prompt.sh
+ln -siv $path/zsh/langenv ~/.langenv
 ln -siv $path/zsh/lgfs.prompt.sh ~/.lgfs.prompt.sh
 ln -siv $path/zsh/zpreztorc ~/.zpreztorc
 ln -siv $path/zsh/zshrc ~/.zshrc
