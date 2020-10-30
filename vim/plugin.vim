@@ -20,8 +20,9 @@ Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'honza/vim-snippets'
-Plug 'SirVer/ultisnips',{ 'for': ['c', 'cpp', 'rust', 'markdown', 'html'] }
+Plug 'SirVer/ultisnips',{ 'for': ['c', 'cpp', 'rust', 'markdown', 'go', 'html'] }
 Plug 'Yggdroot/LeaderF',{ 'do': './install.sh' }
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Plug 'altercation/vim-colors-solarized'
@@ -434,3 +435,6 @@ nnoremap <silent> <space>ep :<C-u>CocListResume<CR>
 hi CocErrorSign ctermfg=9
 hi CocWarningSign ctermfg=6
 " hi default CocUnderline cterm=undercurl gui=undercurl
+
+highlight Pmenu ctermbg=234 ctermfg=33
+highlight PmenuSel ctermbg=236 ctermfg=202
