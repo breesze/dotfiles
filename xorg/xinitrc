@@ -39,7 +39,7 @@ fi
 
 xset r rate 220 45
 xset s 480 480
-xmodmap ~/.Xmodmap 
+xmodmap ~/.Xmodmap
 /usr/bin/start-pulseaudio-x11 &
 
 exec xss-lock -- i3lock -n -B picom --indicator -k --timecolor="D7005F" --datecolor="D7005F" --ringcolor="1a1a1a" --keyhlcolor="D7005f" &
