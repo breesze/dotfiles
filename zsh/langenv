@@ -1,0 +1,5 @@
+export GOPATH=$HOME/d4ta/go
+export PATH=$PATH:$GOPATH/bin
+
+export GO111MODULE=auto
+export GOPROXY=GOPROXY=https://goproxy.cn,direct
