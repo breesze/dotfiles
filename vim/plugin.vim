@@ -86,6 +86,7 @@ let g:indentLine_color_term = 6
 " let g:autoformat_retab = 0
 " let g:autoformat_remove_trailing_spaces = 0
 nnoremap <Leader>vv :Autoformat<CR>
+let g:formatter_go_style = 'goimports'
 
 " nerdcommenter
 " Add spaces after comment delimiters by default
@@ -421,20 +422,22 @@ nmap <leader>gf <Plug>(coc-fix-current)
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Using CocList
-nnoremap <silent> <space>ea :<C-u>CocList diagnostics<cr>
-nnoremap <silent> <space>ee :<C-u>CocList extensions<cr>
-nnoremap <silent> <space>ec :<C-u>CocList commands<cr>
-" Find symbol of current document
-nnoremap <silent> <space>eo :<C-u>CocList outline<cr>
-" Search workspace symbols
-nnoremap <silent> <space>es :<C-u>CocList -I symbols<cr>
-nnoremap <silent> <space>ej :<C-u>CocNext<CR>
-nnoremap <silent> <space>ek :<C-u>CocPrev<CR>
-nnoremap <silent> <space>ep :<C-u>CocListResume<CR>
+nnoremap <silent> [e :<C-u>CocList diagnostics<cr>
+nnoremap <silent> ]r :<C-u>CocRestart<cr>
+" nnoremap <silent> <space>ea :<C-u>CocList extensions<cr>
+" nnoremap <silent> <space>ec :<C-u>CocList commands<cr>
+" " Find symbol of current document
+" nnoremap <silent> <space>eo :<C-u>CocList outline<cr>
+" " Search workspace symbols
+" nnoremap <silent> <space>es :<C-u>CocList -I symbols<cr>
+" nnoremap <silent> <space>ej :<C-u>CocNext<CR>
+" nnoremap <silent> <space>ek :<C-u>CocPrev<CR>
+" nnoremap <silent> <space>ep :<C-u>CocListResume<CR>
 
 hi CocErrorSign ctermfg=9
 hi CocWarningSign ctermfg=6
 " hi default CocUnderline cterm=undercurl gui=undercurl
 
-highlight Pmenu ctermbg=234 ctermfg=33
-highlight PmenuSel ctermbg=236 ctermfg=202
+hi Pmenu ctermbg=234 ctermfg=33
+hi PmenuSel ctermbg=236 ctermfg=202
+hi goSpaceError ctermbg=33
