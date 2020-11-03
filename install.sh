@@ -12,14 +12,20 @@ ln -siv $path/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 # ln -siv $path/aria2/dht.dat ~/.aria2/dht.dat
 # ln -siv $path/aria2/dht6.dat ~/.aria2/dht6.dat
 
+# bspwm
+ln -siv $path/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
+ln -siv $path/bspwm/sxhkdrc ~/.config/sxhkd/sxhkdrc
+
 # dwm
-ln -siv $path/dwm/startdwm.sh ~/.startdwm.sh
+ln -siv $path/dwm/startdwm ~/.startdwm
+ln -siv $path/dwmstatus/startdwmstatus ~/.startdwmstatus
 
 # feh
 ln -siv $path/wallpapers/fehbg ~/.fehbg
 
 # fontconfig
-ln -siv $path/fontconfig/fonts.conf ~/.config/fonts.conf
+ln -siv $path/fontconfig/fonts.conf ~/.config/fontconfig/fonts.conf/fontts.conf
+ln -siv $path/fontconfig/10-dpi.conf ~/.config/fontconfig/conf.d/10-dpi.conf
 
 # i3-gaps, i3status
 # ln -siv $path/i3status/config ~/.config/i3status/config
