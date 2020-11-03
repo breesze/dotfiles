@@ -67,7 +67,7 @@ set laststatus=2
 set cursorline
 set textwidth=80
 " set cursorcolumn
-set colorcolumn=81
+set colorcolumn=80
 set number
 " set relativenumber
 set ruler
