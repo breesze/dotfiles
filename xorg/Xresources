@@ -49,11 +49,10 @@ URxvt.saveLines: 3000
 URxvt.borderLess: False
 !!字体设置
 Xft.dpi: 141
-! Xft.antialias: true
 ! URxvt.letterSpace: -1
 
-URxvt.font: xft:xos4 Terminus:antialias=True:size=12
-URxvt.boldfont: xft:xos4 Terminus:antialias=True:size=12
+URxvt.font: xft:xos4 Terminus:size=12,xft:TerminessTTF Nerd Font Mono:size=12
+URxvt.boldfont: xft:xos4 Terminus:size=12,xft:TerminessTTF Nerd Font Mono:size=12
 
 URxvt.background:   [70]#060404
 URxvt.foreground:       #c0c0c0
@@ -87,4 +86,4 @@ URxvt.color12 : #1f75fe
 ! URxvt.color15:          #ffffff
 
 Xcursor.theme: Breeze
-Xcursor.size: 24
+Xcursor.size: 32
