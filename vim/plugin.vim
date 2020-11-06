@@ -81,6 +81,10 @@ let g:indentLine_color_term = 6
 " let g:indentLine_char = '┆'
 " let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
+" Don't coneal symbol
+let g:indentLine_concealcursor = 'inc'
+let g:indentLine_conceallevel = 0
+
 " clang-format
 " let g:autoformat_autoindent = 0
 " let g:autoformat_retab = 0
@@ -438,6 +442,7 @@ hi CocErrorSign ctermfg=9
 hi CocWarningSign ctermfg=6
 " hi default CocUnderline cterm=undercurl gui=undercurl
 
+" 234=#1c1c1c 33=#0087ff
 hi Pmenu ctermbg=234 ctermfg=33
 hi PmenuSel ctermbg=236 ctermfg=202
 hi goSpaceError ctermbg=33

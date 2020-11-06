@@ -71,6 +71,7 @@ set colorcolumn=80
 set number
 " set relativenumber
 set ruler
+set conceallevel=0
 set ignorecase
 set hlsearch
 set incsearch
