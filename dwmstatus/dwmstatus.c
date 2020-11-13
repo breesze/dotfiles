@@ -79,7 +79,7 @@ void setstatus(char *str)
   XSync(dpy, False);
 }
 
-/*
+
 char *loadavg(void)
 {
   double avgs[3];
@@ -88,7 +88,7 @@ char *loadavg(void)
 
   return smprintf("%.2f %.2f %.2f", avgs[0], avgs[1], avgs[2]);
 }
-*/
+
 
 char *readfile(char *base, char *file)
 {
