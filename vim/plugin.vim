@@ -4,27 +4,28 @@ Plug 'tomasr/molokai'
 Plug 'itchyny/lightline.vim'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'Yggdroot/indentLine'
+Plug 'plasticboy/vim-markdown'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'preservim/nerdcommenter'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'easymotion/vim-easymotion'
-Plug 'Chiel92/vim-autoformat'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-
-Plug 'preservim/nerdtree'
-Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
-Plug 'majutsushi/tagbar'
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'Chiel92/vim-autoformat'
+Plug 'preservim/nerdcommenter'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
+Plug 'majutsushi/tagbar'
+Plug 'preservim/nerdtree'
+Plug 'easymotion/vim-easymotion'
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'honza/vim-snippets'
-Plug 'SirVer/ultisnips',{ 'for': ['c', 'cpp', 'rust', 'markdown', 'go', 'html'] }
-Plug 'Yggdroot/LeaderF',{ 'do': './install.sh' }
-" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'SirVer/ultisnips', { 'for': ['c', 'cpp', 'rust', 'markdown', 'go', 'html'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'mhinz/vim-startify'
 " Plug 'dense-analysis/ale',{ 'for':['c','cpp'] }
@@ -306,8 +307,8 @@ let g:tagbar_compact=1
 set updatetime=100
 let g:gitgutter_sign_allow_clobber = 1
 
-nmap ]h <Plug>(GitGutterNextHunk)
-nmap [h <Plug>(GitGutterPrevHunk)
+nmap ]c <Plug>(GitGutterNextHunk)
+nmap [c <Plug>(GitGutterPrevHunk)
 " nmap ghs <Plug>(GitGutterStageHunk)
 " nmap ghu <Plug>(GitGutterUndoHunk)
 " nmap ghp <Plug>(GitGutterPreviewHunk)
