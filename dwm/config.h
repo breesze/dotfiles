@@ -1,34 +1,36 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int snap      = 32;       /* snap pixel */
-static const unsigned int gaps      = 20;
-static const unsigned int gappih    = gaps;       /* horiz inner gap between windows */
-static const unsigned int gappiv    = gaps;       /* vert inner gap between windows */
-static const unsigned int gappoh    = gaps;       /* horiz outer gap between windows and screen edge */
-static const unsigned int gappov    = gaps;       /* vert outer gap between windows and screen edge */
-static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
-static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = {"SarasaMonoCL:style=Semibold:size=10","FontAwesome5Free:style=Solid:size=9","FontAwesome5Free:style=Regular:size=9", "FontAwesome5Brands:style=Regular:size=9"};
-static const char dmenufont[]       = "SarasaMonoCLSemibold:size=10";
+static const unsigned int borderpx = 2;  /* border pixel of windows */
+static const unsigned int snap     = 32; /* snap pixel */
+static const unsigned int gaps     = 20;
+static const unsigned int gappih   = gaps; /* horiz inner gap between windows */
+static const unsigned int gappiv   = gaps; /* vert inner gap between windows */
+static const unsigned int gappoh   = gaps; /* horiz outer gap between windows and screen edge */
+static const unsigned int gappov   = gaps; /* vert outer gap between windows and screen edge */
+static const int smartgaps         = 0;    /* 1 means no outer gap when there is only one window */
+static const int showbar           = 1;    /* 0 means no bar */
+static const int topbar            = 1;    /* 0 means bottom bar */
+static const char *fonts[]         = {
+    "SarasaMonoCL:style=Semibold:size=10", "FontAwesome5Free:style=Solid:size=9",
+    "FontAwesome5Free:style=Regular:size=9", "FontAwesome5Brands:style=Regular:size=9"};
+static const char dmenufont[] = "SarasaMonoCLSemibold:size=10";
 
-static const char col_pink[]        = "#D7005F";
-static const char col_blue[]        = "#00bbff";
-static const char col_black[]       = "#1a1a1a";
-static const char col_gray[]        = "#202020";
-static const char col_cyan[]        = "#00ffff";
-static const char col_green[]       = "#44ff00";
-static const char col_white[]       = "#c0c0c0";
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-    [SchemeNorm] = { col_pink, col_black, col_pink },
-	[SchemeSel]  = { col_blue, col_gray,  col_blue },
+static const char col_pink[]   = "#D7005F";
+static const char col_blue[]   = "#00bbff";
+static const char col_black[]  = "#1a1a1a";
+static const char col_gray[]   = "#202020";
+static const char col_cyan[]   = "#00ffff";
+static const char col_green[]  = "#44ff00";
+static const char col_white[]  = "#c0c0c0";
+static const char *colors[][3] = {
+    /*               fg         bg         border   */
+    [SchemeNorm] = {col_pink, col_black, col_pink},
+    [SchemeSel]  = {col_blue, col_gray, col_blue},
 };
 
 /* tagging */
-static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九" };
+static const char *tags[] = {"一", "二", "三", "四", "五", "六", "七", "八", "九"};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -36,14 +38,14 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-    { "feh",                    NULL,       NULL,       0,            1,           -1 },
-    { "mpv",                    NULL,       NULL,       0,            1,           -1 },
-    { "obs",                    NULL,       NULL,       0,            1,           -1 },
-    { "qv2ray",                 NULL,       NULL,       0,            1,           -1 },
-    { "qBittorrent",            NULL,       NULL,       0,            1,           -1 },
-    { "Pcmanfm",                NULL,       NULL,       0,            1,           -1 },
-    { "TelegramDesktop",        NULL,       NULL,       0,            1,           -1 },
-    { "VirtualBox Manager",     NULL,       NULL,       0,            1,           -1 },
+    { "feh",                    NULL,         NULL,        0,      1,     -1 },
+    { "mpv",                    NULL,         NULL,        0,      1,     -1 },
+    { "obs",                    NULL,         NULL,        0,      1,     -1 },
+    { "qv2ray",                 NULL,         NULL,        0,      1,     -1 },
+    { "qBittorrent",            NULL,         NULL,        0,      1,     -1 },
+    { "Pcmanfm",                NULL,         NULL,        0,      1,     -1 },
+    { "TelegramDesktop",        NULL,         NULL,        0,      1,     -1 },
+    { "VirtualBox Manager",     NULL,         NULL,        0,      1,     -1 },
 };
 
 /* layout(s) */
@@ -69,7 +71,9 @@ static const Layout layouts[] = {
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
-
+// '[' and ']'
+#define XK_bl XK_bracketleft
+#define XK_br XK_bracketright
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray, "-nf", col_white, "-sb", col_cyan, "-sf", col_gray, NULL };
@@ -84,8 +88,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY|ControlMask,           XK_r,      incnmaster,     {.i = +1 } },
 	{ MODKEY|ControlMask|ShiftMask, XK_r,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ MODKEY|ShiftMask,             XK_h,      setmfact,       {.f = -0.05} },
+	{ MODKEY|ShiftMask,             XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_n,      zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_w,      killclient,     {0} },
@@ -100,6 +104,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -111,7 +116,11 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|AltMask,               XK_e,      quit,           {0} },
     
-    // patch: dwm-vanitygaps-20200610-f09418b.diff
+	// [patch] next prev tag
+	{ MODKEY,                       XK_h,      view_adjacent, {.i = -1 } },
+	{ MODKEY,                       XK_l,      view_adjacent, {.i = +1 } },
+
+    // [patch] dwm-vanitygaps-20200610-f09418b.diff
  	{ MODKEY|Mod1Mask,              XK_t,      incrgaps,       {.i = +1 } },
  	{ MODKEY|Mod1Mask,              XK_y,      incrgaps,       {.i = -1 } },
  	{ MODKEY|Mod1Mask|ShiftMask,    XK_t,      incrogaps,      {.i = +1 } },
@@ -138,16 +147,17 @@ static Key keys[] = {
 	{ MODKEY,                       XK_o,      spawn,          SHCMD("scrot -bmpe 'mv $f ~/downloads/screenshots/'") },
 	{ MODKEY|ShiftMask,             XK_i,      spawn,          SHCMD("scrot -bmpq 100 -e 'mv $f ~/downloads/screenshots/'") },
 	{ MODKEY|ShiftMask,             XK_o,      spawn,          SHCMD("scrot -bmpq 100 -cd 5 -e 'mv $f ~/downloads/screenshots/'") },
-	{ MODKEY|AltMask,               XK_p,      spawn,          SHCMD("i3lock -n -B picom --indicator -k --timecolor=\"D7005F\" --datecolor=\"D7005F\" --ringcolor=\"1a1a1a\" --keyhlcolor=\"D7005f\"") },
+	{ MODKEY|AltMask,               XK_p,      spawn,          
+	    SHCMD("i3lock -n -B picom --indicator -k --timecolor=\"D7005F\" --datecolor=\"D7005F\" --ringcolor=\"1a1a1a\" --keyhlcolor=\"D7005f\"") },
 
-	{ MODKEY|ShiftMask,     XK_bracketleft,     spawn,   SHCMD("amixer set Master playback 5-") },
-	{ MODKEY|ShiftMask,     XK_bracketright,    spawn,   SHCMD("amixer set Master playback 5+") },
-	{ MODKEY|AltMask,       XK_bracketleft,     spawn,   SHCMD("xbacklight -dec 5") },
-	{ MODKEY|AltMask,       XK_bracketright,    spawn,   SHCMD("xbacklight -inc 5") },
-    { MODKEY|ControlMask,   XK_m,               spawn,   SHCMD("pactl set-sink-mute 0 toggle") },
-	{ MODKEY,               XK_z,               spawn,   SHCMD("mpc prev") },
-	{ MODKEY,               XK_c,               spawn,   SHCMD("mpc next") },
-	{ MODKEY,               XK_x,               spawn,   SHCMD("mpc toggle") },
+	{ MODKEY|ShiftMask,             XK_bl,     spawn,   SHCMD("amixer set Master playback 5-") },
+	{ MODKEY|ShiftMask,             XK_br,     spawn,   SHCMD("amixer set Master playback 5+") },
+	{ MODKEY|AltMask,               XK_bl,     spawn,   SHCMD("xbacklight -dec 5") },
+	{ MODKEY|AltMask,               XK_br,     spawn,   SHCMD("xbacklight -inc 5") },
+    { MODKEY|ControlMask,           XK_m,      spawn,   SHCMD("pactl set-sink-mute 0 toggle") },
+	{ MODKEY,                       XK_z,      spawn,   SHCMD("mpc prev") },
+	{ MODKEY,                       XK_c,      spawn,   SHCMD("mpc next") },
+	{ MODKEY,                       XK_x,      spawn,   SHCMD("mpc toggle") },
 
 	{ 0, XF86XK_MonBrightnessUp,	spawn,		SHCMD("xbacklight -inc 5") },
 	{ 0, XF86XK_MonBrightnessDown,	spawn,		SHCMD("xbacklight -dec 5") },
@@ -180,4 +190,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
