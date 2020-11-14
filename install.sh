@@ -13,15 +13,15 @@ ln -siv $path/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 # ln -siv $path/aria2/dht6.dat ~/.aria2/dht6.dat
 
 # bspwm
-ln -siv $path/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-ln -siv $path/bspwm/sxhkdrc ~/.config/sxhkd/sxhkdrc
+# ln -siv $path/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
+# ln -siv $path/bspwm/sxhkdrc ~/.config/sxhkd/sxhkdrc
 
 # dwm
 ln -siv $path/dwm/startdwm ~/.startdwm
 ln -siv $path/dwmstatus/startdwmstatus ~/.startdwmstatus
 
 # feh
-ln -siv $path/wallpapers/fehbg ~/.fehbg
+ln -siv $path/pictures/fehbg ~/.fehbg
 
 # fontconfig
 ln -siv $path/fontconfig/fonts.conf ~/.config/fontconfig/fonts.conf/fontts.conf
