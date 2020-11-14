@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/home/lag/.dotfiles/pictures/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg-towner-JgOeRuGD_Y4-unsplash.jpg' 
+feh --no-fehbg --bg-fill '/home/lag/.dotfiles/pictures/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg' 
