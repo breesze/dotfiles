@@ -11,7 +11,7 @@
 
 # Aria2下载目录
 # TIPS：一键脚本推荐使用选项进行修改，Docker 无需修改。
-downloadpath='~/downloads'
+downloadpath='~/Downloads'
 
 #=====================================================
 
