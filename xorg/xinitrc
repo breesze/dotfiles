@@ -49,11 +49,12 @@ exec redshift &
 exec picom &
 exec keynav &
 
-exec alacritty &
 exec ~/.fehbg &
-exec ~/.startdwmstatus &
-exec ~/.startdwm
+exec alacritty &
+exec bspwm
 
 # abandon
 # exec aria2c --conf-path=<path to aria2.conf> &
 # exec i3 -V >> ~/.config/i3/log/i3log-$(date +'%F-%k-%M-%S') 2>&1
+# exec ~/.startdwmstatus &
+# exec ~/.startdwm
