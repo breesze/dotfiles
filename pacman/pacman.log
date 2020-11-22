@@ -9027,3 +9027,408 @@ filesystem: 700  package: 755
 [2020-11-14T00:52:21+0800] [PACMAN] synchronizing package lists
 [2020-11-14T00:59:26+0800] [PACMAN] Running 'pacman -Syu'
 [2020-11-14T00:59:26+0800] [PACMAN] synchronizing package lists
+[2020-11-14T23:58:38+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-14T23:58:38+0800] [PACMAN] synchronizing package lists
+[2020-11-14T23:58:38+0800] [PACMAN] starting full system upgrade
+[2020-11-15T10:30:18+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-15T10:30:18+0800] [PACMAN] synchronizing package lists
+[2020-11-15T10:30:35+0800] [PACMAN] starting full system upgrade
+[2020-11-15T10:41:01+0800] [ALPM] transaction started
+[2020-11-15T10:41:03+0800] [ALPM] upgraded go (2:1.15.5-1 -> 2:1.15.5-2)
+[2020-11-15T10:41:03+0800] [ALPM] upgraded imagemagick (7.0.10.37-1 -> 7.0.10.38-1)
+[2020-11-15T10:41:05+0800] [ALPM] upgraded ttf-sarasa-gothic (0.14.5-1 -> 0.15.0-1)
+[2020-11-15T10:41:05+0800] [ALPM] upgraded v2ray-domain-list-community (20201112075523-1 -> 20201114162208-1)
+[2020-11-15T10:41:05+0800] [ALPM] transaction completed
+[2020-11-15T10:41:05+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-15T10:41:05+0800] [ALPM] running 'detect-old-perl-modules.hook'...
+[2020-11-15T10:41:05+0800] [ALPM] running 'fontconfig.hook'...
+[2020-11-15T10:41:07+0800] [ALPM] running 'xorg-mkfontscale.hook'...
+[2020-11-15T13:08:47+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-15T13:08:47+0800] [PACMAN] synchronizing package lists
+[2020-11-15T13:08:47+0800] [PACMAN] starting full system upgrade
+[2020-11-15T17:59:59+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-15T17:59:59+0800] [PACMAN] synchronizing package lists
+[2020-11-15T18:00:13+0800] [PACMAN] starting full system upgrade
+[2020-11-15T18:00:42+0800] [ALPM] transaction started
+[2020-11-15T18:00:42+0800] [ALPM] upgraded libibus (1.5.22+8+gf591381e-1 -> 1.5.23+1+gdd4cc5b0-1)
+[2020-11-15T18:00:42+0800] [ALPM] upgraded python-pep517 (0.8.2-1 -> 0.9.1-1)
+[2020-11-15T18:00:42+0800] [ALPM] upgraded python-resolvelib (0.4.0-1 -> 0.5.1-1)
+[2020-11-15T18:00:42+0800] [ALPM] installed python-pyopenssl (19.1.0-2)
+[2020-11-15T18:00:42+0800] [ALPM] upgraded python-pip (20.1.1-1 -> 20.2-1)
+[2020-11-15T18:00:43+0800] [ALPM] transaction completed
+[2020-11-15T18:00:43+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-16T10:44:29+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-16T10:44:29+0800] [PACMAN] synchronizing package lists
+[2020-11-16T10:44:38+0800] [PACMAN] starting full system upgrade
+[2020-11-16T15:44:01+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-16T15:44:01+0800] [PACMAN] synchronizing package lists
+[2020-11-16T15:44:04+0800] [PACMAN] starting full system upgrade
+[2020-11-16T15:44:09+0800] [ALPM] transaction started
+[2020-11-16T15:44:09+0800] [ALPM] upgraded ca-certificates-mozilla (3.58-2 -> 3.59-1)
+[2020-11-16T15:44:09+0800] [ALPM] upgraded kitemviews (5.75.0-1 -> 5.76.0-1)
+[2020-11-16T15:44:09+0800] [ALPM] upgraded kwidgetsaddons (5.75.0-1 -> 5.76.0-1)
+[2020-11-16T15:44:09+0800] [ALPM] upgraded nss (3.58-2 -> 3.59-1)
+[2020-11-16T15:44:09+0800] [ALPM] upgraded universal-ctags-git (r8071.9bb75d022-1 -> r8086.caca347a2-1)
+[2020-11-16T15:44:09+0800] [ALPM] upgraded v2ray-domain-list-community (20201114162208-1 -> 20201115055442-1)
+[2020-11-16T15:44:09+0800] [ALPM] upgraded v2ray-geoip (202011120012-1 -> 202011150541-1)
+[2020-11-16T15:44:09+0800] [ALPM] upgraded vim-runtime (8.2.1704-1 -> 8.2.1989-2)
+[2020-11-16T15:44:09+0800] [ALPM] upgraded vim (8.2.1704-1 -> 8.2.1989-2)
+[2020-11-16T15:44:09+0800] [ALPM] transaction completed
+[2020-11-16T15:44:09+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-16T15:44:09+0800] [ALPM] running '40-update-ca-trust.hook'...
+[2020-11-16T15:44:10+0800] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2020-11-16T15:44:10+0800] [ALPM] running 'update-desktop-database.hook'...
+[2020-11-16T16:29:52+0800] [PACMAN] Running 'pacman -U --noconfirm --config /etc/pacman.conf -- /home/lag/.cache/yay/lazygit-git/lazygit-git-0.23.6.r4.6faed08d-1-x86_64.pkg.tar.zst'
+[2020-11-16T16:29:52+0800] [ALPM] transaction started
+[2020-11-16T16:29:52+0800] [ALPM] installed lazygit-git (0.23.6.r4.6faed08d-1)
+[2020-11-16T16:29:52+0800] [ALPM] transaction completed
+[2020-11-16T16:29:52+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-16T23:56:53+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-16T23:56:53+0800] [PACMAN] synchronizing package lists
+[2020-11-16T23:56:54+0800] [PACMAN] starting full system upgrade
+[2020-11-17T15:41:04+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-17T15:41:04+0800] [PACMAN] synchronizing package lists
+[2020-11-17T15:41:08+0800] [PACMAN] starting full system upgrade
+[2020-11-17T15:42:31+0800] [ALPM] transaction started
+[2020-11-17T15:42:31+0800] [ALPM] upgraded pam (1.4.0-3 -> 1.5.0-1)
+[2020-11-17T15:42:31+0800] [ALPM] upgraded libcap (2.44-1 -> 2.45-2)
+[2020-11-17T15:42:31+0800] [ALPM] upgraded libdrm (2.4.103-1 -> 2.4.103-2)
+[2020-11-17T15:42:31+0800] [ALPM] upgraded libmm-glib (1.14.6-1 -> 1.14.8-1)
+[2020-11-17T15:42:31+0800] [ALPM] upgraded nodejs (15.2.0-1 -> 15.2.1-1)
+[2020-11-17T15:42:32+0800] [ALPM] upgraded ttf-sarasa-gothic (0.15.0-1 -> 0.15.1-1)
+[2020-11-17T15:42:32+0800] [ALPM] upgraded usbutils (012-2 -> 013-1)
+[2020-11-17T15:42:32+0800] [ALPM] upgraded xorg-server-common (1.20.9-2 -> 1.20.9-3)
+[2020-11-17T15:42:32+0800] [ALPM] upgraded xorg-server (1.20.9-2 -> 1.20.9-3)
+[2020-11-17T15:42:33+0800] [ALPM] transaction completed
+[2020-11-17T15:42:33+0800] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2020-11-17T15:42:33+0800] [ALPM] running '30-systemd-tmpfiles.hook'...
+[2020-11-17T15:42:33+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-17T15:42:33+0800] [ALPM] running 'fontconfig.hook'...
+[2020-11-17T15:42:34+0800] [ALPM] running 'xorg-mkfontscale.hook'...
+[2020-11-17T22:35:24+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-17T22:35:24+0800] [PACMAN] synchronizing package lists
+[2020-11-17T22:35:24+0800] [PACMAN] starting full system upgrade
+[2020-11-18T10:21:41+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-18T10:21:41+0800] [PACMAN] synchronizing package lists
+[2020-11-18T10:21:45+0800] [PACMAN] starting full system upgrade
+[2020-11-18T10:22:16+0800] [ALPM] transaction started
+[2020-11-18T10:22:16+0800] [ALPM] upgraded adobe-source-code-pro-fonts (2.030ro+1.050it-6 -> 2.032ro+1.052it+1.012var-1)
+[2020-11-18T10:22:17+0800] [ALPM] upgraded firefox (82.0.3-1 -> 83.0-1)
+[2020-11-18T10:22:17+0800] [ALPM] transaction completed
+[2020-11-18T10:22:17+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-18T10:22:17+0800] [ALPM] running 'fontconfig.hook'...
+[2020-11-18T10:22:17+0800] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2020-11-18T10:22:17+0800] [ALPM] running 'update-desktop-database.hook'...
+[2020-11-18T10:22:17+0800] [ALPM] running 'xorg-mkfontscale.hook'...
+[2020-11-18T11:05:52+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-18T11:05:52+0800] [PACMAN] synchronizing package lists
+[2020-11-18T11:05:52+0800] [PACMAN] starting full system upgrade
+[2020-11-18T12:18:21+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-18T12:18:21+0800] [PACMAN] synchronizing package lists
+[2020-11-18T12:18:22+0800] [PACMAN] starting full system upgrade
+[2020-11-18T12:18:26+0800] [ALPM] transaction started
+[2020-11-18T12:18:26+0800] [ALPM] upgraded yay (10.1.0-1 -> 10.1.1-1)
+[2020-11-18T12:18:26+0800] [ALPM] transaction completed
+[2020-11-18T12:18:26+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-18T19:20:03+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-18T19:20:03+0800] [PACMAN] synchronizing package lists
+[2020-11-18T19:20:08+0800] [PACMAN] starting full system upgrade
+[2020-11-18T19:20:40+0800] [ALPM] transaction started
+[2020-11-18T19:20:41+0800] [ALPM] upgraded js78 (78.4.1-1 -> 78.5.0-1)
+[2020-11-18T19:20:41+0800] [ALPM] upgraded telegram-desktop (2.4.7-2 -> 2.4.7-3)
+[2020-11-18T19:20:41+0800] [ALPM] transaction completed
+[2020-11-18T19:20:41+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-18T19:20:41+0800] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2020-11-18T19:20:41+0800] [ALPM] running 'update-desktop-database.hook'...
+[2020-11-18T19:42:31+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-18T19:42:31+0800] [PACMAN] synchronizing package lists
+[2020-11-18T19:42:31+0800] [PACMAN] starting full system upgrade
+[2020-11-19T09:50:10+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-19T09:50:10+0800] [PACMAN] synchronizing package lists
+[2020-11-19T09:50:13+0800] [PACMAN] starting full system upgrade
+[2020-11-19T09:50:24+0800] [ALPM] transaction started
+[2020-11-19T09:50:24+0800] [ALPM] upgraded cmake (3.18.4-1 -> 3.18.5-1)
+[2020-11-19T09:50:24+0800] [ALPM] upgraded imagemagick (7.0.10.38-1 -> 7.0.10.39-1)
+[2020-11-19T09:50:24+0800] [ALPM] upgraded universal-ctags-git (r8086.caca347a2-1 -> r8090.2aa034a30-1)
+[2020-11-19T09:50:24+0800] [ALPM] upgraded v2ray-domain-list-community (20201115055442-1 -> 20201117215431-1)
+[2020-11-19T09:50:24+0800] [ALPM] upgraded v2ray-geoip (202011150541-1 -> 202011181755-1)
+[2020-11-19T09:50:24+0800] [ALPM] transaction completed
+[2020-11-19T09:50:25+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-19T09:50:25+0800] [ALPM] running 'detect-old-perl-modules.hook'...
+[2020-11-19T09:50:25+0800] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2020-11-19T09:50:25+0800] [ALPM] running 'update-desktop-database.hook'...
+[2020-11-19T09:50:25+0800] [ALPM] running 'update-mime-database.hook'...
+[2020-11-19T12:50:05+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-19T12:50:05+0800] [PACMAN] synchronizing package lists
+[2020-11-19T12:50:14+0800] [PACMAN] starting full system upgrade
+[2020-11-19T18:31:49+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-19T18:31:49+0800] [PACMAN] synchronizing package lists
+[2020-11-19T18:32:10+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-19T18:32:10+0800] [PACMAN] synchronizing package lists
+[2020-11-19T18:32:11+0800] [PACMAN] starting full system upgrade
+[2020-11-20T01:48:48+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-20T01:48:48+0800] [PACMAN] synchronizing package lists
+[2020-11-20T01:48:48+0800] [PACMAN] starting full system upgrade
+[2020-11-20T10:13:58+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-20T10:13:58+0800] [PACMAN] synchronizing package lists
+[2020-11-20T10:14:02+0800] [PACMAN] starting full system upgrade
+[2020-11-20T10:16:36+0800] [ALPM] running '60-mkinitcpio-remove.hook'...
+[2020-11-20T10:16:36+0800] [ALPM] running '71-dkms-remove.hook'...
+[2020-11-20T10:16:36+0800] [ALPM-SCRIPTLET] ==> dkms remove --no-depmod -m vboxhost -v 6.1.16_OSE -k 5.9.8-arch1-1
+[2020-11-20T10:16:37+0800] [ALPM-SCRIPTLET] ==> depmod 5.9.8-arch1-1
+[2020-11-20T10:16:45+0800] [ALPM] transaction started
+[2020-11-20T10:16:45+0800] [ALPM] upgraded c-ares (1.16.1-2 -> 1.17.1-1)
+[2020-11-20T10:16:45+0800] [ALPM] upgraded util-linux-libs (2.36-4 -> 2.36.1-3)
+[2020-11-20T10:16:45+0800] [ALPM] upgraded gpgme (1.14.0-1 -> 1.15.0-1)
+[2020-11-20T10:16:45+0800] [ALPM] upgraded intel-ucode (20201112-1 -> 20201118-1)
+[2020-11-20T10:16:45+0800] [ALPM] upgraded util-linux (2.36-4 -> 2.36.1-3)
+[2020-11-20T10:16:46+0800] [ALPM] upgraded linux (5.9.8.arch1-1 -> 5.9.9.arch1-1)
+[2020-11-20T10:16:47+0800] [ALPM] upgraded linux-firmware (20201023.dae4b4c-1 -> 20201113.2ea8667-1)
+[2020-11-20T10:16:50+0800] [ALPM] upgraded linux-headers (5.9.8.arch1-1 -> 5.9.9.arch1-1)
+[2020-11-20T10:16:50+0800] [ALPM] upgraded lsof (4.93.2-3 -> 4.94.0-1)
+[2020-11-20T10:16:50+0800] [ALPM] upgraded tor-browser (10.0.4-1 -> 10.0.5-1)
+[2020-11-20T10:16:50+0800] [ALPM-SCRIPTLET] 
+[2020-11-20T10:16:50+0800] [ALPM-SCRIPTLET] ==> The tor-browser copy in your home directory will be upgraded at the
+[2020-11-20T10:16:50+0800] [ALPM-SCRIPTLET] ==> first time you run it as your normal user!
+[2020-11-20T10:16:50+0800] [ALPM-SCRIPTLET] ==> Just start and have fun.
+[2020-11-20T10:16:50+0800] [ALPM-SCRIPTLET] 
+[2020-11-20T10:16:50+0800] [ALPM] upgraded universal-ctags-git (r8090.2aa034a30-1 -> r8094.f22450923-1)
+[2020-11-20T10:16:50+0800] [ALPM] upgraded v2ray-geoip (202011181755-1 -> 202011190012-1)
+[2020-11-20T10:16:51+0800] [ALPM] transaction completed
+[2020-11-20T10:16:51+0800] [ALPM] running '20-systemd-sysusers.hook'...
+[2020-11-20T10:16:51+0800] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2020-11-20T10:16:52+0800] [ALPM] running '30-systemd-tmpfiles.hook'...
+[2020-11-20T10:16:52+0800] [ALPM] running '30-systemd-udev-reload.hook'...
+[2020-11-20T10:16:52+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-20T10:16:52+0800] [ALPM] running '60-depmod.hook'...
+[2020-11-20T10:16:58+0800] [ALPM] running '70-dkms-install.hook'...
+[2020-11-20T10:16:58+0800] [ALPM-SCRIPTLET] ==> dkms install --no-depmod -m vboxhost -v 6.1.16_OSE -k 5.9.9-arch1-1
+[2020-11-20T10:17:11+0800] [ALPM-SCRIPTLET] ==> depmod 5.9.9-arch1-1
+[2020-11-20T10:17:18+0800] [ALPM] running '90-mkinitcpio-install.hook'...
+[2020-11-20T10:17:18+0800] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+[2020-11-20T10:17:18+0800] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+[2020-11-20T10:17:18+0800] [ALPM-SCRIPTLET] ==> Starting build: 5.9.9-arch1-1
+[2020-11-20T10:17:18+0800] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2020-11-20T10:17:18+0800] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2020-11-20T10:17:18+0800] [ALPM-SCRIPTLET]   -> Running build hook: [resume]
+[2020-11-20T10:17:18+0800] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2020-11-20T10:17:18+0800] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2020-11-20T10:17:18+0800] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2020-11-20T10:17:19+0800] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: xhci_pci
+[2020-11-20T10:17:19+0800] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2020-11-20T10:17:19+0800] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2020-11-20T10:17:20+0800] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2020-11-20T10:17:20+0800] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2020-11-20T10:17:20+0800] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-linux.img
+[2020-11-20T10:17:21+0800] [ALPM-SCRIPTLET] ==> Image generation successful
+[2020-11-20T10:17:21+0800] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+[2020-11-20T10:17:21+0800] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+[2020-11-20T10:17:21+0800] [ALPM-SCRIPTLET] ==> Starting build: 5.9.9-arch1-1
+[2020-11-20T10:17:21+0800] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2020-11-20T10:17:21+0800] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2020-11-20T10:17:22+0800] [ALPM-SCRIPTLET]   -> Running build hook: [resume]
+[2020-11-20T10:17:22+0800] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2020-11-20T10:17:22+0800] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2020-11-20T10:17:22+0800] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: wd719x
+[2020-11-20T10:17:22+0800] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2020-11-20T10:17:24+0800] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: xhci_pci
+[2020-11-20T10:17:25+0800] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2020-11-20T10:17:26+0800] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2020-11-20T10:17:27+0800] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2020-11-20T10:17:28+0800] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2020-11-20T10:17:29+0800] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-linux-fallback.img
+[2020-11-20T10:17:33+0800] [ALPM-SCRIPTLET] ==> Image generation successful
+[2020-11-20T10:17:33+0800] [ALPM] running 'texinfo-install.hook'...
+[2020-11-20T10:17:33+0800] [ALPM] running 'update-desktop-database.hook'...
+[2020-11-20T16:45:07+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-20T16:45:07+0800] [PACMAN] synchronizing package lists
+[2020-11-20T16:45:10+0800] [PACMAN] starting full system upgrade
+[2020-11-20T16:45:28+0800] [ALPM] transaction started
+[2020-11-20T16:45:28+0800] [ALPM] upgraded alsa-card-profiles (13.99.3-1 -> 13.99.3+4+gd83ad6990-1)
+[2020-11-20T16:45:28+0800] [ALPM] upgraded libpulse (13.99.3-1 -> 13.99.3+4+gd83ad6990-1)
+[2020-11-20T16:45:29+0800] [ALPM] upgraded pulseaudio (13.99.3-1 -> 13.99.3+4+gd83ad6990-1)
+[2020-11-20T16:45:29+0800] [ALPM] transaction completed
+[2020-11-20T16:45:29+0800] [ALPM] running '30-systemd-udev-reload.hook'...
+[2020-11-20T16:45:29+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-20T16:45:29+0800] [ALPM] running 'glib-compile-schemas.hook'...
+[2020-11-21T00:33:06+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-21T00:33:06+0800] [PACMAN] synchronizing package lists
+[2020-11-21T00:33:07+0800] [PACMAN] starting full system upgrade
+[2020-11-22T00:15:21+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-22T00:15:21+0800] [PACMAN] synchronizing package lists
+[2020-11-22T00:15:24+0800] [PACMAN] starting full system upgrade
+[2020-11-22T00:15:43+0800] [ALPM] transaction started
+[2020-11-22T00:15:44+0800] [ALPM] upgraded cmake (3.18.5-1 -> 3.19.0-1)
+[2020-11-22T00:15:44+0800] [ALPM] upgraded libcups (2.3.3-3 -> 2.3.3+106+ga72b0140e-1)
+[2020-11-22T00:15:44+0800] [ALPM] upgraded xorg-xprop (1.2.4-2 -> 1.2.5-1)
+[2020-11-22T00:15:44+0800] [ALPM] upgraded mpv (1:0.32.0-5 -> 1:0.32.0-6)
+[2020-11-22T00:15:44+0800] [ALPM] upgraded universal-ctags-git (r8094.f22450923-1 -> r8102.4a9f00a1c-1)
+[2020-11-22T00:15:44+0800] [ALPM] upgraded v2ray-domain-list-community (20201117215431-1 -> 20201120043726-1)
+[2020-11-22T00:15:44+0800] [ALPM] upgraded xorg-server-common (1.20.9-3 -> 1.20.9.r21.g5c400cae1-2)
+[2020-11-22T00:15:44+0800] [ALPM] upgraded xorg-server (1.20.9-3 -> 1.20.9.r21.g5c400cae1-2)
+[2020-11-22T00:15:44+0800] [ALPM] transaction completed
+[2020-11-22T00:15:44+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-22T00:15:44+0800] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2020-11-22T00:15:44+0800] [ALPM] running 'update-desktop-database.hook'...
+[2020-11-22T00:15:44+0800] [ALPM] running 'update-mime-database.hook'...
+[2020-11-22T12:22:51+0800] [PACMAN] Running 'pacman -Syu'
+[2020-11-22T12:22:51+0800] [PACMAN] synchronizing package lists
+[2020-11-22T12:23:04+0800] [PACMAN] starting full system upgrade
+[2020-11-22T12:25:28+0800] [ALPM] transaction started
+[2020-11-22T12:25:28+0800] [ALPM] upgraded libjpeg-turbo (2.0.5-3 -> 2.0.6-1)
+[2020-11-22T12:25:28+0800] [ALPM] upgraded imagemagick (7.0.10.39-1 -> 7.0.10.41-1)
+[2020-11-22T12:25:28+0800] [ALPM] upgraded librsvg (2:2.50.1-1 -> 2:2.50.2-1)
+[2020-11-22T12:25:28+0800] [ALPM] upgraded libxkbcommon (1.0.1-1 -> 1.0.2-1)
+[2020-11-22T12:25:28+0800] [ALPM] upgraded libxkbcommon-x11 (1.0.1-1 -> 1.0.2-1)
+[2020-11-22T12:25:29+0800] [ALPM] upgraded ttf-sarasa-gothic (0.15.1-1 -> 0.15.2-1)
+[2020-11-22T12:25:29+0800] [ALPM] upgraded universal-ctags-git (r8102.4a9f00a1c-1 -> r8104.1b2f82fdb-1)
+[2020-11-22T12:25:29+0800] [ALPM] transaction completed
+[2020-11-22T12:25:30+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-22T12:25:30+0800] [ALPM] running 'detect-old-perl-modules.hook'...
+[2020-11-22T12:25:30+0800] [ALPM] running 'fontconfig.hook'...
+[2020-11-22T12:25:31+0800] [ALPM] running 'gdk-pixbuf-query-loaders.hook'...
+[2020-11-22T12:25:31+0800] [ALPM] running 'xorg-mkfontscale.hook'...
+[2020-11-22T12:25:41+0800] [PACMAN] Running 'pacman -S rofi'
+[2020-11-22T12:25:43+0800] [ALPM] transaction started
+[2020-11-22T12:25:43+0800] [ALPM] installed libxdg-basedir (1.2.0-5)
+[2020-11-22T12:25:43+0800] [ALPM] installed rofi (1.6.0-1)
+[2020-11-22T12:25:43+0800] [ALPM] transaction completed
+[2020-11-22T12:25:43+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-22T12:32:55+0800] [PACMAN] Running 'pacman -S albert'
+[2020-11-22T12:32:59+0800] [ALPM] transaction started
+[2020-11-22T12:32:59+0800] [ALPM] installed qt5-charts (5.15.1-1)
+[2020-11-22T12:32:59+0800] [ALPM] installed qt5-graphicaleffects (5.15.1-1)
+[2020-11-22T12:32:59+0800] [ALPM] installed qt5-quickcontrols (5.15.1-1)
+[2020-11-22T12:32:59+0800] [ALPM] installed albert (0.16.1-2)
+[2020-11-22T12:32:59+0800] [ALPM] transaction completed
+[2020-11-22T12:32:59+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-22T12:32:59+0800] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2020-11-22T12:32:59+0800] [ALPM] running 'update-desktop-database.hook'...
+[2020-11-22T12:34:16+0800] [PACMAN] Running 'pacman -S --config /etc/pacman.conf -- community/libdbusmenu-glib community/libdbusmenu-gtk3 community/libindicator-gtk3 community/libappindicator-gtk3 extra/libkeybinder3 extra/harfbuzz-icu extra/libwpe extra/wpebackend-fdo extra/bubblewrap extra/xdg-dbus-proxy extra/webkit2gtk extra/python-dbus-common extra/python-dbus community/python-pyinotify community/python-levenshtein extra/python-pyxdg community/python-websocket-client extra/perl-encode-locale extra/perl-http-date extra/perl-file-listing extra/perl-html-tagset extra/perl-clone extra/perl-io-html extra/perl-lwp-mediatypes extra/perl-uri extra/perl-http-message extra/perl-html-parser extra/perl-http-cookies extra/perl-http-daemon extra/perl-http-negotiate extra/perl-net-http extra/perl-try-tiny extra/perl-www-robotrules extra/perl-libwww extra/perl-xml-parser extra/intltool community/python-distutils-extra'
+[2020-11-22T12:34:46+0800] [ALPM] transaction started
+[2020-11-22T12:34:46+0800] [ALPM] installed libdbusmenu-glib (16.04.0-4)
+[2020-11-22T12:34:46+0800] [ALPM] installed libdbusmenu-gtk3 (16.04.0-4)
+[2020-11-22T12:34:46+0800] [ALPM] installed libindicator-gtk3 (12.10.1-9)
+[2020-11-22T12:34:46+0800] [ALPM] installed libappindicator-gtk3 (12.10.0.r296-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed libkeybinder3 (0.3.2-3)
+[2020-11-22T12:34:46+0800] [ALPM] installed harfbuzz-icu (2.7.2-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed libwpe (1.8.0-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed wpebackend-fdo (1.8.0-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed bubblewrap (0.4.1-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed xdg-dbus-proxy (0.1.2-2)
+[2020-11-22T12:34:46+0800] [ALPM] installed webkit2gtk (2.30.3-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed python-dbus-common (1.2.16-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed python-dbus (1.2.16-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed python-pyinotify (0.9.6-7)
+[2020-11-22T12:34:46+0800] [ALPM] installed python-levenshtein (0.12.0-8)
+[2020-11-22T12:34:46+0800] [ALPM] installed python-pyxdg (0.26-6)
+[2020-11-22T12:34:46+0800] [ALPM] installed python-websocket-client (0.57.0-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-encode-locale (1.05-7)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-http-date (6.05-3)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-file-listing (6.11-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-html-tagset (3.20-10)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-clone (0.45-2)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-io-html (1.004-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-lwp-mediatypes (6.02-8)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-uri (5.05-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-http-message (6.26-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-html-parser (3.75-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-http-cookies (6.09-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-http-daemon (6.06-2)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-http-negotiate (6.01-8)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-net-http (6.19-4)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-try-tiny (0.30-5)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-www-robotrules (6.02-8)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-libwww (6.49-1)
+[2020-11-22T12:34:46+0800] [ALPM] installed perl-xml-parser (2.46-2)
+[2020-11-22T12:34:46+0800] [ALPM] installed intltool (0.51.0-6)
+[2020-11-22T12:34:46+0800] [ALPM] installed python-distutils-extra (2.39-5)
+[2020-11-22T12:34:46+0800] [ALPM] transaction completed
+[2020-11-22T12:34:46+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-22T12:34:46+0800] [ALPM] running 'detect-old-perl-modules.hook'...
+[2020-11-22T12:34:46+0800] [PACMAN] Running 'pacman -D --asdeps --config /etc/pacman.conf -- libdbusmenu-glib libdbusmenu-gtk3 libindicator-gtk3 libappindicator-gtk3 libkeybinder3 harfbuzz-icu libwpe wpebackend-fdo bubblewrap xdg-dbus-proxy webkit2gtk python-dbus-common python-dbus python-pyinotify python-levenshtein python-pyxdg python-websocket-client perl-encode-locale perl-http-date perl-file-listing perl-html-tagset perl-clone perl-io-html perl-lwp-mediatypes perl-uri perl-http-message perl-html-parser perl-http-cookies perl-http-daemon perl-http-negotiate perl-net-http perl-try-tiny perl-www-robotrules perl-libwww perl-xml-parser intltool python-distutils-extra'
+[2020-11-22T12:37:30+0800] [PACMAN] Running 'pacman -U --noconfirm --config /etc/pacman.conf -- /home/lag/.cache/yay/ulauncher/ulauncher-5.8.1-1-any.pkg.tar.zst'
+[2020-11-22T12:37:30+0800] [ALPM] transaction started
+[2020-11-22T12:37:30+0800] [ALPM] installed ulauncher (5.8.1-1)
+[2020-11-22T12:37:30+0800] [ALPM] transaction completed
+[2020-11-22T12:37:30+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-22T12:37:30+0800] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2020-11-22T12:37:30+0800] [ALPM] running 'update-desktop-database.hook'...
+[2020-11-22T12:37:31+0800] [PACMAN] Running 'pacman -R -u --noconfirm --config /etc/pacman.conf -- perl-encode-locale perl-http-date perl-file-listing perl-html-tagset perl-clone perl-io-html perl-lwp-mediatypes perl-uri perl-http-message perl-html-parser perl-http-cookies perl-http-daemon perl-http-negotiate perl-net-http perl-try-tiny perl-www-robotrules perl-libwww perl-xml-parser intltool python-distutils-extra'
+[2020-11-22T12:37:31+0800] [ALPM] transaction started
+[2020-11-22T12:37:31+0800] [ALPM] removed python-distutils-extra (2.39-5)
+[2020-11-22T12:37:31+0800] [ALPM] removed intltool (0.51.0-6)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-xml-parser (2.46-2)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-libwww (6.49-1)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-www-robotrules (6.02-8)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-try-tiny (0.30-5)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-net-http (6.19-4)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-http-negotiate (6.01-8)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-http-daemon (6.06-2)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-http-cookies (6.09-1)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-html-parser (3.75-1)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-http-message (6.26-1)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-uri (5.05-1)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-lwp-mediatypes (6.02-8)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-io-html (1.004-1)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-clone (0.45-2)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-html-tagset (3.20-10)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-file-listing (6.11-1)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-http-date (6.05-3)
+[2020-11-22T12:37:31+0800] [ALPM] removed perl-encode-locale (1.05-7)
+[2020-11-22T12:37:31+0800] [ALPM] transaction completed
+[2020-11-22T12:37:31+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-22T12:39:36+0800] [PACMAN] Running 'pacman -R -s -c --config /etc/pacman.conf -- ulauncher'
+[2020-11-22T12:39:37+0800] [ALPM] transaction started
+[2020-11-22T12:39:37+0800] [ALPM] removed ulauncher (5.8.1-1)
+[2020-11-22T12:39:37+0800] [ALPM] removed webkit2gtk (2.30.3-1)
+[2020-11-22T12:39:37+0800] [ALPM] removed xdg-dbus-proxy (0.1.2-2)
+[2020-11-22T12:39:37+0800] [ALPM] removed wpebackend-fdo (1.8.0-1)
+[2020-11-22T12:39:37+0800] [ALPM] removed libwpe (1.8.0-1)
+[2020-11-22T12:39:37+0800] [ALPM] removed harfbuzz-icu (2.7.2-1)
+[2020-11-22T12:39:37+0800] [ALPM] removed bubblewrap (0.4.1-1)
+[2020-11-22T12:39:37+0800] [ALPM] removed python-websocket-client (0.57.0-1)
+[2020-11-22T12:39:37+0800] [ALPM] removed python-pyxdg (0.26-6)
+[2020-11-22T12:39:37+0800] [ALPM] removed python-pyinotify (0.9.6-7)
+[2020-11-22T12:39:37+0800] [ALPM] removed python-levenshtein (0.12.0-8)
+[2020-11-22T12:39:37+0800] [ALPM] removed python-dbus (1.2.16-1)
+[2020-11-22T12:39:37+0800] [ALPM] removed python-dbus-common (1.2.16-1)
+[2020-11-22T12:39:37+0800] [ALPM] removed libkeybinder3 (0.3.2-3)
+[2020-11-22T12:39:37+0800] [ALPM] removed libappindicator-gtk3 (12.10.0.r296-1)
+[2020-11-22T12:39:37+0800] [ALPM] removed libindicator-gtk3 (12.10.1-9)
+[2020-11-22T12:39:37+0800] [ALPM] removed libdbusmenu-gtk3 (16.04.0-4)
+[2020-11-22T12:39:37+0800] [ALPM] removed libdbusmenu-glib (16.04.0-4)
+[2020-11-22T12:39:37+0800] [ALPM] transaction completed
+[2020-11-22T12:39:37+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-22T12:39:37+0800] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2020-11-22T12:39:37+0800] [ALPM] running 'update-desktop-database.hook'...
+[2020-11-22T13:28:11+0800] [PACMAN] Running 'pacman -Rsc albert'
+[2020-11-22T13:28:11+0800] [ALPM] transaction started
+[2020-11-22T13:28:11+0800] [ALPM] removed albert (0.16.1-2)
+[2020-11-22T13:28:11+0800] [ALPM] removed qt5-quickcontrols (5.15.1-1)
+[2020-11-22T13:28:11+0800] [ALPM] removed qt5-graphicaleffects (5.15.1-1)
+[2020-11-22T13:28:11+0800] [ALPM] removed qt5-charts (5.15.1-1)
+[2020-11-22T13:28:12+0800] [ALPM] transaction completed
+[2020-11-22T13:28:12+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-22T13:28:12+0800] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2020-11-22T13:28:12+0800] [ALPM] running 'update-desktop-database.hook'...
+[2020-11-22T14:13:49+0800] [PACMAN] Running 'pacman -S albert'
+[2020-11-22T14:13:50+0800] [ALPM] transaction started
+[2020-11-22T14:13:50+0800] [ALPM] installed qt5-charts (5.15.1-1)
+[2020-11-22T14:13:50+0800] [ALPM] installed qt5-graphicaleffects (5.15.1-1)
+[2020-11-22T14:13:50+0800] [ALPM] installed qt5-quickcontrols (5.15.1-1)
+[2020-11-22T14:13:50+0800] [ALPM] installed albert (0.16.1-2)
+[2020-11-22T14:13:50+0800] [ALPM] transaction completed
+[2020-11-22T14:13:50+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-22T14:13:50+0800] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2020-11-22T14:13:50+0800] [ALPM] running 'update-desktop-database.hook'...
+[2020-11-22T14:17:18+0800] [PACMAN] Running 'pacman -Rsc albert'
+[2020-11-22T14:17:19+0800] [ALPM] transaction started
+[2020-11-22T14:17:19+0800] [ALPM] removed albert (0.16.1-2)
+[2020-11-22T14:17:19+0800] [ALPM] removed qt5-quickcontrols (5.15.1-1)
+[2020-11-22T14:17:19+0800] [ALPM] removed qt5-graphicaleffects (5.15.1-1)
+[2020-11-22T14:17:19+0800] [ALPM] removed qt5-charts (5.15.1-1)
+[2020-11-22T14:17:19+0800] [ALPM] transaction completed
+[2020-11-22T14:17:19+0800] [ALPM] running '30-systemd-update.hook'...
+[2020-11-22T14:17:19+0800] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2020-11-22T14:17:19+0800] [ALPM] running 'update-desktop-database.hook'...
