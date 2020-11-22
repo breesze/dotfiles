@@ -36,5 +36,5 @@ bspc rule -a VirtualBox Manager state=floating
 
 xmodap ~/.Xmodmap
 
-killall polybar
+killall -q polybar
 polybar -r lagbar
