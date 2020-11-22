@@ -69,8 +69,9 @@ label-focused-padding = 1
 label-occupied = %name%
 label-occupied-padding = 1
 
-label-urgent = %name%!
-label-urgent-background = ${colors.alert}
+label-urgent = %name%
+label-urgent-background = ${colors.red}
+label-urgent-foreground = ${colors.background}
 label-urgent-padding = 1
 
 label-empty = %name%
