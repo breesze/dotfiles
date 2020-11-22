@@ -13,12 +13,12 @@ ln -siv $path/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 # ln -siv $path/aria2/dht6.dat ~/.aria2/dht6.dat
 
 # bspwm
-# ln -siv $path/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-# ln -siv $path/bspwm/sxhkdrc ~/.config/sxhkd/sxhkdrc
+ln -siv $path/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
+ln -siv $path/bspwm/sxhkdrc ~/.config/sxhkd/sxhkdrc
 
 # dwm
-ln -siv $path/dwm/startdwm ~/.startdwm
-ln -siv $path/dwmstatus/startdwmstatus ~/.startdwmstatus
+# ln -siv $path/dwm/startdwm ~/.startdwm
+# ln -siv $path/dwmstatus/startdwmstatus ~/.startdwmstatus
 
 # feh
 ln -siv $path/pictures/fehbg ~/.fehbg
@@ -48,6 +48,10 @@ ln -siv $path/ranger/rc.conf ~/.config/ranger/rc.conf
 
 # redshift
 ln -siv $path/redshift/redshift.conf ~/.config/redshift.conf
+
+# rofi
+ln -siv $path/rofi/config.rasi ~/.config/rofi/config.rasi
+ln -siv $path/rofi/arc-red-dark.rasi ~/.config/rofi/arc-red-dark.rasi
 
 # termite
 ln -siv $path/termite/config ~/.config/termite/config
