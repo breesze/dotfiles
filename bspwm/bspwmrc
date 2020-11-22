@@ -35,4 +35,6 @@ bspc rule -a TelegramDesktop state=floating
 bspc rule -a VirtualBox Manager state=floating
 
 xmodap ~/.Xmodmap
+
+killall polybar
 polybar -r lagbar
