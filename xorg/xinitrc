@@ -39,7 +39,6 @@ fi
 
 xset r rate 220 45
 xset s 480 480
-# xmodmap ~/.Xmodmap
 /usr/bin/start-pulseaudio-x11 &
 
 exec xss-lock -- i3lock -n -B picom --indicator -k --timecolor="D7005F" --datecolor="D7005F" --ringcolor="1a1a1a" --keyhlcolor="D7005f" &
@@ -52,7 +51,7 @@ exec keynav &
 exec ~/.fehbg &
 exec alacritty &
 exec polybar -r lagbar &
-exec bspwm >> ~/.bsplog
+exec bspwm >> ~/.config/bspwm/log/bsplog-$(date +'%F-%k-%M-%S') 2>&1
 
 # abandon
 # exec aria2c --conf-path=<path to aria2.conf> &

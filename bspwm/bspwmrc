@@ -34,8 +34,3 @@ bspc rule -a Pcmanfm state=floating
 bspc rule -a TelegramDesktop state=floating
 bspc rule -a VirtualBox Manager state=floating
 bspc rule -a Zathura state=tiled
-
-xmodap ~/.Xmodmap
-
-# killall -q polybar
-# polybar -r lagbar
