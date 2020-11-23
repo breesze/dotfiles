@@ -86,3 +86,11 @@ ln -siv $path/zsh/langenv ~/.langenv
 ln -siv $path/zsh/lgfs.prompt.sh ~/.lgfs.prompt.sh
 ln -siv $path/zsh/zpreztorc ~/.zpreztorc
 ln -siv $path/zsh/zshrc ~/.zshrc
+
+# [root]
+# xorg
+# sudo ln -siv $path/xorg/20-intel.conf /etc/X11/xorg.conf.d/20-intel.conf
+sudo ln -siv $path/xorg/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+
+# pacman 
+sudo ln -siv $path/pacman/pacman.log /var/log/pacman.log
