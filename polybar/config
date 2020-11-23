@@ -41,8 +41,8 @@ font-2 = FontAwesome5Free:style=Regular:size=14;4
 font-3 = FontAwesome5Brands:style=Regular:size=14;4
 font-4 = NotoColorEmoji:style=Regular:size=14;4
 
-modules-left = bspwm mod xwindow 
-modules-center = 
+modules-left = bspwm mod
+modules-center = xwindow 
 modules-right = network pulseaudio cpu memory temperature battery date
 
 ; tray-position = right
@@ -87,8 +87,8 @@ format = <label>
 
 ; label = %title:0:30:...%
 label = %title%
-label-maxlen = 30
-label-empty = [bspwm]
+label-maxlen = 20
+label-empty = [NULL]
 
 format-foreground = ${colors.foreground-alt}
 ; format-background = ${colors.background-alt}
