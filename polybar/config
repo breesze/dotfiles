@@ -39,9 +39,10 @@ font-0 = SarasaMonoCL:style=Semibold:size=15;5
 font-1 = FontAwesome5Free:style=Solid:size=14;4
 font-2 = FontAwesome5Free:style=Regular:size=14;4
 font-3 = FontAwesome5Brands:style=Regular:size=14;4
+font-4 = NotoColorEmoji:style=Regular:size=14;4
 
-modules-left = bspwm xwindow 
-modules-center =
+modules-left = bspwm mod xwindow 
+modules-center = 
 modules-right = network pulseaudio cpu memory temperature battery date
 
 ; tray-position = right
@@ -93,11 +94,29 @@ format-foreground = ${colors.foreground-alt}
 ; format-background = ${colors.background-alt}
 format-padding = 1
 
+[module/mod]
+type = internal/bspwm
+
+format = <label-mode>
+format-padding = 1
+
+label-monocle = "[]="
+label-tiled = "[]"
+
+label-floating = "~"
+label-pseudotiled = "-"
+label-fullscreen = "$"
+
+label-marked = "@"
+label-sticky = "#"
+label-locked = "&"
+label-private = "^"
+
 [module/pulseaudio]
 type = internal/pulseaudio
 format-volume =  <label-volume>
 
-label-volume = " %percentage%%" 
+label-volume = " %percentage%%"
 ; label-volume-foreground = ${colors.red}
 ; label-volume-underline = ${colors.yellow}
 
@@ -128,11 +147,11 @@ warn-temperature = 90
 format =  <label>
 format-warn =  <label-warn>
 
-label = " %temperature-c%"
+label = " +%temperature-c%"
 ; label-foreground = ${colors.red}
 ; label-underline = ${colors.red}
 
-label-warn = " %temperature-c%"
+label-warn = " +%temperature-c%"
 ; label-warn-foreground = ${colors.red}
 ; label-warn-underline = ${colors.red}
 
@@ -183,7 +202,7 @@ screenchange-reload = flase
 ;pseudo-transparency = false
 
 [global/wm]
-; margin-top = 5
-; margin-bottom = 5
+margin-top = 0
+margin-bottom = 0
 
 ; vim:ft=dosini
