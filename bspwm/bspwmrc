@@ -33,8 +33,9 @@ bspc rule -a qBittorrent state=floating desktop='^7'
 bspc rule -a Pcmanfm state=floating
 bspc rule -a TelegramDesktop state=floating
 bspc rule -a VirtualBox Manager state=floating
+bspc rule -a Zathura state=tiled
 
 xmodap ~/.Xmodmap
 
-killall -q polybar
-polybar -r lagbar
+# killall -q polybar
+# polybar -r lagbar

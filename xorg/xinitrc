@@ -51,7 +51,8 @@ exec keynav &
 
 exec ~/.fehbg &
 exec alacritty &
-exec bspwm
+exec polybar -r lagbar &
+exec bspwm >> ~/.bsplog
 
 # abandon
 # exec aria2c --conf-path=<path to aria2.conf> &
