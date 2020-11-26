@@ -6,8 +6,8 @@
 super + Return
 	alacritty
 
-super + shift + Return
-    urxvt
+# super + shift + Return
+#     urxvt
 
 # program launcher
 super + @space
@@ -47,7 +47,7 @@ super + shift + g
 #
 
 # set the window state
-super + {s,shift + space,t,shift + t}
+super + {n,shift + space,t,shift + t}
 	bspc node -t {tiled,floating,pseudo_tiled,fullscreen}
 
 # set the node flags
@@ -66,14 +66,14 @@ super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
-super + {_, shift + }b
+super + {_, shift + }v
 	bspc node -f @{parent,brother}
 
 super + bracket{left,right}
 	bspc node -f @{first,second}
 
 # focus the next/previous window in the current desktop
-super + {_,shift + }n
+super + {_,shift + }s
 	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
