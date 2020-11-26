@@ -43,7 +43,7 @@ font-4 = NotoColorEmoji:style=Regular:size=14;4
 
 modules-left = bspwm mod
 modules-center = xwindow 
-modules-right = network pulseaudio cpu memory temperature battery date
+modules-right = network pulseaudio cpu memory temperature battery date powermenu
 
 ; tray-position = right
 ; tray-padding = 0
@@ -56,7 +56,7 @@ wm-restack = bspwm
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 cursor-click = pointer
-cursor-scroll = ns-resize
+cursor-scroll = default
 
 [module/bspwm]
 type = internal/bspwm
@@ -181,7 +181,7 @@ time = %R
 ; format-underline = ${colors.blue}
 
 ; label =  %date% %time% %{F#D7005F}%{F-}
-label =  "%date% %time% "
+label =  " %date% %time%"
 
 [module/network]
 type = internal/network
@@ -192,6 +192,41 @@ format-connected = <label-connected>
 label-connected = [%downspeed:7:9% %upspeed:7:9%]
 ; label-connected-foreground = ${colors.red}
 ; label-connected-underline = ${colors.green}
+
+[module/powermenu]
+type = custom/menu
+expand-right = false
+format-spacing = 1
+format-foreground = ${colors.green}
+
+label-open = 
+label-open-foreground = ${colors.foreground}
+label-close = [C]
+label-close-foreground = ${colors.yellow}
+; label-separator =
+; label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = [P]
+menu-0-0-exec = menu-open-1
+menu-0-1 = [H]
+menu-0-1-exec = menu-open-2
+menu-0-2 = [L]
+menu-0-2-exec = menu-open-3
+menu-0-3 = [R]
+menu-0-3-exec = menu-open-4
+menu-0-4 = [S]
+menu-0-4-exec = menu-open-5
+
+menu-1-0 = suspend
+menu-1-0-exec = systemctl suspend
+menu-2-0 = hibernate
+menu-2-0-exec = systemctl hiberate
+menu-3-0 = logout
+menu-3-0-exec = logout
+menu-4-0 = reboot
+menu-4-0-exec = reboot
+menu-5-0 = shutdown
+menu-5-0-exec = shutdown -h now
 
 [settings]
 screenchange-reload = flase
