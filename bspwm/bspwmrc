@@ -25,12 +25,12 @@ bspc config active_border_color \#D7005F
 
 # rule
 bspc rule -a firefox desktop='^2'
-bspc rule -a feh state=floating
-bspc rule -a mpv state=floating
-bspc rule -a obs state=floating
-bspc rule -a qv2ray state=floating
-bspc rule -a qBittorrent state=floating desktop='^7'
-bspc rule -a Pcmanfm state=floating
-bspc rule -a TelegramDesktop state=floating
-bspc rule -a VirtualBox Manager state=floating
+bspc rule -a feh state=floating center=on
+bspc rule -a mpv state=floating center=on
+bspc rule -a obs state=floating center=on
+bspc rule -a qv2ray state=floating center=on
+bspc rule -a qBittorrent state=floating center=on desktop='^7'
+bspc rule -a Pcmanfm state=floating center=on
+bspc rule -a TelegramDesktop state=floating center=on
+bspc rule -a VirtualBox Manager state=floating center=on
 bspc rule -a Zathura state=tiled
