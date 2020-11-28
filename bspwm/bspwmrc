@@ -19,18 +19,12 @@ bspc config normal_border_color \#00BBFF
 bspc config focused_border_color \#D7005F
 bspc config active_border_color \#D7005F
 
-# bspc rule -a Gimp desktop='^8' state=floating follow=on
-# bspc rule -a Kupfer.py focus=on
-# bspc rule -a Screenkey manage=off
-
 # rule
 bspc rule -a firefox desktop='^2'
-bspc rule -a feh state=floating center=on
-bspc rule -a mpv state=floating center=on
-bspc rule -a obs state=floating center=on
-bspc rule -a qv2ray state=floating center=on
-bspc rule -a qBittorrent state=floating center=on desktop='^7'
-bspc rule -a Pcmanfm state=floating center=on
-bspc rule -a TelegramDesktop state=floating center=on
-bspc rule -a VirtualBox Manager state=floating center=on
+bspc rule -a feh state=floating
+bspc rule -a mpv state=floating
+bspc rule -a qv2ray state=floating
+bspc rule -a Pcmanfm state=floating
+# bspc rule -a Screenkey manage=off
 bspc rule -a Zathura state=tiled
+bspc rule -a "VirtualBox Manager" state=floating 
