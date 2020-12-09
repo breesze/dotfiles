@@ -143,6 +143,9 @@ super + alt + bracket{left,right}
 super + shift + bracket{left,right}
     amixer set Master playback {5-,5+}
 
+super + ctrl + m
+    pactl set-sink-mute 0 toggle
+
 # music player & mpc 
 super + {z,x,c}
     mpc {prev,toggle,next}
