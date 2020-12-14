@@ -28,6 +28,7 @@ SpaceAfterTemplateKeyword: false
 AlwaysBreakTemplateDeclarations: Yes
 
 # BreakBeforeBraces: Stroustrup
+# BreakBeforeBraces: Allman
 BreakBeforeBraces: Custom
 BraceWrapping:
   AfterCaseLabel:  false

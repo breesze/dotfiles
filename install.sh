@@ -16,6 +16,9 @@ ln -siv $path/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 ln -siv $path/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
 ln -siv $path/bspwm/sxhkdrc ~/.config/sxhkd/sxhkdrc
 
+# clang
+ln -siv $path/clang/clang-format ~/.clang-format
+
 # dwm
 # ln -siv $path/dwm/startdwm ~/.startdwm
 # ln -siv $path/dwmstatus/startdwmstatus ~/.startdwmstatus
@@ -60,7 +63,6 @@ ln -siv $path/termite/config ~/.config/termite/config
 ln -siv $path/tmux/tmux.conf ~/.tmux.conf
 
 # vim
-ln -siv $path/vim/clang-format ~/.clang-format
 ln -siv $path/vim/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -siv $path/vim/coc-settings.json ~/.vim/coc-settings.json
 ln -siv $path/vim/init.vim ~/.config/nvim/init.vim
