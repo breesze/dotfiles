@@ -28,17 +28,21 @@ nnoremap <Leader>7 :7b<CR>
 nnoremap <Leader>8 :8b<CR>
 nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
+nnoremap <leader>w <C-W>
+nnoremap <space>w <C-W>
 noremap <M-u> <C-w>p<C-u><C-w>p
 noremap <M-d> <C-w>p<C-d><C-w>p
 nnoremap <space>p :bp<CR>
 nnoremap <space>n :bn<CR>
+
+" cargo
 nnoremap <space>rr :!cargo run<CR>
 nnoremap <space>rj :!cargo check<CR>
 nnoremap <space>rg :!cargo build<CR>
 nnoremap <space>rf :!cargo fix<CR>
 nnoremap <space>rt :!cargo test<CR>
 nnoremap <space>gh :nohlsearch<CR>
-nnoremap <space>w <C-W>
+
 " nnoremap <space>gg gg=G``<CR>
 " inoremap jj <Esc>
 " nnoremap <CR> o<Esc>
