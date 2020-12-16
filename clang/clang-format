@@ -19,33 +19,58 @@ SpaceInEmptyBlock: true
 SpaceAfterTemplateKeyword: false
 
 # Break
-# AllowShortBlocksOnASingleLine: false
-# AllowShortCaseLabelsOnASingleLine: false
-# AllowShortFunctionsOnASingleLine: true
-# AllowShortLambdasOnASingleLine: true
-# AllowShortIfStatementsOnASingleLine: false
-# AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortEnumsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: true
+AllowShortLambdasOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: true
 AlwaysBreakTemplateDeclarations: Yes
+
+BreakBeforeBinaryOperators: All
 
 # BreakBeforeBraces: Stroustrup
 # BreakBeforeBraces: Allman
 BreakBeforeBraces: Custom
 BraceWrapping:
-  AfterCaseLabel:  false
-  AfterClass:      false
-  AfterControlStatement: false
+  AfterCaseLabel:  true
+  AfterClass:      true
+  AfterControlStatement: true
   AfterEnum:       false
   AfterFunction:   true
-  AfterNamespace:  false
-  AfterObjCDeclaration: false
-  AfterStruct:     false
-  AfterUnion:      false
-  AfterExternBlock: false
+  AfterNamespace:  true
+  AfterObjCDeclaration: true
+  AfterStruct:     true
+  AfterUnion:      true
+  AfterExternBlock: true
   BeforeCatch:     true
-  BeforeElse:      false
+  BeforeElse:      true
+  BeforeLambdaBody: true
+  BeforeWhile: true
   IndentBraces:    false
   SplitEmptyFunction: false
   SplitEmptyRecord: false
   SplitEmptyNamespace: false
+
+## K&R 
+# BreakBeforeBraces: Custom
+# BraceWrapping:
+#   AfterCaseLabel:  false
+#   AfterClass:      false
+#   AfterControlStatement: false
+#   AfterEnum:       false
+#   AfterFunction:   true
+#   AfterNamespace:  false
+#   AfterObjCDeclaration: false
+#   AfterStruct:     false
+#   AfterUnion:      false
+#   AfterExternBlock: false
+#   BeforeCatch:     false
+#   BeforeElse:      false
+#   IndentBraces:    false
+#   SplitEmptyFunction: false
+#   SplitEmptyRecord: false
+  # SplitEmptyNamespace: false
 
 
