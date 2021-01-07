@@ -24,6 +24,7 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 separator = %{F#555555}%{F-}
+; separator = %{F#555555}%{F-}
 
 ; line-size = 3
 ; line-color = ${colors.blue}
@@ -39,7 +40,12 @@ font-0 = SarasaMonoCL:style=Semibold:size=15;5
 font-1 = FontAwesome5Free:style=Solid:size=14;4
 font-2 = FontAwesome5Free:style=Regular:size=14;4
 font-3 = FontAwesome5Brands:style=Regular:size=14;4
-font-4 = NotoColorEmoji:style=Regular:size=14;4
+font-4 = Siji:style=Regular:size=20;3
+font-5 = NotoColorEmoji:style=Regular:size=14;4
+
+; font-0 = xos4 Terminus:style=Regular:size=18;4
+; font-1 = WenQuanYi WenQuanYi Bitmap Song:style=Regular:size=16;3
+; font-2 = Siji:style=Regular:size=20;3
 
 modules-left = bspwm mod
 modules-center = xwindow 
@@ -117,10 +123,12 @@ type = internal/pulseaudio
 format-volume =  <label-volume>
 
 label-volume = " %percentage%%"
+; label-volume = " %percentage%%"
 ; label-volume-foreground = ${colors.red}
 ; label-volume-underline = ${colors.yellow}
 
 label-muted = " %percentage%%"
+; label-muted = " %percentage%%"
 ; label-muted-foreground = ${colors.red}
 ; label-muted-underline = ${colors.yellow}
 
@@ -128,6 +136,7 @@ label-muted = " %percentage%%"
 type = internal/cpu
 interval = 2
 label = " %percentage%%"
+; label = " %percentage%%"
 ; format-foreground = ${colors.red}
 ; format-underline = ${colors.red}
 
@@ -135,6 +144,7 @@ label = " %percentage%%"
 type = internal/memory
 interval = 2
 label = " %gb_used%"
+; label = " %gb_used%"
 ; format-foreground = ${colors.red}
 ; format-underline = ${colors.orange}
 
@@ -148,10 +158,12 @@ format =  <label>
 format-warn =  <label-warn>
 
 label = " +%temperature-c%"
+; label = " +%temperature-c%"
 ; label-foreground = ${colors.red}
 ; label-underline = ${colors.red}
 
 label-warn = " +%temperature-c%"
+; label-warn = " +%temperature-c%"
 ; label-warn-foreground = ${colors.red}
 ; label-warn-underline = ${colors.red}
 
@@ -164,6 +176,10 @@ full-at = 99
 label-charging = " %percentage%%[#]"
 label-discharging = " %percentage%%[$]"
 label-full = " %percentage%%[@]"
+
+; label-charging = " %percentage%%[#]"
+; label-discharging = " %percentage%%[$]"
+; label-full = " %percentage%%[@]"
 
 ; label-charging-foreground = ${colors.red}
 ; label-discharging-foreground = ${colors.red}
@@ -182,6 +198,7 @@ time = %R
 
 ; label =  %date% %time% %{F#D7005F}%{F-}
 label =  " %date% %time%"
+; label =  " %date% %time%"
 
 [module/network]
 type = internal/network
@@ -190,6 +207,7 @@ interval = 1.0
 
 format-connected = <label-connected>
 label-connected = [%downspeed:7:9% %upspeed:7:9%]
+; label-connected = [%downspeed:7:9% %upspeed:7:9%]
 ; label-connected-foreground = ${colors.red}
 ; label-connected-underline = ${colors.green}
 
@@ -200,6 +218,7 @@ format-spacing = 1
 format-foreground = ${colors.green}
 
 label-open = 
+; label-open = 
 label-open-foreground = ${colors.foreground}
 label-close = [C]
 label-close-foreground = ${colors.yellow}
