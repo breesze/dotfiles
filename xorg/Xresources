@@ -51,8 +51,8 @@ URxvt.borderLess: False
 Xft.dpi: 141
 ! URxvt.letterSpace: -1
 
-URxvt.font: xft:xos4 Terminus:size=12,xft:TerminessTTF Nerd Font Mono:size=12
-URxvt.boldfont: xft:xos4 Terminus:size=12,xft:TerminessTTF Nerd Font Mono:size=12
+URxvt.font: xft:xos4 Terminus:size=12,xft:WenQuanYi WenQuanYi Bitmap Song:size=12,xft:TerminessTTF Nerd Font Mono:size=12
+URxvt.boldfont: xft:xos4 Terminus:size=12,xft:WenQuanYi WenQuanYi Bitmap Song:size=12,xft:TerminessTTF Nerd Font Mono:size=12
 
 URxvt.background:   [70]#060404
 URxvt.foreground:       #c0c0c0

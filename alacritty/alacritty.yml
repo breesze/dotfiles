@@ -97,9 +97,11 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     family: Sarasa Mono CL
+    # family: xos4 Terminus
 
     # The `style` can be specified to pick a specific face.
     style: Semibold
+    # style: Regular
 
   # Bold font face
   bold:
@@ -108,6 +110,7 @@ font:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     family: Sarasa Mono CL
+    # family: xos4 Terminus
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -119,6 +122,7 @@ font:
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
     family: Sarasa Mono CL
+    # family: xos4 Terminus
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -157,7 +161,7 @@ font:
   #use_thin_strokes: true
 
 # If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
+# draw_bold_text_with_bright_colors: true
 
 # Colors (Tomorrow Night)
 colors:
@@ -175,9 +179,9 @@ colors:
     # The dimmed foreground color is calculated automatically if it is not present.
     # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
     # is `false`, the normal foreground color will be used.
-    #dim_foreground: '#828482'
-    #bright_foreground: '#eaeaea'
-
+    # dim_foreground: '#828482'
+    # bright_foreground: '#eaeaea'
+    #
   # Cursor colors
   #
   # Colors which should be used to draw the terminal cursor.
@@ -188,9 +192,10 @@ colors:
   # text: CellBackground
   # cursor: CellForeground
 
-   text: '#060404'
-   # text: '#121212'
-   cursor: '#c0c0c0'
+   # text: '#ff0000'
+   # cursor: '#000000'
+   text: '#d7005f'
+   cursor: '#1a1a1a'
 
   # Vi mode cursor colors
   #
