@@ -206,6 +206,7 @@ let g:NERDTreeIndicatorMapCustom = {
 
 " snippets
 let g:UltiSnipsExpandTrigger = '<C-l>'
+let g:UltiSnipsSnippetDirectories=["lagsnippets"]
 
 "lightline
 set showtabline=2
