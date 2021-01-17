@@ -1,3 +1,5 @@
+source ~/.fsph_prompt.sh
+
 if [ -n "$BASH_VERSION" ]; then
     if [ "$UID" -eq 0 ]; then
         export PS1='\[\e[01;31m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\w\[\e[00m\]\# '
