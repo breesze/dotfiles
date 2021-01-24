@@ -26,7 +26,15 @@ network.http.speculative-parallel-limit 0
 browser.send_pings false
 security.tls.version.min 3
 media.navigator.enabled false
+media.peerconnection.enabled false
 
+// webRTC
+media.peerconnection.turn.disable true
+media.peerconnection.use_document_iceservers false
+media.peerconnection.video.enabled false
+media.peerconnection.video.vp9_enabled false
+media.peerconnection.identity.enabled false
+media.peerconnection.identity.timeout 1
 
 
 /* browser.tabs.tabmanager.enabled true */
