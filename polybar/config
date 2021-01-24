@@ -49,7 +49,7 @@ font-5 = NotoColorEmoji:style=Regular:size=14;4
 
 modules-left = bspwm mod
 modules-center = xwindow 
-modules-right = network pulseaudio cpu memory temperature battery date powermenu
+modules-right = wired-network wireless-network pulseaudio cpu memory temperature battery date powermenu
 
 ; tray-position = right
 ; tray-padding = 0
@@ -200,9 +200,20 @@ time = %R
 label =  " %date% %time%"
 ; label =  " %date% %time%"
 
-[module/network]
+[module/wired-network]
 type = internal/network
 interface = enp0s31f6
+interval = 1.0
+
+format-connected = <label-connected>
+label-connected = [%downspeed:7:9% %upspeed:7:9%]
+; label-connected = [%downspeed:7:9% %upspeed:7:9%]
+; label-connected-foreground = ${colors.red}
+; label-connected-underline = ${colors.green}
+
+[module/wireless-network]
+type = internal/network
+interface = wlp1s0
 interval = 1.0
 
 format-connected = <label-connected>
