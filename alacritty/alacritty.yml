@@ -232,26 +232,53 @@ colors:
   #   background: CellForeground
   #   foreground: CellBackground
 
+#   # Normal colors
+  # normal:
+  #  black:   '#1b1d1e'
+  #  red:     '#d7005f'
+  #  green:   '#44ff00'
+  #  yellow:  '#f67400'
+  #  blue:    '#1f75fe'
+  #  magenta: '#932fff'
+  #  cyan:    '#00bbff'
+  #  white:   '#bbbbbb'
+  #
+  # # Bright colors
+  # bright:
+  #  black:   '#555555'
+  #  red:     '#cd0000'
+  #  green:   '#00ff00'
+  #  yellow:  '#ffd000'
+  #  blue:    '#0087ff'
+  #  magenta: '#cd00cd'
+  #  cyan:    '#00dddd'
+   # white:   '#ffffff'
   # Normal colors
+  
   normal:
    black:   '#1b1d1e'
-   red:     '#cd0000'
+   red:     '#d7005f'
    green:   '#44ff00'
-   yellow:  '#f67400'
+   # green:   '#82b414'
+   yellow:  '#ff8700'
    blue:    '#1f75fe'
-   magenta: '#cd00cd'
-   cyan:    '#00bbff'
-   white:   '#bbbbbb'
+   # blue:    '#1080d0'
+   magenta: '#932fff'
+   # magenta: '#af5fff'
+   cyan:    '#00d7af'
+   # cyan:    '#5FD7FF'
+   white:   '#bcbcbc'
 
   # Bright colors
   bright:
    black:   '#555555'
-   red:     '#ff0000'
-   green:   '#00ff00'
-   yellow:  '#ffff00'
+   red:     '#d40000'
+   green:   '#87ff00'
+   yellow:  '#ffd000'
    blue:    '#0087ff'
-   magenta: '#ff00ff'
-   cyan:    '#00ffff'
+   magenta: '#af5fff'
+   # magenta: '#af87ff'
+   cyan:    '#00ddff'
    white:   '#ffffff'
 
   # Dim colors

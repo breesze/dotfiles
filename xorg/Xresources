@@ -57,33 +57,44 @@ URxvt.boldfont: xft:xos4 Terminus:size=12,xft:WenQuanYi WenQuanYi Bitmap Song:si
 URxvt.background:   [70]#060404
 URxvt.foreground:       #c0c0c0
 URxvt.color12 : #1f75fe
-!---------------------
-!breeze theme from kde
-!---------------------
-! ! black
-! URxvt.color0:           #1d1d1e
-! URxvt.color8:           #7f8c8d
-! ! red
-! URxvt.color1:           #ed1515
-! URxvt.color9:           #c0392b
-! ! green
-! URxvt.color2:           #11d116
-! URxvt.color10:          #1cdc9a
-! ! brown/yellow
-! URxvt.color3:           #f67400
-! URxvt.color11:          #fdbc4b
-! ! blue
-! URxvt.color4:           #1d99f3
-! URxvt.color12:          #3daee9
-! ! magenta
-! URxvt.color5:           #9b59b6
-! URxvt.color13:          #8e44ad
-! ! cyan
-! URxvt.color6:           #1adb9c
-! URxvt.color14:          #16a085
-! ! white
-! URxvt.color7:           #fcfcfc
-! URxvt.color15:          #ffffff
+
+bar-background:     #1a1a1a
+! alert:              #ffddff
+
+! [private][archive] molokai-like theme
+! color0:         #1b1d1e
+! color1:         #d7005f
+! color2:         #44ff00
+! color3:         #f67400
+! color4:         #1f75fe
+! color5:         #932fff
+! color6:         #00bbff
+! color7:         #bbbbbb
+! color8:         #555555
+! color9:         #cd0000
+! color10:        #00ff00
+! color11:        #ffd000
+! color12:        #0087ff
+! color13:        #cd00cd
+! color14:        #00ddff
+! color15:        #ffffff
+
+color0:     #1b1d1e
+color1:     #d7005f
+color2:     #44ff00
+color3:     #ff8700
+color4:     #1f75fe
+color5:     #932fff
+color6:     #00d7af
+color7:     #bcbcbc
+color8:     #555555
+color9:     #d40000
+color10:    #87ff00
+color11:    #ffd000
+color12:    #0087ff
+color13:    #af5fff
+color14:    #00ddff
+color15:    #ffffff
 
 Xcursor.theme: Breeze
 Xcursor.size: 32

@@ -1,20 +1,30 @@
 [colors]
-background = #1a1a1a
-background-alt = #202020
-foreground = #D7005F
-foreground-alt = #00bbff
-alert = #bd2c40
+background      =    ${xrdb:bar-background}
+background-alt  =    #88000000
+foreground      =    ${xrdb:color1}
+foreground-alt  =    ${xrdb:color14}
+empty           =    #003a3a3a
 
-red = #D7005F
-blue = #0087ff
-orange = #f67400
-yellow = #fff000
-green = #44ff00
-grey = #555555
+color0  =   ${xrdb:color0}
+color1  =   ${xrdb:color1}
+color2  =   ${xrdb:color2}
+color3  =   ${xrdb:color3}
+color4  =   ${xrdb:color4}
+color5  =   ${xrdb:color5}
+color6  =   ${xrdb:color6}
+color7  =   ${xrdb:color7}
+color8  =   ${xrdb:color8}
+color9  =   ${xrdb:color9}
+color10 =   ${xrdb:color10}
+color11 =   ${xrdb:color11}
+color12 =   ${xrdb:color12}
+color13 =   ${xrdb:color13}
+color14 =   ${xrdb:color14}
+color15 =   ${xrdb:color15}
 
-[bar/lagbar]
+[bar/grezkl]
 width = 100%
-height = 30
+height = 25
 offset-x = 0%
 offset-y = 0%
 ; radius = 1.0
@@ -23,33 +33,64 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-separator = %{F#555555}%{F-}
-; separator = %{F#555555}%{F-}
-
+; separator = %{F#555555}%{F-}
+; separator = %{F#555555}%{B#1a1a1a}%{B-}%{F-}
 ; line-size = 3
 ; line-color = ${colors.blue}
 ; border-size = 2
 ; border-color = #00bbff
 
-padding-left = 0
-padding-right = 1
-module-margin-left = 1
-module-margin-right = 1
+; padding-left = 0
+; padding-right = 0
+; module-margin-left = 0
+; module-margin-right = 0
 
-font-0 = SarasaMonoCL:style=Semibold:size=15;5
-font-1 = FontAwesome5Free:style=Solid:size=14;4
-font-2 = FontAwesome5Free:style=Regular:size=14;4
-font-3 = FontAwesome5Brands:style=Regular:size=14;4
-font-4 = Siji:style=Regular:size=20;3
-font-5 = NotoColorEmoji:style=Regular:size=14;4
+font-0 = SarasaMonoCL:style=Semibold:size=15;4
+font-1 = FontAwesome5Free:style=Solid:size=14;3
+font-2 = FontAwesome5Free:style=Regular:size=14;3
+font-3 = FontAwesome5Brands:style=Regular:size=14;3
+; font-4 = Hack Nerd Font:style=Regular:size=20;3
+; font-5 = Siji:style=Regular:size=8;3
+; font-6 = NotoColorEmoji:style=Regular:size=14;4
 
 ; font-0 = xos4 Terminus:style=Regular:size=18;4
 ; font-1 = WenQuanYi WenQuanYi Bitmap Song:style=Regular:size=16;3
-; font-2 = Siji:style=Regular:size=20;3
+; font-2 = Siji:style=Regular:size=9;3
 
-modules-left = bspwm mod
-modules-center = xwindow 
-modules-right = wired-network wireless-network pulseaudio cpu memory temperature battery date powermenu
+; module layout sytle ----------------------------------------------------------
+
+; 1 - parallelogram style 
+; modules-left    = bspwm rd lu mod rd
+; modules-center  = lu xwindow rd
+; modules-right   = lu wired-network wireless-network rd lu cpu memory temperature rd lu pulseaudio battery rd lu date
+
+; 2 - rev-parallelogram style 
+; modules-left    = bspwm ld ru mod ld
+; modules-center  = ru xwindow ld
+; modules-right   = ru wired-network wireless-network ld ru cpu memory temperature ld ru pulseaudio battery ld ru date
+
+; 3 - trapezium style
+; modules-left    = bspwm ld ru mod rd
+; modules-center  = lu xwindow ld
+; modules-right   = ru wired-network wireless-network rd lu cpu memory temperature ld ru pulseaudio battery rd lu date
+
+; 4 - rev-trapezium style
+; modules-left    = bspwm rd lu mod ld
+; modules-center  = ru xwindow rd
+; modules-right   = lu wired-network wireless-network ld ru cpu memory temperature rd lu pulseaudio battery ld ru date
+
+; -441-
+; modules-left    = bspwm rd lu mod ld
+; modules-center  = ru xwindow rd
+; modules-right   = lu wired-network wireless-network rd lu cpu memory temperature rd lu pulseaudio battery rd lu date
+
+; modules-center  =  lu bspwm rd lu mod ld ru xwindow rd lu wired-network wireless-network rd lu cpu memory temperature rd lu pulseaudio battery rd lu date rd
+
+modules-left    = bspwm rd lu mod ld ru
+modules-center  = xwindow
+modules-right   = rd lu wired-network wireless-network rd lu cpu memory temperature rd lu pulseaudio battery rd lu date
+
+; ------------------------------------------------------------------------------
 
 ; tray-position = right
 ; tray-padding = 0
@@ -57,12 +98,40 @@ modules-right = wired-network wireless-network pulseaudio cpu memory temperature
 
 wm-restack = bspwm
 
-; override-redirect = true
+; override-redirect = lde
 
-scroll-up = bspwm-desknext
-scroll-down = bspwm-deskprev
+rdoll-up = bspwm-desknext
+rdoll-down = bspwm-deskprev
 cursor-click = pointer
-cursor-scroll = default
+cursor-rdoll = default
+
+; modules-left    = bspwm rd lu mod ld
+; modules-center  = ru xwindow rd
+; modules-right   = lu wired-network wireless-network rd lu cpu memory temperature rd lu pulseaudio battery rd lu date
+
+; ------------------------------------------------------------------------------
+
+; [bar/back]
+; inherit = bar/grezkl
+; width = 100%
+; modules-left    = bspwm rd lu mod ld
+; ; modules-left    = bspwm rd lu mod ld ru xwindow rd
+; modules-right   = lu wired-network wireless-network rd lu cpu memory temperature rd lu pulseaudio battery rd lu date
+;
+; [bar/xwnd]
+; inherit = bar/grezkl
+; width = 20%
+; offset-y = 0%
+; offset-x = 27%
+; modules-center  = ru xwindow rd
+;
+; [bar/right]
+; inherit = bar/grezkl
+; width = 55%
+; offset-x = 45%
+; modules-right   = lu wired-network wireless-network rd lu cpu memory temperature rd lu pulseaudio battery rd lu date
+
+; ------------------------------------------------------------------------------
 
 [module/bspwm]
 type = internal/bspwm
@@ -70,35 +139,46 @@ type = internal/bspwm
 label-focused = %name%
 label-focused-background = ${colors.background-alt}
 label-focused-foreground = ${colors.foreground-alt}
-; label-focused-underline= ${colors.blue}
 label-focused-padding = 1
+; label-focused-underline= ${colors.blue}
 
 label-occupied = %name%
+label-occupied-background = ${colors.background}
 label-occupied-padding = 1
 
 label-urgent = %name%
-label-urgent-background = ${colors.red}
+label-urgent-background = ${colors.color1}
 label-urgent-foreground = ${colors.background}
 label-urgent-padding = 1
 
 label-empty = %name%
-label-empty-foreground = ${colors.grey}
+label-empty-foreground = ${colors.color8}
+label-empty-background = ${colors.background}
 label-empty-padding = 1
 
-; label-separator = %{F#555555}%{F-}
+; label-separator = %{F#555555}%{F-}
+
+; ------------------------------------------------------------------------------
 
 [module/xwindow]
 type = internal/xwindow
 format = <label>
 
 ; label = %title:0:30:...%
-label = %title%
+label = " %title% "
+; label-minlen = 35
 label-maxlen = 20
-label-empty = [NULL]
+; label-alignment = center
 
+label-empty = [bspwm]
+
+; format-padding = 1
 format-foreground = ${colors.foreground-alt}
-; format-background = ${colors.background-alt}
-format-padding = 1
+format-background = ${colors.background}
+; format-foreground = ${colors.color15}
+; format-background = ${colors.empty};
+
+; ------------------------------------------------------------------------------
 
 [module/mod]
 type = internal/bspwm
@@ -106,66 +186,111 @@ type = internal/bspwm
 format = <label-mode>
 format-padding = 1
 
+format-background = ${colors.background}
+; format-foreground = ${colors.background}
+
+; label-monocle = "%{F#555555}%{F-}  []="
+; label-tiled = "%{F#555555}%{F-}  []"
+
 label-monocle = "[]="
 label-tiled = "[]"
 
 label-floating = "~"
 label-pseudotiled = "-"
-label-fullscreen = "$"
+label-fullrdeen = "$"
 
 label-marked = "@"
 label-sticky = "#"
 label-locked = "&"
 label-private = "^"
 
+; ------------------------------------------------------------------------------
+
 [module/pulseaudio]
 type = internal/pulseaudio
 format-volume =  <label-volume>
 
-label-volume = " %percentage%%"
-; label-volume = " %percentage%%"
-; label-volume-foreground = ${colors.red}
-; label-volume-underline = ${colors.yellow}
-
-label-muted = " %percentage%%"
+label-volume = "  %percentage%% "
+label-muted = "  %percentage%% "
 ; label-muted = " %percentage%%"
-; label-muted-foreground = ${colors.red}
-; label-muted-underline = ${colors.yellow}
+; label-volume = " %percentage%%"
+
+label-volume-foreground = ${colors.color5}
+label-muted-foreground = ${colors.color5}
+label-volume-background = ${colors.background}
+label-muted-background = ${colors.background}
+
+; label-volume-foreground = ${colors.background}
+; label-muted-foreground = ${colors.background}
+; label-volume-background = ${colors.color5}
+; label-muted-background = ${colors.color5}
+
+; label-volume-underline = ${colors.color5}
+; label-muted-underline = ${colors.color5}
+
+; ------------------------------------------------------------------------------
 
 [module/cpu]
 type = internal/cpu
 interval = 2
-label = " %percentage%%"
+label = "  %percentage%% "
 ; label = " %percentage%%"
-; format-foreground = ${colors.red}
-; format-underline = ${colors.red}
+
+format-foreground = ${colors.color11}
+format-background = ${colors.background}
+
+; format-foreground = ${colors.background}
+; format-background = ${colors.color11}
+
+; format-underline = ${colors.color11}
+
+; ------------------------------------------------------------------------------
 
 [module/memory]
 type = internal/memory
 interval = 2
-label = " %gb_used%"
+label = "  %gb_used% "
+; label = "  %gb_used% "
 ; label = " %gb_used%"
-; format-foreground = ${colors.red}
-; format-underline = ${colors.orange}
+
+format-foreground = ${colors.color3}
+format-background = ${colors.background}
+
+; format-foreground = ${colors.background}
+; format-background = ${colors.color3}
+
+; format-underline = ${colors.color3}
+
+; ------------------------------------------------------------------------------
 
 [module/temperature]
 type = internal/temperature
 interval = 3
 thermal-zone = 0
 warn-temperature = 90
-
 format =  <label>
 format-warn =  <label-warn>
 
-label = " +%temperature-c%"
+; 
+label = "  +%temperature-c% "
+label-warn = "  +%temperature-c% "
 ; label = " +%temperature-c%"
-; label-foreground = ${colors.red}
-; label-underline = ${colors.red}
-
-label-warn = " +%temperature-c%"
 ; label-warn = " +%temperature-c%"
-; label-warn-foreground = ${colors.red}
-; label-warn-underline = ${colors.red}
+
+label-foreground = ${colors.color9}
+label-background = ${colors.background}
+label-warn-foreground = ${colors.color9}
+label-warn-background = ${colors.background}
+
+; label-foreground = ${colors.background}
+; label-background = ${colors.color9}
+; label-warn-foreground = ${colors.background}
+; label-warn-background = ${colors.color9}
+
+; label-underline = ${colors.color9}
+; label-warn-underline = ${colors.color9}
+
+; ------------------------------------------------------------------------------
 
 [module/battery]
 type = internal/battery
@@ -173,32 +298,50 @@ battery = BAT0
 adapter = AC0
 full-at = 99
 
-label-charging = " %percentage%%[#]"
-label-discharging = " %percentage%%[$]"
-label-full = " %percentage%%[@]"
-
+label-charging = "  %percentage%%[#] "
+label-discharging = "  %percentage%%[$] "
+label-full = "  %percentage%%[@] "
 ; label-charging = " %percentage%%[#]"
 ; label-discharging = " %percentage%%[$]"
 ; label-full = " %percentage%%[@]"
 
-; label-charging-foreground = ${colors.red}
-; label-discharging-foreground = ${colors.red}
-; label-full-foreground = ${colors.red}
-; label-charging-underline = ${colors.green}
-; label-discharging-underline = ${colors.green}
-; label-full-underline = ${colors.green}
+label-charging-foreground = ${colors.color14}
+label-discharging-foreground = ${colors.color14}
+label-full-foreground = ${colors.color14}
+label-full-background = ${colors.background}
+
+; label-charging-foreground = ${colors.background}
+; label-discharging-foreground = ${colors.background}
+; label-full-foreground = ${colors.background}
+; label-charging-background = ${colors.color6}
+; label-discharging-background = ${colors.color6}
+; label-full-background = ${colors.color6}
+
+; label-charging-underline = ${colors.color14}
+; label-discharging-underline = ${colors.color14}
+; label-full-underline = ${colors.color14}
+
+; ------------------------------------------------------------------------------
 
 [module/date]
 type = internal/date
 interval = 5
 date = %a %F
 time = %R
-; format-foreground = ${colors.red}
-; format-underline = ${colors.blue}
 
-; label =  %date% %time% %{F#D7005F}%{F-}
-label =  " %date% %time%"
+;   
+label =  " %date% %time%  "
 ; label =  " %date% %time%"
+
+format-foreground = ${colors.color12}
+format-background = ${colors.background}
+
+; format-foreground = ${colors.background}
+; format-background = ${colors.color12}
+
+; format-underline = ${colors.color12}
+
+; ------------------------------------------------------------------------------
 
 [module/wired-network]
 type = internal/network
@@ -206,10 +349,16 @@ interface = enp0s31f6
 interval = 1.0
 
 format-connected = <label-connected>
-label-connected = [%downspeed:7:9% %upspeed:7:9%]
+label-connected = " %downspeed:7:9% %upspeed:7:9% "
 ; label-connected = [%downspeed:7:9% %upspeed:7:9%]
-; label-connected-foreground = ${colors.red}
-; label-connected-underline = ${colors.green}
+
+label-connected-foreground = ${colors.color10}
+label-connected-background = ${colors.background}
+
+; label-connected-foreground = ${colors.background}
+; label-connected-background = ${colors.color10}
+
+; label-connected-underline = ${colors.color10}
 
 [module/wireless-network]
 type = internal/network
@@ -217,51 +366,60 @@ interface = wlp1s0
 interval = 1.0
 
 format-connected = <label-connected>
-label-connected = [%downspeed:7:9% %upspeed:7:9%]
+label-connected = " %downspeed:7:9% %upspeed:7:9% "
 ; label-connected = [%downspeed:7:9% %upspeed:7:9%]
-; label-connected-foreground = ${colors.red}
-; label-connected-underline = ${colors.green}
 
-[module/powermenu]
-type = custom/menu
-expand-right = false
-format-spacing = 1
-format-foreground = ${colors.green}
+label-connected-foreground = ${colors.color10}
+label-connected-background = ${colors.background}
 
-label-open = 
-; label-open = 
-label-open-foreground = ${colors.foreground}
-label-close = [C]
-label-close-foreground = ${colors.yellow}
-; label-separator =
-; label-separator-foreground = ${colors.foreground-alt}
+; label-connected-foreground = ${colors.background}
+; label-connected-background = ${colors.color10}
 
-menu-0-0 = [P]
-menu-0-0-exec = menu-open-1
-menu-0-1 = [H]
-menu-0-1-exec = menu-open-2
-menu-0-2 = [L]
-menu-0-2-exec = menu-open-3
-menu-0-3 = [R]
-menu-0-3-exec = menu-open-4
-menu-0-4 = [S]
-menu-0-4-exec = menu-open-5
+; label-connected-underline = ${colors.color10}
 
-menu-1-0 = suspend
-menu-1-0-exec = systemctl suspend
-menu-2-0 = hibernate
-menu-2-0-exec = systemctl hiberate
-menu-3-0 = logout
-menu-3-0-exec = logout
-menu-4-0 = reboot
-menu-4-0-exec = reboot
-menu-5-0 = shutdown
-menu-5-0-exec = shutdown -h now
+; ------------------------------------------------------------------------------
+
+; [module/powermenu]
+; type = custom/menu
+; expand-right = false
+; format-spacing = 1
+; format-foreground = ${colors.color2}
+;
+; label-open = "  "
+; label-open-foreground = ${colors.color12}
+; label-close = [C]
+; label-close-foreground = ${colors.color11}
+; ; label-separator =
+; ; label-separator-foreground = ${colors.foreground-alt}
+;
+; menu-0-0 = [P]
+; menu-0-0-exec = menu-open-1
+; menu-0-1 = [H]
+; menu-0-1-exec = menu-open-2
+; menu-0-2 = [L]
+; menu-0-2-exec = menu-open-3
+; menu-0-3 = [R]
+; menu-0-3-exec = menu-open-4
+; menu-0-4 = [S]
+; menu-0-4-exec = menu-open-5
+;
+; menu-1-0 = suspend
+; menu-1-0-exec = systemctl suspend
+; menu-2-0 = hibernate
+; menu-2-0-exec = systemctl hiberate
+; menu-3-0 = logout
+; menu-3-0-exec = logout
+; menu-4-0 = reboot
+; menu-4-0-exec = reboot
+; menu-5-0 = shutdown
+; menu-5-0-exec = shutdown -h now
+
+; ------------------------------------------------------------------------------
 
 [settings]
-screenchange-reload = flase
+rdeenchange-reload = flase
 ;compositing-background = xor
-;compositing-background = screen
+;compositing-background = rdeen
 ;compositing-foreground = source
 ;compositing-border = over
 ;pseudo-transparency = false
@@ -269,5 +427,52 @@ screenchange-reload = flase
 [global/wm]
 margin-top = 0
 margin-bottom = 0
+
+; ------------------------------------------------------------------------------
+
+[module/lu]
+type = custom/text
+content = "%{T3}%{T-}"
+content-background = ${colors.empty}
+content-foreground = ${colors.background}
+
+[module/ru]
+type = custom/text
+content = "%{T3}%{T-}"
+content-background = ${colors.empty}
+content-foreground = ${colors.background}
+
+[module/ld]
+type = custom/text
+content = "%{T3}%{T-}"
+content-foreground = ${colors.background}
+content-background = ${colors.empty}
+
+[module/rd]
+type = custom/text
+content = "%{T3}%{T-}"
+content-background = ${colors.empty}
+content-foreground = ${colors.background}
+
+; [module/slu]
+; type = custom/text
+; content = "%{T3}%{T-}"
+; content-background = ${colors.empty}
+; content-foreground = ${colors.background}
+;
+; [module/srd]
+; type = custom/text
+; content = "%{T3}%{T-}"
+; content-background = ${colors.empty}
+; content-foreground = ${colors.background}
+
+; glyph
+
+;    
+;    
+
+;   
+;   
+; ------------------------------------------------------------------------------
 
 ; vim:ft=dosini

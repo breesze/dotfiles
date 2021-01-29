@@ -1,4 +1,4 @@
-# lag style
+# my style
 
 BasedOnStyle: LLVM
 Standard: c++11
@@ -8,7 +8,7 @@ IndentWidth: 4
 ColumnLimit: 80
 # UseTab: false
 # IndentCaseLabels: true
-# PointerAlignment: Right
+PointerAlignment: Right
 AccessModifierOffset: -4
 AlignOperands: true
 AlignAfterOpenBracket: Align

@@ -27,7 +27,7 @@ ln -siv $path/clang/clang-format ~/.clang-format
 ln -siv $path/pictures/fehbg ~/.fehbg
 
 # fontconfig
-ln -siv $path/fontconfig/fonts.conf ~/.config/fontconfig/fonts.conf/fontts.conf
+ln -siv $path/fontconfig/fonts.conf ~/.config/fontconfig/fonts.conf
 ln -siv $path/fontconfig/10-dpi.conf ~/.config/fontconfig/conf.d/10-dpi.conf
 
 # i3-gaps, i3status
@@ -45,6 +45,9 @@ ln -siv $path/mpd-ncmpcpp/mpd.conf ~/.config/mpd/mpd.conf
 
 # picom(compton)
 ln -siv $path/picom/picom.conf ~/.config/picom/picom.conf
+
+# polybar
+ln -siv $path/polybar/config ~/.config/polybar/config
 
 # ranger
 ln -siv $path/ranger/rc.conf ~/.config/ranger/rc.conf

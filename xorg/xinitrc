@@ -51,7 +51,7 @@ exec keynav &
 
 exec ~/.fehbg &
 exec alacritty &
-exec polybar -r lagbar &
+exec polybar -r grezkl &
 exec bspwm
 # exec bspwm >> ~/.config/bspwm/log/bsplog-$(date +'%F-%k-%M-%S') 2>&1
 
