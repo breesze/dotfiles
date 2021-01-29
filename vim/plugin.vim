@@ -16,7 +16,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
-Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'majutsushi/tagbar'
 Plug 'preservim/nerdtree'
 Plug 'easymotion/vim-easymotion'
@@ -25,6 +24,7 @@ Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips', { 'for': ['c', 'cpp', 'rust', 'markdown', 'go', 'html'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'mhinz/vim-startify'
@@ -440,8 +440,8 @@ nnoremap <silent> ]r :<C-u>CocRestart<cr>
 " nnoremap <silent> <space>ek :<C-u>CocPrev<CR>
 " nnoremap <silent> <space>ep :<C-u>CocListResume<CR>
 
-hi CocErrorSign ctermfg=9
-hi CocWarningSign ctermfg=6
+hi CocErrorSign ctermfg=1
+hi CocWarningSign ctermfg=12
 " hi default CocUnderline cterm=undercurl gui=undercurl
 
 " 234=#1c1c1c 33=#0087ff
