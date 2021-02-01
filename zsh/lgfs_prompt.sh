@@ -15,7 +15,7 @@ else
         precmd_functions+=( precmd_vcs_info )
         zstyle ':vcs_info:git:*' formats '%F{11}[%b]'
         zstyle ':vcs_info:*' enable git
-
+        # λ
         export PROMPT='%F{12}[%*] %F{1}%n%F{8}@%F{10}%m %F{9}%F{3}$(_fish_collapsed_pwd)%F{14}>%f%  '
         export RPROMPT='%(?.. %F{1}✘ %?) $vcs_info_msg_0_'
 

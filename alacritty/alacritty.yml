@@ -98,9 +98,11 @@ font:
     #   - (Windows) Consolas
     family: Sarasa Mono CL
     # family: xos4 Terminus
+    # family: Iosevka Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Semibold
+    # style: Medium
     # style: Regular
 
   # Bold font face
@@ -111,6 +113,7 @@ font:
     # value specified for the normal font.
     family: Sarasa Mono CL
     # family: xos4 Terminus
+    # family: Iosevka Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -123,6 +126,7 @@ font:
     # value specified for the normal font.
     family: Sarasa Mono CL
     # family: xos4 Terminus
+    # family: Iosevka Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
