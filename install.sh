@@ -84,13 +84,13 @@ ln -siv $path/xorg/xinitrc ~/.xinitrc
 ln -siv $path/zathura/zathurarc ~/.config/zathura/zathurarc
 
 # zsh
-ln -siv $path/zsh/LESS_TERMCAP ~/.LESS_TERMCAP 
 ln -siv $path/zsh/alias.sh ~/.alias.sh
 ln -siv $path/zsh/fsph_prompt.sh ~/.fsph_prompt.sh
 ln -siv $path/zsh/utils_env.sh ~/.utils_env.sh
 ln -siv $path/zsh/lgfs_prompt.sh ~/.lgfs_prompt.sh
 ln -siv $path/zsh/zpreztorc ~/.zpreztorc
 ln -siv $path/zsh/zshrc ~/.zshrc
+# ln -siv $path/zsh/LESS_TERMCAP ~/.LESS_TERMCAP
 
 # [root]
 # xorg

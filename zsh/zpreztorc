@@ -35,12 +35,12 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'history-substring-search' \
   'directory' \
-  'spectrum' \
   'utility' \
   'completion' \
   'autosuggestions' \
   'syntax-highlighting'\
   # 'prompt'
+  # 'spectrum' \
  
 #
 # Autosuggestions
@@ -68,7 +68,14 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # Allow the zsh prompt context to be shown.
-#zstyle ':prezto:module:editor' ps-context 'yes'
+# zstyle ':prezto:module:editor' ps-context 'yes'
+
+# Theming
+# zstyle ':prezto:module:editor:info:keymap:primary' format '>>>'
+# zstyle ':prezto:module:editor:info:keymap:primary:insert' format 'I'
+# zstyle ':prezto:module:editor:info:keymap:primary:overwrite' format 'O'
+# zstyle ':prezto:module:editor:info:keymap:alternate' format '<<<'
+# zstyle ':prezto:module:editor:info:completing' format '...'
 
 #
 # Git
@@ -99,7 +106,7 @@ zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # zstyle ':prezto:module:history-substring-search' case-sensitive 'no'
 
-# zstyle ':prezto:module:history-substring-search' color 'yes'
+zstyle ':prezto:module:history-substring-search' color 'yes'
 
 # Set the query found color.
 # zstyle ':prezto:module:history-substring-search:color' found ''
@@ -240,3 +247,4 @@ zstyle ':prezto:module:syntax-highlighting' pattern \
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 zstyle ':prezto:module:utility' safe-ops 'no'
+zstyle ':prezto:module:utility' correct 'no'
